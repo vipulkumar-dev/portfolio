@@ -1,6 +1,6 @@
 /* @import url("https://fonts.googleapis.com/css2?family=DM+Sans&display=swap"); */
 :root {
-  --primary-color: #ffe600
+  --primary-color: #ffe600;
   --padding: clamp(20px, 7.8vw + 10px, 150px);
   --padding2: 0vw;
   --colorDark: #0e0d0c;
@@ -148,7 +148,7 @@ ul {
 
 .myImage img {
   width: 100%;
-  max-width: 1000px;
+  max-width: 850px;
 }
 
 .section__1 {
@@ -162,6 +162,7 @@ ul {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  background: linear-gradient(90deg, rgb(0 0 0) 0%, rgb(34 33 33) 100%);
 }
 
 .hire-me--wrapper {
@@ -778,11 +779,6 @@ textPath {
   align-items: center;
 }
 
-.position {
-  /* position: absolute; */
-  /* left: ; */
-}
-
 #one {
   position: relative;
   /* height: 27vh; */
@@ -865,10 +861,6 @@ a {
 @media only screen and (max-width: 768px) {
   .slider_wip {
     width: auto;
-  }
-
-  .slider-inner {
-    /* min-width: initial; */
   }
 
   #one {
