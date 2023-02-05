@@ -16,7 +16,7 @@
   :root {
     --fontExtraSmall: 16px;
     --fontSmall: 4.5vw;
-    --fontBig: 9vw;
+    --fontBig: 8.5vw;
     --fontExtraBig: 25vw;
     --padding2: 5vw;
   }
@@ -26,7 +26,7 @@
   :root {
     --fontExtraSmall: 16px;
     --fontSmall: 7vw;
-    --fontBig: 8.8vw;
+    --fontBig: 8.4vw;
     --fontExtraBig: 29vw;
     --padding2: 5vw;
   }
