@@ -38,15 +38,17 @@
 }
 
 @font-face {
-  font-family: "ginger";
-  src: url("../font/ginger-bold.otf") format("opentype");
+  font-family: "Ginger";
+  src: url("../font/woff/F37Ginger-Bold.woff2") format("woff2"),
+    url("../font/woff/F37Ginger-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "ginger";
-  src: url("../font/ginger-regular.otf") format("opentype");
+  font-family: "Ginger";
+  src: url("../font/woff/F37Ginger.woff2") format("woff2"),
+    url("../font/woff/F37Ginger.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -65,7 +67,7 @@ html {
 }
 
 body {
-  font-family: "ginger";
+  font-family: "Ginger";
   /* font-family: "DM Sans", sans-serif; */
   /* background-color: var(--background-color3); */
 
