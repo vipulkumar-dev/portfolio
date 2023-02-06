@@ -595,6 +595,7 @@ textPath {
   background-color: var(--colorLight);
   overflow: hidden;
   padding: var(--padding2);
+  padding-inline: 5vw;
   height: 100%;
   display: flex !important;
   flex-direction: column;
@@ -604,7 +605,7 @@ textPath {
 
 .section__2 .container {
   display: flex;
-  padding-top: 100px;
+  padding-top: clamp(0px, 3vw, 100px);
 }
 .section__2_left {
   width: 80%;
@@ -794,15 +795,17 @@ textPath {
   /* height: 27vh; */
   flex-grow: 1;
   max-height: 25vh;
-  width: calc(100% - (2 * var(--padding)));
+  width: 100%;
   margin-inline: auto;
   overflow: hidden;
   border-top: 1px solid rgba(0, 0, 0, 0.106);
   padding-block: 15px;
+  max-width: 1620px;
 }
 
 .slider_wip {
-  width: calc(100% - (2 * var(--padding)));
+  width: 100%;
+  max-width: 1250px;
   height: 100%;
   overflow: hidden;
   position: relative;

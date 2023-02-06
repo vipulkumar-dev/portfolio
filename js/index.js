@@ -1,4 +1,10 @@
-// gsap.registerPlugin(ScrollTrigger);
+var YOUR_API_KEY = "AIzaSyCRl-M5wCloEJ40LerD6hAK19D0iRAgbVs";
+
+fetch(
+  `https://youtube.googleapis.com/youtube/v3/commentThreads?part=id%2C%20snippet&searchTerms=vipul%20kumar&videoId=DuudSp4sHmg&key=${YOUR_API_KEY}`
+)
+  .then((response) => response.json())
+  .then((data) => console.log(data.items[0].snippet.topLevelComment.snippet));
 
 document.addEventListener("mousemove", function (e) {
   gsap.to(".cursor", {
