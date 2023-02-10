@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=DM+Sans&display=swap"); */
 :root {
   --primary-color: #ffe600;
   --padding: clamp(20px, 7.8vw + 10px, 150px);
@@ -37,7 +37,7 @@
   background-color: var(--primary-color);
 }
 
-/* @font-face {
+@font-face {
   font-family: "Ginger";
   src: url("../font/woff/F37Ginger-Bold.woff2") format("woff2"),
     url("../font/woff/F37Ginger-Bold.woff") format("woff");
@@ -51,7 +51,7 @@
     url("../font/woff/F37Ginger.woff") format("woff");
   font-weight: normal;
   font-style: normal;
-} */
+}
 
 * {
   margin: 0;
@@ -68,7 +68,7 @@ html {
 
 body {
   font-family: "Ginger";
-  font-family: "DM Sans", sans-serif;
+  /* font-family: "DM Sans", sans-serif; */
   /* background-color: var(--background-color3); */
 
   width: 100%;
