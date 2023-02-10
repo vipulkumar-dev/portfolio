@@ -51,9 +51,9 @@ let about = gsap
     "-=0.9"
   );
 
-const myText = new SplitType("#my-text");
+const myText = new SplitType("#my-text", { types: "lines,chars" });
 
-let textAnim__section2__down = gsap.from("#my-text .line .word .char", 1.4, {
+let textAnim__section2__down = gsap.from("#my-text .char", 1.4, {
   y: "200%",
   skewX: -10,
   scaleY: 1.5,
