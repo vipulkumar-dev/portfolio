@@ -134,27 +134,32 @@ ul {
 }
 
 .image--works {
-  background: url(../img/projects/1.png) no-repeat center;
+  background: url(https://i.ytimg.com/vi/OpN-Y2IV7SI/maxresdefault.jpg)
+    no-repeat center;
   background-size: contain;
 }
 
 .image--works2 {
-  background: url(../img/projects/2.png) no-repeat center;
+  background: url(https://i.ytimg.com/vi/n_l0qwygQwQ/maxresdefault.jpg)
+    no-repeat center;
   background-size: contain;
 }
 
 .image--works3 {
-  background: url(../img/projects/3.png) no-repeat center;
+  background: url(https://i.ytimg.com/vi/LQiMCa5qloc/maxresdefault.jpg)
+    no-repeat center;
   background-size: contain;
 }
 
 .image--works4 {
-  background: url(../img/projects/4.png) no-repeat center;
+  background: url(https://i.ytimg.com/vi/op0SBlE5QKU/maxresdefault.jpg)
+    no-repeat center;
   background-size: contain;
 }
 
 .image--works5 {
-  background: url(../img/projects/5.png) no-repeat center;
+  background: url(https://i.ytimg.com/vi/JMnl_moHSws/maxresdefault.jpg)
+    no-repeat center;
   background-size: contain;
 }
 
@@ -204,8 +209,9 @@ ul {
 
 .image .page-num p {
   line-height: 1.1;
-  background-color: hsl(0, 0%, 0%, 0.07);
+  background-color: hsl(0, 0%, 0%, 0.5);
   border-radius: 10px;
+  color: white;
 }
 
 @media screen and (max-width: 970px) {
