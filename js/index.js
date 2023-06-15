@@ -1,10 +1,10 @@
-var YOUR_API_KEY = "AIzaSyCRl-M5wCloEJ40LerD6hAK19D0iRAgbVs";
+// var YOUR_API_KEY = "AIzaSyCRl-M5wCloEJ40LerD6hAK19D0iRAgbVs";
 
-fetch(
-  `https://youtube.googleapis.com/youtube/v3/commentThreads?part=id%2C%20snippet&searchTerms=vipul%20kumar&videoId=DuudSp4sHmg&key=${YOUR_API_KEY}`
-)
-  .then((response) => response.json())
-  .then((data) => console.log(data.items[0].snippet.topLevelComment.snippet));
+// fetch(
+//   `https://youtube.googleapis.com/youtube/v3/commentThreads?part=id%2C%20snippet&searchTerms=vipul%20kumar&videoId=DuudSp4sHmg&key=${YOUR_API_KEY}`
+// )
+//   .then((response) => response.json())
+//   .then((data) => console.log(data.items[0].snippet.topLevelComment.snippet));
 
 document.addEventListener("mousemove", function (e) {
   gsap.to(".cursor", {
@@ -28,11 +28,7 @@ const anim = lottie.loadAnimation({
 });
 
 anim.addEventListener("complete", function () {
-  setTimeout(() => {
-    // introContainer.style.transform = "scale(1) rotate(45deg)";
-    // logo_animation.style.opacity = "0";
-    introContainer.style.opacity = "0";
-  }, 0);
+  introContainer.style.opacity = "0";
 });
 
 let about = gsap
