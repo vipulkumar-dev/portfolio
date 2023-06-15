@@ -129,6 +129,70 @@ ul {
   }
 }
 
+.home__starteranimation {
+  position: fixed;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100vh;
+  transform: scale(1) rotate(0deg);
+  transition: opacity 1.2s cubic-bezier(1, 0, 0.29, 1);
+  z-index: 10000;
+  pointer-events: none;
+}
+
+.home__starteranimation .background__color {
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--colorLight);
+  /* clip-path: polygon(
+    0% 0%,
+    0% 100%,
+    35% 100%,
+    35% 34%,
+    65% 34%,
+    65% 62%,
+    35% 62%,
+    35% 100%,
+    100% 100%,
+    100% 0%
+  ); */
+  /* display: none; */
+}
+
+.home__starteranimation .animation__container {
+  max-width: 850px;
+  width: 100%;
+  aspect-ratio: 1/1;
+  /* background-color: var(--colorDark); */
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: opacity 1.2s cubic-bezier(1, 0, 0.29, 1);
+  /* background-color: var(--text-color); */
+}
+
+.home__starteranimation .animation__container.not {
+  max-width: 850px;
+  aspect-ratio: 1/1;
+  clip-path: polygon(
+    0% 0%,
+    0% 100%,
+    35% 100%,
+    35% 41%,
+    65% 41%,
+    65% 58%,
+    35% 58%,
+    35% 100%,
+    100% 100%,
+    100% 0%
+  );
+}
+
 .yellow__it {
   color: var(--primary-color);
 }

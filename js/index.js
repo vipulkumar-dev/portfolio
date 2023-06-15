@@ -14,6 +14,27 @@ document.addEventListener("mousemove", function (e) {
   });
 });
 
+const introContainer = document.querySelector("#intro");
+const logo_animation = document.querySelector("#logo_animation");
+
+const animation__container = document.querySelector("#logo_animation");
+
+const anim = lottie.loadAnimation({
+  container: animation__container,
+  renderer: "svg",
+  loop: false,
+  autoplay: true,
+  path: "../bodymovin/data.json",
+});
+
+anim.addEventListener("complete", function () {
+  setTimeout(() => {
+    // introContainer.style.transform = "scale(1) rotate(45deg)";
+    // logo_animation.style.opacity = "0";
+    introContainer.style.opacity = "0";
+  }, 0);
+});
+
 let about = gsap
   .timeline({ defaults: { ease: "none" }, repeat: -1 })
   .to(".left .animate__this1", {
