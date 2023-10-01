@@ -1,5 +1,5 @@
 :root {
-  --primary-color: #e75340;
+  --primary-color: hsl(54, 100%, 50%);
   --secondary-color: #fff;
   --foreground-color: hsl(54, 6%, 5%);
   --background-color: #fff;
