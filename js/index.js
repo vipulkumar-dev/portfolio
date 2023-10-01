@@ -24,7 +24,7 @@ const anim = lottie.loadAnimation({
   renderer: "svg",
   loop: false,
   autoplay: true,
-  path: "../portfolio/bodymovin/data.json",
+  path: "/bodymovin/data.json",
 });
 
 anim.addEventListener("complete", function () {
