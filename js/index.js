@@ -25,7 +25,7 @@ const anim = lottie.loadAnimation({
   renderer: "svg",
   loop: false,
   autoplay: true,
-  animationData,
+  animationData: JSON.parse(animationData),
 });
 
 anim.addEventListener("complete", function () {
