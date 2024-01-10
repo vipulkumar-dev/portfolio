@@ -9,14 +9,19 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@fullpage/react-fullpage": "^0.1.40",
+    "@reduxjs/toolkit": "^2.0.1",
     "fullpage.js": "^4.0.20",
     "gsap": "^3.12.4",
+    "lottie-web": "^5.12.2",
     "next": "14.0.4",
     "react": "^18",
     "react-dom": "^18",
+    "react-redux": "^9.0.4",
     "split-type": "^0.3.4"
   },
   "devDependencies": {
+    "@types/fullpage.js": "^2.9.6",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
