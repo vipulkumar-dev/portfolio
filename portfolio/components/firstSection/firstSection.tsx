@@ -4,9 +4,7 @@ import Image from "next/image";
 import Magentic from "../ui/magentic";
 import { useAppSelector } from "@/hooks/reduxHooks";
 export function FirstSection({}) {
-  const { isActive, direction } = useAppSelector(
-    (state) => state.fullpageReducer.first
-  );
+  useAppSelector((state) => state.fullpageReducer.first);
 
   return (
     <section className="section section__1 first">

@@ -1,6 +1,6 @@
 import React, { use, useRef } from "react";
 import Magentic from "@/components/ui/magentic";
-import { BgImages } from "@/components/fourthSection/bgImages";
+import { BgImagesContainer } from "@/components/fourthSection/bgImagesContainer";
 import { useAppSelector } from "@/hooks/reduxHooks";
 export function FourthSection({}) {
   const { suscribe } = useAppSelector((state) => state.fullpageReducer.fourth);
@@ -28,12 +28,12 @@ export function FourthSection({}) {
           Quoute<span className="yellow__it">.</span>
         </span>
       </Magentic>
-      <BgImages bgImagesSharedRef={bgImagesSharedRef} />
+      <BgImagesContainer bgImagesSharedRef={bgImagesSharedRef} />
       <div className="footer__links anime">
         <div className="footer__left">
           Copyright © 2012-2022 email.coex@gmail.com
         </div>
-        <div className="footer__right">
+        <div className="footer__right flex">
           <a className="footer__icons" href="#">
             <svg
               xmlns="http://www.w3.org/2000/svg"

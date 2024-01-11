@@ -1,10 +1,9 @@
 import { FourthSection } from "@/components/fourthSection/fourthSection";
-import { BgImages } from "@/components/fourthSection/bgImages";
+
 import { FirstSection } from "@/components/firstSection/firstSection";
 import React from "react";
 import Image from "next/image";
-import Magentic from "./ui/magentic";
-export function Main({}: { state?: any }) {
+export function Main() {
   // console.log(state);
 
   return (
@@ -15,8 +14,7 @@ export function Main({}: { state?: any }) {
        <div className="background__color"></div>
        <div className="animation__container not"></div>
        <div id="logo_animation" className="animation__container anim"></div>
-      </div>
-      <div id="fullpage"> */}
+      </div> */}
       <FirstSection />
       <section className="section section__2 second">
         <div className="rounded__div__down black">
@@ -184,7 +182,7 @@ export function Main({}: { state?: any }) {
         </div>
       </section>
 
-      <section className="section section__3 third overflow-hidden !h-[100vh] ">
+      <section className="section section__3 third !h-[100vh] overflow-hidden ">
         <div className="rounded__div__down white">
           <div className="round__bg__down black"></div>
         </div>
@@ -244,17 +242,7 @@ export function Main({}: { state?: any }) {
         </div>
       </section>
 
-      {/* <section className="section section__4">
-         <section className="container">
-           <div className="title">
-             The pixel perfect 💡
-             <Image width={100} height={100} src="img-five.jpg" alt="" />
-           </div>
-         </section>
-       </section> */}
-
       <FourthSection />
-      {/* </div> */}
     </>
   );
 }
