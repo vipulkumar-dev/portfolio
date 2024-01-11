@@ -75,12 +75,12 @@ const Magentic = ({
   return (
     <div
       ref={magnet}
-      className={className}
+      className={className + " *:pointer-events-none"}
       onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave}
     >
       {shapka && <div className="shapka">{shapka}</div>}
-      <div className="magnet"></div>
+      {/* <div className="magnet"></div> */}
       {children}
     </div>
   );

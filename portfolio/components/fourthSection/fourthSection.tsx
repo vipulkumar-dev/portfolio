@@ -23,7 +23,7 @@ export function FourthSection({}) {
           bgImagesSharedRef.current?.reverse();
         }}
       >
-        <span className="shapka pointer-events-none">
+        <span className="shapka ">
           Get a<br />
           Quoute<span className="yellow__it">.</span>
         </span>

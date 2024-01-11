@@ -6,6 +6,6 @@ export const getRandRgb = () => {
 };
 
 //  function to get rotation two beetween numbers
-export const getRandRotation = (min: number, max: number) => {
+export const getRandValues = (min: number, max: number) => {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 };

@@ -4,7 +4,7 @@ import { useAppSelector } from "@/hooks/reduxHooks";
 import { memo } from "react";
 import { gsap } from "gsap";
 import { CustomEase } from "gsap/CustomEase";
-import { getRandRgb, getRandRotation } from "@/lib/utils";
+import { getRandRgb, getRandValues } from "@/lib/utils";
 
 const bgImagesData = [
   {
@@ -75,7 +75,7 @@ export const BgImages = ({
           return 80 + index * -GAP + "%";
         },
         rotate: function (index, target, targets) {
-          return getRandRotation(-30, 30);
+          return getRandValues(-30, 30);
         },
         // filter: "blur(0px)",
 
@@ -107,26 +107,8 @@ export const BgImages = ({
     };
   });
 
-  // useEffect(() => {
-  //   // bgImagesTween.current?.restart(true);
-  // });
-  // function for get ranadom rgb
-
   return (
-    <div
-      style={
-        {
-          // left: `${(bgImagesData.length * gap) / 2 + 40}px`,
-        }
-      }
-      // onMouseEnter={() => {
-      //   bgImagesTween.current?.restart();
-      // }}
-      // onMouseLeave={() => {
-      //   bgImagesTween.current?.pause();
-      // }}
-      className="footer__img_wrapper  flex absolute justify-center items-center overflow-hidden w-[100%] h-[100%]"
-    >
+    <div className="footer__img_wrapper  flex absolute justify-center items-center overflow-hidden w-[100%] h-[100%] ">
       {bgImagesData.map((item, i) => (
         <div
           style={{
