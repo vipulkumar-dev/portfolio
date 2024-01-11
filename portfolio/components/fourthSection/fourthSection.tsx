@@ -4,6 +4,7 @@ import { BgImages } from "@/components/fourthSection/bgImages";
 import { useAppSelector } from "@/hooks/reduxHooks";
 export function FourthSection({}) {
   const { suscribe } = useAppSelector((state) => state.fullpageReducer.fourth);
+  const bgImagesSharedRef = useRef<gsap.core.Tween | null>(null);
 
   return (
     <section className="section section__5 fourth">
@@ -14,14 +15,20 @@ export function FourthSection({}) {
         <div className="round__bg__up white"></div>
       </div>
       <Magentic // href="mailto:email.coex@gmail.com"
-        className="magnetic footer__heading anime"
+        className="magnetic footer__heading anime cursor-pointer"
+        onMouseEnter={() => {
+          bgImagesSharedRef.current?.restart(true);
+        }}
+        onMouseLeave={() => {
+          bgImagesSharedRef.current?.reverse();
+        }}
       >
-        <span className="shapka">
+        <span className="shapka pointer-events-none">
           Get a<br />
           Quoute<span className="yellow__it">.</span>
         </span>
       </Magentic>
-      <BgImages />
+      <BgImages bgImagesSharedRef={bgImagesSharedRef} />
       <div className="footer__links anime">
         <div className="footer__left">
           Copyright © 2012-2022 email.coex@gmail.com

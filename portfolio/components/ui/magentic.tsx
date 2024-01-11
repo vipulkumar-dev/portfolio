@@ -1,4 +1,4 @@
-import React, { use, useEffect, useRef } from "react";
+import React, { memo, use, useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { CustomEase } from "gsap/CustomEase";
 
@@ -7,27 +7,32 @@ type MagenticProps = {
   className?: string;
   shapka?: React.ReactNode;
   strength?: number;
+  onMouseEnter?: () => void;
+  onMouseLeave?: () => void;
 };
-export default function Magentic({
+const Magentic = ({
   shapka,
   children,
   className,
+  onMouseEnter,
+  onMouseLeave,
   strength = 100,
-}: MagenticProps) {
+}: MagenticProps) => {
   const magnet = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     if (magnet.current === null) {
       return;
     }
+    const magnetButton = magnet.current;
+    const shapka = magnetButton.querySelector(".shapka");
 
     if (screen.width > 540) {
-      magnet.current.addEventListener("mousemove", handleMagnetMove);
-      magnet.current.addEventListener("mouseout", handleMagnetOut);
+      magnetButton.addEventListener("mousemove", handleMagnetMove);
+      magnetButton.addEventListener("mouseout", handleMagnetOut);
     }
     function handleMagnetOut(event: MouseEvent) {
-      const eventTarget = event.currentTarget as HTMLDivElement;
-      gsap.to([eventTarget, eventTarget.querySelector(".shapka")], {
+      gsap.to([magnetButton, shapka], {
         x: 0,
         y: 0,
         ease: "elastic.out(1,0.4)",
@@ -36,31 +41,24 @@ export default function Magentic({
     }
 
     function handleMagnetMove(event: MouseEvent) {
-      var magnetButton = event.currentTarget as HTMLDivElement;
-      // asiign a default value to magnet strength
-      var magnetsStrength = strength;
-
-      var bounding = magnetButton.getBoundingClientRect();
-      var shapka = magnetButton.querySelector(".shapka");
+      const bounding = magnetButton.getBoundingClientRect();
+      const magneticWidth =
+        (event.clientX - bounding.left) / magnetButton.offsetWidth - 0.5;
+      const magneticHeight =
+        (event.clientY - bounding.top) / magnetButton.offsetHeight - 0.5;
 
       gsap.to(magnetButton, {
-        x:
-          ((event.clientX - bounding.left) / magnetButton.offsetWidth - 0.5) *
-          magnetsStrength,
-        y:
-          ((event.clientY - bounding.top) / magnetButton.offsetHeight - 0.5) *
-          magnetsStrength,
+        x: magneticWidth * strength,
+        y: magneticHeight * strength,
         ease: "power2.out",
         duration: 1,
       });
+      // shapka should be pointer events none
+
       if (shapka) {
         gsap.to(shapka, {
-          x:
-            ((event.clientX - bounding.left) / magnetButton.offsetWidth - 0.5) *
-            (magnetsStrength / 2),
-          y:
-            ((event.clientY - bounding.top) / magnetButton.offsetHeight - 0.5) *
-            (magnetsStrength / 2),
+          x: magneticWidth * (strength / 2),
+          y: magneticHeight * (strength / 2),
           ease: "power2.out",
           duration: 1,
         });
@@ -75,8 +73,17 @@ export default function Magentic({
     };
   }, []);
   return (
-    <div ref={magnet} className={className}>
+    <div
+      ref={magnet}
+      className={className}
+      onMouseEnter={onMouseEnter}
+      onMouseLeave={onMouseLeave}
+    >
+      {shapka && <div className="shapka">{shapka}</div>}
+      <div className="magnet"></div>
       {children}
     </div>
   );
-}
+};
+
+export default memo(Magentic);

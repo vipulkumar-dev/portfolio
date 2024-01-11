@@ -51,16 +51,20 @@ const bgImagesData = [
   },
 ];
 
-export const BgImages = ({ suscribe }: { suscribe?: number }) => {
-  const bgImagesTimeline = useRef<gsap.core.Tween | null>(null);
-  const GAP = 150;
+export const BgImages = ({
+  bgImagesSharedRef,
+}: {
+  bgImagesSharedRef: React.MutableRefObject<gsap.core.Tween | null>;
+}) => {
+  const bgImagesTween = useRef<gsap.core.Tween | null>(null);
+  const GAP = 10;
   useEffect(() => {
-    bgImagesTimeline.current = gsap.fromTo(
+    bgImagesTween.current = gsap.fromTo(
       ".bgImages",
       {
         y: "200%",
         x: "0%",
-        left: 0,
+        left: "50%",
         rotate: 0,
         // filter: "blur(20px)",
       },
@@ -68,7 +72,7 @@ export const BgImages = ({ suscribe }: { suscribe?: number }) => {
         y: "0%",
         x: "0%",
         left: function (index, target, targets) {
-          return 450 + index * -GAP;
+          return 80 + index * -GAP + "%";
         },
         rotate: function (index, target, targets) {
           return getRandRotation(-30, 30);
@@ -83,24 +87,45 @@ export const BgImages = ({ suscribe }: { suscribe?: number }) => {
       }
     );
 
+    bgImagesSharedRef.current = gsap.fromTo(
+      ".footer__img_wrapper",
+      {
+        width: "100%",
+      },
+      {
+        width: "110%",
+        paused: true,
+        delay: 0.1,
+        duration: 0.6,
+        ease: CustomEase.create("custom", "M0,0,C0.5,0,0,1,1,1"),
+      }
+    );
+
     return () => {
-      bgImagesTimeline.current?.kill();
+      bgImagesTween.current?.kill();
+      bgImagesSharedRef.current?.kill();
     };
   });
 
   // useEffect(() => {
-  //   // bgImagesTimeline.current?.restart(true);
+  //   // bgImagesTween.current?.restart(true);
   // });
   // function for get ranadom rgb
 
   return (
-    <a
+    <div
       style={
         {
           // left: `${(bgImagesData.length * gap) / 2 + 40}px`,
         }
       }
-      className="footer__img_wrapper  flex absolute justify-center items-center"
+      // onMouseEnter={() => {
+      //   bgImagesTween.current?.restart();
+      // }}
+      // onMouseLeave={() => {
+      //   bgImagesTween.current?.pause();
+      // }}
+      className="footer__img_wrapper  flex absolute justify-center items-center overflow-hidden w-[100%] h-[100%]"
     >
       {bgImagesData.map((item, i) => (
         <div
@@ -116,6 +141,6 @@ export const BgImages = ({ suscribe }: { suscribe?: number }) => {
           key={item.id}
         ></div>
       ))}
-    </a>
+    </div>
   );
 };
