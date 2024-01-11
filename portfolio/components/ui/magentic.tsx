@@ -39,7 +39,6 @@ export default function Magentic({
       var magnetButton = event.currentTarget as HTMLDivElement;
       // asiign a default value to magnet strength
       var magnetsStrength = strength;
-      console.log(magnetsStrength);
 
       var bounding = magnetButton.getBoundingClientRect();
       var shapka = magnetButton.querySelector(".shapka");

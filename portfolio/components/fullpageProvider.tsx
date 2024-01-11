@@ -7,6 +7,8 @@ import { gsap } from "gsap";
 import { CustomEase } from "gsap/CustomEase";
 
 import SplitType from "split-type";
+import { useAppDispatch } from "@/hooks/reduxHooks";
+import { setActiveSlide } from "@/redux/states/fullpageSlice";
 // import Lottie from "lottie-web";
 // import fullpage from "@fullpage/react-fullpage";
 
@@ -28,9 +30,12 @@ const FullpageProvider = ({ children }: { children: React.ReactNode }) => {
   const about = useRef<gsap.core.Timeline | null>(null);
   const textAnim__section2__down = useRef<gsap.core.Tween | null>(null);
   const videoElement = useRef<HTMLVideoElement | null>(null);
-  const bgImagesTimeline = useRef<gsap.core.Tween | null>(null);
+
+  const dispatch = useAppDispatch();
 
   const onLeave = (origin: any, destination?: any, direction?: any) => {
+    dispatch(setActiveSlide([destination.anchor, direction]));
+
     if (destination.anchor == "first") {
       if (direction == "down") {
       } else {
@@ -57,9 +62,6 @@ const FullpageProvider = ({ children }: { children: React.ReactNode }) => {
     if (destination.anchor == "fourth") {
       if (direction == "down") {
         // anim__section2__down.restart();
-        console.log("fourth");
-
-        bgImagesTimeline.current?.restart(true);
       } else {
         // textAnim__section2__up.restart();
         // anim__section2__up.restart();
@@ -217,30 +219,6 @@ const FullpageProvider = ({ children }: { children: React.ReactNode }) => {
       ease: CustomEase.create("custom", "M0,0,C0.5,0,0,1,1,1"),
     });
 
-    bgImagesTimeline.current = gsap.fromTo(
-      ".bgImages",
-      {
-        y: "200%",
-        left: 0,
-      },
-      {
-        y: "0%",
-        left: function (index, target, targets) {
-          //function-based value
-          console.log(target);
-          console.log(targets);
-
-          return 450 + index * -150;
-        },
-
-        paused: true,
-        delay: 0.8,
-        stagger: 0.08,
-        duration: 1,
-        ease: CustomEase.create("custom", "M0,0,C0.5,0,0,1,1,1"),
-      }
-    );
-
     videoElement.current = document.querySelector("#video") as HTMLVideoElement;
 
     // console.log(gsap);
@@ -250,7 +228,6 @@ const FullpageProvider = ({ children }: { children: React.ReactNode }) => {
     return () => {
       about.current?.kill();
       textAnim__section2__down.current?.kill();
-      bgImagesTimeline.current?.kill();
     };
   }, []);
 

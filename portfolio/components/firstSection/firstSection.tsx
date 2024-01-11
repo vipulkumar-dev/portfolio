@@ -1,8 +1,13 @@
 import { Marquee } from "./marquee";
-import React from "react";
+import React, { useEffect } from "react";
 import Image from "next/image";
 import Magentic from "../ui/magentic";
+import { useAppSelector } from "@/hooks/reduxHooks";
 export function FirstSection({}) {
+  const { isActive, direction } = useAppSelector(
+    (state) => state.fullpageReducer.first
+  );
+
   return (
     <section className="section section__1 first">
       <div className="rounded__div__down white">
