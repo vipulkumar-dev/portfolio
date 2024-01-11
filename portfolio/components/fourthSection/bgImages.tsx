@@ -53,20 +53,27 @@ const bgImagesData = [
 
 export const BgImages = ({ suscribe }: { suscribe?: number }) => {
   const bgImagesTimeline = useRef<gsap.core.Tween | null>(null);
+  const GAP = 150;
   useEffect(() => {
     bgImagesTimeline.current = gsap.fromTo(
       ".bgImages",
       {
         y: "200%",
+        x: "0%",
         left: 0,
+        rotate: 0,
+        // filter: "blur(20px)",
       },
       {
         y: "0%",
+        x: "0%",
         left: function (index, target, targets) {
-          //function-based value
-
-          return 450 + index * -150;
+          return 450 + index * -GAP;
         },
+        rotate: function (index, target, targets) {
+          return getRandRotation(-30, 30);
+        },
+        // filter: "blur(0px)",
 
         // paused: true,
         delay: 0.8,
@@ -86,7 +93,6 @@ export const BgImages = ({ suscribe }: { suscribe?: number }) => {
   // });
   // function for get ranadom rgb
 
-  const gap = 150;
   return (
     <a
       style={
@@ -100,16 +106,13 @@ export const BgImages = ({ suscribe }: { suscribe?: number }) => {
         <div
           style={{
             backgroundColor: getRandRgb(),
-            left: `${450 + i * -gap}px`,
-            // top: `${i * 40}px`,
-            rotate: `${getRandRotation(-30, 30)}deg`,
             zIndex: `${
               Math.floor(bgImagesData.length / 2) == i
                 ? 520
                 : Math.floor(Math.random() * 10)
             }`,
           }}
-          className="w-[320px] h-[400px] absolute rounded-3xl bgImages translate-y-[0%] translate-x-[-50%] origin-center"
+          className="w-[320px] h-[400px] absolute rounded-3xl bgImages translate-y-[0%] translate-x-[-50%] origin-[center_center]"
           key={item.id}
         ></div>
       ))}
