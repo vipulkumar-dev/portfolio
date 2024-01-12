@@ -17,11 +17,15 @@ export function FirstSection({}) {
       <header className="nav__container anime">
         <nav className="nav__bar">
           <ul>
-            <Magentic strength={50} className="nav__item ">
-              <a href="work.html"> Work </a>
+            <Magentic href="work.html" strength={50} className="nav__item ">
+              <p>Work</p>
             </Magentic>
-            <Magentic strength={50} className="nav__item ">
-              <a href="https://www.linkedin.com/in/coex-/"> About </a>
+            <Magentic
+              href="https://www.linkedin.com/in/coex-/"
+              strength={50}
+              className="nav__item "
+            >
+              <p>About</p>
             </Magentic>
           </ul>
         </nav>

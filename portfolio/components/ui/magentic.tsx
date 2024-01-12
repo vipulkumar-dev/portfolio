@@ -1,24 +1,27 @@
 import React, { memo, use, useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { CustomEase } from "gsap/CustomEase";
+import { cn } from "@/lib/utils";
 
 type MagenticProps = {
   children: React.ReactNode;
+  href?: string;
   className?: string;
-  shapka?: React.ReactNode;
   strength?: number;
+  hoverUnderline?: boolean;
   onMouseEnter?: () => void;
   onMouseLeave?: () => void;
 };
 const Magentic = ({
-  shapka,
   children,
   className,
   onMouseEnter,
   onMouseLeave,
+  hoverUnderline = false,
   strength = 100,
+  ...rest
 }: MagenticProps) => {
-  const magnet = useRef<HTMLDivElement>(null);
+  const magnet = useRef<HTMLAnchorElement>(null);
 
   useEffect(() => {
     if (magnet.current === null) {
@@ -73,16 +76,21 @@ const Magentic = ({
     };
   }, []);
   return (
-    <div
+    <a
       ref={magnet}
-      className={className + " *:pointer-events-none"}
+      className={cn(
+        "flex justify-center *:pointer-events-none  " +
+          className +
+          (hoverUnderline
+            ? " before:absolute before:bottom-0   before:h-0.5 before:w-0 before:origin-center before:bg-foreground before:transition-all before:duration-300  hover:before:w-full"
+            : ""),
+      )}
       onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave}
+      {...rest}
     >
-      {shapka && <div className="shapka">{shapka}</div>}
-      {/* <div className="magnet"></div> */}
       {children}
-    </div>
+    </a>
   );
 };
 

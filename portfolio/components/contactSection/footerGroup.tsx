@@ -10,14 +10,17 @@ export function FooterGroup({
   return (
     <div className={cn("", className)}>
       <h3 className="text-xs text-foreground">{title}</h3>
-      <ul className="mt-2 flex  gap-5 text-lg text-foreground">
+      <ul className="mt-2 flex  gap-5 text-lg text-foreground ">
         {links.map((link, index) => (
           <li key={index} className="">
             {isMagnetic ? (
-              <Magentic strength={50}>
-                <a className="text-foreground" href={link.href}>
-                  {link.text}
-                </a>
+              <Magentic
+                strength={50}
+                className="text-foreground"
+                href={link.href}
+                hoverUnderline={true}
+              >
+                <p>{link.text}</p>
               </Magentic>
             ) : (
               <p>{link.text}</p>
