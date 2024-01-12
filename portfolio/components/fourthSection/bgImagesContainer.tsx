@@ -59,6 +59,30 @@ const bgImagesData = [
   },
 ];
 
+function getRandDistrubutedTop(index: number, targets: any[]) {
+  const mid = Math.floor(targets.length / 2);
+  if (index === 0) {
+    return 65;
+  }
+
+  if (index === targets.length - 1) {
+    return 35;
+  }
+
+  if (index === mid) {
+    return 50;
+  }
+
+  if (index < mid) {
+    return getRandValues(30, 60);
+  }
+  if (index > mid) {
+    return getRandValues(40, 70);
+  }
+
+  return getRandValues(30, 70);
+}
+
 export const BgImagesContainer = ({
   bgImagesSharedRef,
 }: {
@@ -76,13 +100,18 @@ export const BgImagesContainer = ({
         x: "0%",
         left: "50%",
         rotate: 0,
+        top: "50%",
+
         // filter: "blur(20px)",
       },
       {
-        y: "0%",
+        y: "-50%",
         x: "0%",
         left: function (index, target, targets) {
           return 80 + index * -GAP + "%";
+        },
+        top: function (index, target, targets) {
+          return getRandDistrubutedTop(index, targets) + "%";
         },
         rotate: function (index, target, targets) {
           return getRandValues(-30, 30);
@@ -101,9 +130,11 @@ export const BgImagesContainer = ({
       ".footer__img_wrapper",
       {
         width: "100%",
+        minHeight: "100%",
       },
       {
         width: "110%",
+        minHeight: "150%",
         paused: true,
         delay: 0.1,
         duration: 0.6,
@@ -118,9 +149,9 @@ export const BgImagesContainer = ({
   });
 
   return (
-    <div className="footer__img_wrapper  absolute flex h-[100%] w-[100%] items-center justify-center overflow-hidden ">
+    <div className="footer__img_wrapper bg-transparent-foreground  absolute flex h-[100%] w-[100%] items-center justify-center overflow-hidden ">
       {bgImagesData.map((item, i) => (
-        <BgImage total={bgImagesData.length} item={item} i={i} />
+        <BgImage key={item.id} total={bgImagesData.length} item={item} i={i} />
       ))}
     </div>
   );

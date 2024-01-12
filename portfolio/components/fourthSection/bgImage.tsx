@@ -23,7 +23,6 @@ export function BgImage({ total, item, i }: BgImageProps) {
         }`,
       }}
       className="bgImages drop-shadow-smd absolute h-[400px] w-[320px] origin-[center_center] translate-x-[-50%] translate-y-[0%] overflow-hidden rounded-3xl"
-      key={item.id}
     >
       <Image
         src={item.imgLink}

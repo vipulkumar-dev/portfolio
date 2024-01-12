@@ -186,7 +186,7 @@ export function Main() {
         <div className="rounded__div__down white">
           <div className="round__bg__down black"></div>
         </div>
-        <div className="rounded__div__up black">
+        <div className="rounded__div__up white">
           <div className="round__bg__up black"></div>
         </div>
         <div>
