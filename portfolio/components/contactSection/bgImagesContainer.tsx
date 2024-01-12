@@ -1,4 +1,4 @@
-import { BgImage } from "./bgImage";
+import { BgImage } from "@/components/contactSection/bgImage";
 import React, { useEffect, useRef } from "react";
 import Image from "next/image";
 import { useAppSelector } from "@/hooks/reduxHooks";

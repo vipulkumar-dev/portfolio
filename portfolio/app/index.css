@@ -442,23 +442,6 @@ textPath {
   outline: 1px solid hotpink !important;
 } */
 
-.fp-overflow {
-  height: 100vh;
-  width: 100vw;
-  /* position: relative; */
-  overflow: hidden;
-  overflow-y: hidden !important;
-  display: flex !important;
-  flex-direction: column;
-  align-items: center !important;
-  justify-content: center !important;
-  isolation: isolate;
-}
-
-.fp-watermark {
-  display: none;
-}
-
 .section__3 .heading {
   position: relative;
   z-index: 1;
@@ -635,9 +618,9 @@ textPath {
 
 .section__5 .footer__links {
   min-height: 52.2px;
-  min-width: calc(100% - (2 * var(--padding)));
+  min-width: calc(100% - (var(--padding)));
   position: absolute;
-  border-top: 1px solid #bababa;
+  /* border-top: 1px solid #bababa; */
   bottom: 0;
   display: flex;
   justify-content: space-between;

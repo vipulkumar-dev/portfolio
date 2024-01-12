@@ -1,9 +1,9 @@
-import { Footer } from "@/components/footer";
+import { Footer } from "@/components/contactSection/footer";
 import React, { use, useRef } from "react";
 import Magentic from "@/components/ui/magentic";
-import { BgImagesContainer } from "@/components/fourthSection/bgImagesContainer";
+import { BgImagesContainer } from "@/components/contactSection/bgImagesContainer";
 import { useAppSelector } from "@/hooks/reduxHooks";
-export function FourthSection({}) {
+export function ContactSection({}) {
   const { suscribe } = useAppSelector((state) => state.fullpageReducer.fourth);
   const bgImagesSharedRef = useRef<gsap.core.Tween | null>(null);
 

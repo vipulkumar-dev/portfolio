@@ -1,4 +1,4 @@
-import { FourthSection } from "@/components/fourthSection/fourthSection";
+import { ContactSection } from "@/components/contactSection/contactSection";
 
 import { FirstSection } from "@/components/firstSection/firstSection";
 import React from "react";
@@ -242,7 +242,7 @@ export function Main() {
         </div>
       </section>
 
-      <FourthSection />
+      <ContactSection />
     </>
   );
 }
