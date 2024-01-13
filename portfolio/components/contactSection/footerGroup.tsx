@@ -18,7 +18,7 @@ export function FooterGroup({
                 strength={50}
                 className="text-foreground"
                 href={link.href}
-                hoverUnderline={true}
+                hoverUnderline
               >
                 <p>{link.text}</p>
               </Magentic>

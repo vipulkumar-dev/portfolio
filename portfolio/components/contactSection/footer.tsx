@@ -20,7 +20,6 @@ export function Footer({}) {
           { href: "oggle", text: "Twitter" },
           { href: "oggle", text: "LinkedIn" },
           { href: "oggle", text: "Instagram" },
-          { href: "oggle", text: "Facebook" },
         ]}
       />
     </footer>

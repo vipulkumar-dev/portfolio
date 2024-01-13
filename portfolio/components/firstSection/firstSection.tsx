@@ -17,13 +17,19 @@ export function FirstSection({}) {
       <header className="nav__container anime">
         <nav className="nav__bar">
           <ul>
-            <Magentic href="work.html" strength={50} className="nav__item ">
+            <Magentic
+              href="work.html"
+              hoverUnderline
+              strength={50}
+              className="nav__item text-lg before:bg-background"
+            >
               <p>Work</p>
             </Magentic>
             <Magentic
+              hoverUnderline
               href="https://www.linkedin.com/in/coex-/"
               strength={50}
-              className="nav__item "
+              className="nav__item text-lg before:bg-background"
             >
               <p>About</p>
             </Magentic>

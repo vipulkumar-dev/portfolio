@@ -80,10 +80,10 @@ const Magentic = ({
       ref={magnet}
       className={cn(
         "flex justify-center *:pointer-events-none  " +
-          className +
           (hoverUnderline
-            ? " before:absolute before:bottom-0   before:h-0.5 before:w-0 before:origin-center before:bg-foreground before:transition-all before:duration-300  hover:before:w-full"
-            : ""),
+            ? " before:absolute before:bottom-0 before:h-0.5 before:w-0 before:origin-center before:bg-foreground before:transition-all before:duration-300 hover:before:w-full "
+            : " ") +
+          className,
       )}
       onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave}

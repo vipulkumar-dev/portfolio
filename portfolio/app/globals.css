@@ -91,6 +91,7 @@
   align-items: center !important;
   justify-content: center !important;
   isolation: isolate;
+  outline: initial !important;
 }
 
 .fp-watermark {
