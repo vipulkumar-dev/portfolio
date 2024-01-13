@@ -14,6 +14,7 @@ import { setActiveSlide } from "@/redux/states/fullpageSlice";
 
 const opts = {
   autoScrolling: true,
+  scrollOverflow: false,
   scrollHorizontally: true,
   navigation: false,
   navigationPosition: "left",
@@ -84,7 +85,7 @@ const FullpageProvider = ({ children }: { children: React.ReactNode }) => {
             height: "0vh",
             duration: 1.2,
             ease: CustomEase.create("custom", "M0,0 C0.52,0.01 0.16,1 1,1 "),
-          }
+          },
         );
 
       gsap
@@ -102,7 +103,7 @@ const FullpageProvider = ({ children }: { children: React.ReactNode }) => {
             duration: 1.1,
             stagger: 0.14,
             ease: CustomEase.create("custom", "M0,0 C0.52,0.01 0.16,1 1,1 "),
-          }
+          },
         );
     } else {
       gsap
@@ -119,7 +120,7 @@ const FullpageProvider = ({ children }: { children: React.ReactNode }) => {
             height: "0vh",
             duration: 1.2,
             ease: CustomEase.create("custom", "M0,0 C0.52,0.01 0.16,1 1,1 "),
-          }
+          },
         );
 
       gsap
@@ -137,7 +138,7 @@ const FullpageProvider = ({ children }: { children: React.ReactNode }) => {
             duration: 1.1,
             stagger: -0.08,
             ease: CustomEase.create("custom", "M0,0 C0.52,0.01 0.16,1 1,1 "),
-          }
+          },
         );
     }
   };
@@ -162,7 +163,7 @@ const FullpageProvider = ({ children }: { children: React.ReactNode }) => {
           duration: 0.9,
           delay: 1.7,
           ease,
-        }
+        },
       )
       .fromTo(
         ".left .animate__this2",
@@ -176,7 +177,7 @@ const FullpageProvider = ({ children }: { children: React.ReactNode }) => {
           duration: 0.9,
           ease,
         },
-        "-=0.9"
+        "-=0.9",
       )
       .fromTo(
         ".left .animate__this2",
@@ -190,7 +191,7 @@ const FullpageProvider = ({ children }: { children: React.ReactNode }) => {
           delay: 1.7,
           duration: 0.9,
           ease,
-        }
+        },
       )
       .fromTo(
         ".left .animate__this1",
@@ -204,7 +205,7 @@ const FullpageProvider = ({ children }: { children: React.ReactNode }) => {
           duration: 0.9,
           ease,
         },
-        "-=0.9"
+        "-=0.9",
       );
 
     const myText = new SplitType("#my-text", { types: "lines,chars" });
@@ -240,7 +241,7 @@ const FullpageProvider = ({ children }: { children: React.ReactNode }) => {
         const childrenWithProps = React.Children.map(children, (child) =>
           React.cloneElement(child as React.ReactElement<any>, {
             state,
-          })
+          }),
         );
 
         return <ReactFullpage.Wrapper>{children}</ReactFullpage.Wrapper>;

@@ -27,6 +27,7 @@ const Magentic = ({
     if (magnet.current === null) {
       return;
     }
+
     const magnetButton = magnet.current;
     const shapka = magnetButton.querySelector(".shapka");
 

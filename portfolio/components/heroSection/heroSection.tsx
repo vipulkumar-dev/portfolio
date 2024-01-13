@@ -3,7 +3,7 @@ import React, { useEffect } from "react";
 import Image from "next/image";
 import Magentic from "../ui/magentic";
 import { useAppSelector } from "@/hooks/reduxHooks";
-export function FirstSection({}) {
+export function HeroSection({}) {
   useAppSelector((state) => state.fullpageReducer.first);
 
   return (

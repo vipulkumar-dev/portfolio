@@ -1,6 +1,7 @@
+import { Cursor } from "./cursor";
 import { ContactSection } from "@/components/contactSection/contactSection";
 
-import { FirstSection } from "@/components/firstSection/firstSection";
+import { HeroSection } from "@/components/heroSection/heroSection";
 import React from "react";
 import Image from "next/image";
 export function Main() {
@@ -8,14 +9,7 @@ export function Main() {
 
   return (
     <>
-      {/* <div className="cursor cursor1"></div>
-      <div className="cursor cursor2"></div>
-      <div id="intro" className="home__starteranimation">
-       <div className="background__color"></div>
-       <div className="animation__container not"></div>
-       <div id="logo_animation" className="animation__container anim"></div>
-      </div> */}
-      <FirstSection />
+      <HeroSection />
       <section className="section section__2 second">
         <div className="rounded__div__down black">
           <div className="round__bg__down white"></div>
