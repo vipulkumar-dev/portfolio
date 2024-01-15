@@ -9,14 +9,14 @@ export function FooterGroup({
 }: FooterGroupProps) {
   return (
     <div className={cn("", className)}>
-      <h3 className="text-xs text-foreground">{title}</h3>
-      <ul className="mt-2 flex  gap-5 text-lg text-foreground ">
+      <h3 className="text-xs text-foreground mix-blend-difference">{title}</h3>
+      <ul className=" mt-2  flex gap-5 text-lg text-foreground">
         {links.map((link, index) => (
-          <li key={index} className="">
+          <li key={index} className="mix-blend-difference">
             {isMagnetic ? (
               <Magentic
                 strength={50}
-                className="text-foreground"
+                className="relative text-foreground mix-blend-difference"
                 href={link.href}
                 hoverUnderline
               >

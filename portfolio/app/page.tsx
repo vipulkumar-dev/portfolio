@@ -10,7 +10,7 @@ export default function Home({}) {
   return (
     <>
       <Cursor />
-      <Intro />
+      {/* <Intro /> */}
       <FullpageProvider>
         <Main />
       </FullpageProvider>

@@ -10,6 +10,8 @@
   },
   "dependencies": {
     "@fullpage/react-fullpage": "^0.1.40",
+    "@radix-ui/react-avatar": "^1.0.4",
+    "@radix-ui/react-slot": "^1.0.2",
     "@reduxjs/toolkit": "^2.0.1",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.0",

@@ -129,11 +129,11 @@ export const BgImagesContainer = ({
     bgImagesSharedRef.current = gsap.fromTo(
       ".footer__img_wrapper",
       {
-        width: "100%",
+        minWidth: "100%",
         minHeight: "100%",
       },
       {
-        width: "110%",
+        minWidth: "110%",
         minHeight: "150%",
         paused: true,
         delay: 0.1,

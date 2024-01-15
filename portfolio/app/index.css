@@ -378,7 +378,7 @@ textPath {
   width: 70%;
   background-color: var(--colorDark);
   border-radius: 50%;
-  padding: 10px;
+  padding: 4px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -424,6 +424,22 @@ textPath {
 }
 
 @media only screen and (max-width: 425px) {
+}
+
+.section__2__separater::before {
+  color: red;
+  display: block;
+  content: "";
+  background-image: url(/svg/arrow2.svg);
+  background-size: cover;
+  aspect-ratio: 1/1;
+  right: 0;
+  rotate: 90deg;
+  width: 30px;
+  position: absolute;
+  margin-top: -215px;
+  margin-right: 40px;
+  transform: translate(-50%, -50%);
 }
 
 /* ad/ */

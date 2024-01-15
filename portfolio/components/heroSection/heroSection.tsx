@@ -41,9 +41,9 @@ export function HeroSection({}) {
 
         <div className="email_section1 anime">
           <div className="sqaure">
-            Located in
+            Looking For
             <br />
-            Rajasthan, India
+            Opportunities
           </div>
           <div className="round">
             <Image width={100} height={100} src="/img/logo.png" alt="" />
