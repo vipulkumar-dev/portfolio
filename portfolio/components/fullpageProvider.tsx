@@ -29,7 +29,7 @@ const opts = {
 
 const FullpageProvider = ({ children }: { children: React.ReactNode }) => {
   const about = useRef<gsap.core.Timeline | null>(null);
-  // const textAnim__section2__down = useRef<gsap.core.Tween | null>(null);
+  const textAnim__section2__down = useRef<gsap.core.Tween | null>(null);
   const videoElement = useRef<HTMLVideoElement | null>(null);
 
   const dispatch = useAppDispatch();
@@ -48,7 +48,7 @@ const FullpageProvider = ({ children }: { children: React.ReactNode }) => {
     if (destination.anchor == "second") {
       if (direction == "down") {
         // anim__section2__down.restart();
-        // textAnim__section2__down.current?.restart();
+        textAnim__section2__down.current?.restart();
       } else {
         // textAnim__section2__up.restart();
         // anim__section2__up.restart();
@@ -210,15 +210,16 @@ const FullpageProvider = ({ children }: { children: React.ReactNode }) => {
 
     const myText = new SplitType("#my-text", { types: "lines,chars" });
 
-    // textAnim__section2__down.current = gsap.from("#my-text .char", 1.4, {
-    //   y: "200%",
-    //   skewX: -10,
-    //   scaleY: 1.5,
-    //   paused: true,
-    //   delay: 1.3,
-    //   stagger: 0.04,
-    //   ease: CustomEase.create("custom", "M0,0,C0.5,0,0,1,1,1"),
-    // });
+    textAnim__section2__down.current = gsap.from("#my-text .char", 1.4, {
+      y: "200%",
+      opacity: 0,
+      skewX: -10,
+      // scaleY: 1.5,
+      paused: true,
+      delay: 1.3,
+      stagger: 0.04,
+      ease: CustomEase.create("custom", "M0,0,C0.5,0,0,1,1,1"),
+    });
 
     videoElement.current = document.querySelector("#video") as HTMLVideoElement;
 
