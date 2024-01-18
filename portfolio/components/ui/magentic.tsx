@@ -82,7 +82,7 @@ const Magentic = ({
       className={cn(
         "flex justify-center *:pointer-events-none  " +
           (hoverUnderline
-            ? " before:absolute before:bottom-0 before:h-0.5 before:w-0 before:origin-center before:bg-foreground before:transition-all before:duration-300 hover:before:w-full "
+            ? " before:absolute before:bottom-0 before:h-0.5 before:w-0 before:origin-center before:bg-[#a3a3a3] before:transition-all before:duration-300 hover:before:w-full "
             : " ") +
           className,
       )}

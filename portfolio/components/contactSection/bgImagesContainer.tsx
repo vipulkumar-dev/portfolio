@@ -149,7 +149,7 @@ export const BgImagesContainer = ({
   });
 
   return (
-    <div className="footer__img_wrapper bg-transparent-foreground  absolute flex h-[100%] w-[100%] items-center justify-center overflow-hidden ">
+    <div className="footer__img_wrapper bg-transparent-foreground  !absolute flex h-[100%] w-[100%] items-center justify-center overflow-hidden ">
       {bgImagesData.map((item, i) => (
         <BgImage key={item.id} total={bgImagesData.length} item={item} i={i} />
       ))}

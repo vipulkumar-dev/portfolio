@@ -2,7 +2,7 @@ import { FooterGroup } from "@/components/contactSection/footerGroup";
 import React from "react";
 export function Footer({}) {
   return (
-    <footer className="footer__links anime flex flex-wrap gap-10 py-6">
+    <footer className="footer__links absolute flex flex-wrap gap-5 py-6 mix-blend-difference md:gap-10">
       <FooterGroup
         title="VERSION"
         links={[{ href: "", text: "2022 © Edition" }]}
@@ -13,7 +13,7 @@ export function Footer({}) {
       />
       <FooterGroup
         title="SOCIALS"
-        className="ml-auto"
+        className="md:ml-auto"
         isMagnetic={true}
         links={[
           { href: "oggle", text: "Github" },

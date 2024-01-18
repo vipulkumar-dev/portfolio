@@ -635,11 +635,11 @@ textPath {
 .section__5 .footer__links {
   min-height: 52.2px;
   min-width: calc(100% - (var(--padding)));
-  position: absolute;
+  /* position: absolute; */
   /* border-top: 1px solid #bababa; */
   bottom: 0;
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: center;
   padding-inline: 20px;
 }
@@ -657,13 +657,13 @@ textPath {
 
 @media only screen and (max-width: 425px) {
   .section__5 .footer__links {
-    flex-direction: column;
-    padding: 20px;
+    /* flex-direction: column; */
+    /* padding: 20px; */
     gap: 20px;
   }
 
   .section__5 {
-    padding-bottom: 120px;
+    /* padding-bottom: 120px; */
   }
 }
 
@@ -734,9 +734,9 @@ textPath {
 }
 
 .section__2 .footer__heading {
-  font-size: var(--fontSmall);
+  /* font-size: var(--fontSmall); */
   white-space: nowrap;
-  font-weight: bold;
+  font-weight: 600;
   color: var(--colorLight);
   background-color: var(--colorDark);
   aspect-ratio: 1/1;
@@ -744,7 +744,7 @@ textPath {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 1.2em;
+  padding: 2.5em;
   line-height: 1em;
   position: relative;
   margin-top: 40px;
