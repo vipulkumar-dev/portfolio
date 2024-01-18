@@ -3,9 +3,10 @@ import Image from "next/image";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
 import Magentic from "../ui/magentic";
+import { gsap } from "gsap";
 export function AboutSection({}) {
   return (
-    <section className="section section__2 second  items-center justify-center px-[5vw] py-10">
+    <section className="section section__2 second items-center justify-center bg-colorLight px-[5vw] py-10 text-colorDark">
       <div className="rounded__div__down black">
         <div className="round__bg__down white"></div>
       </div>
@@ -21,7 +22,7 @@ export function AboutSection({}) {
             Passion for Websites<span className="yellow__it ">.</span>
           </h2>
           <svg
-            className="ml-auto w-[calc(0.15em+25px)] rotate-90 text-foreground"
+            className="text-colorSecondaryDark ml-auto w-[calc(0.15em+25px)] rotate-90"
             // width="34px"
             // height="34px"
             viewBox="0 0 14 14"
@@ -58,7 +59,7 @@ export function AboutSection({}) {
           </svg>
         </div>
         <div className="anime relative flex grow flex-col gap-[1em] pt-[1em] md:flex-row">
-          <p className="text-justify leading-[1.4] md:w-[68%]">
+          <p className="text-colorSecondaryDark text-justify leading-[1.4] md:w-[68%]">
             I'm coex, an year 18 year developer that assist global companies by
             providing bespoke solutions, Elevating my work in every project,
             pioneering new horizons, Emphasizing quality consistently, a
@@ -67,18 +68,34 @@ export function AboutSection({}) {
           </p>
           <Magentic
             href=""
-            className="absolute bottom-0 hidden aspect-square  h-full items-center justify-center rounded-full bg-foreground p-2 md:relative  md:ml-auto  md:flex md:aspect-auto md:min-h-full md:w-[22%]"
+            onMouseEnter={() => {
+              gsap.to("body", {
+                "--colorLight": "#0e0d0c",
+                "--colorDark": "#fff",
+                "--colorSecondaryDark": "#bfbfbf",
+                "--colorSecondaryLight": "#404040",
+              });
+            }}
+            onMouseLeave={() => {
+              gsap.to("body", {
+                "--colorLight": "#fff",
+                "--colorDark": "#0e0d0c",
+                "--colorSecondaryDark": "#404040",
+                "--colorSecondaryLight": "#bfbfbf",
+              });
+            }}
+            className="absolute bottom-0 hidden aspect-square  h-full items-center justify-center rounded-full bg-colorDark p-2  md:relative  md:ml-auto  md:flex md:aspect-auto md:min-h-full md:w-[22%]"
           >
-            <p className=" text-background">
+            <p className="text-colorLight">
               About<span className="yellow__it">.</span>
             </p>
           </Magentic>
         </div>
-        <div className="anime relative my-[6em]  h-[1px]  w-full bg-borderLight md:my-[4em]">
+        <div className="anime bg-colorSecondaryLight relative  my-[6em]  h-[2px] w-full md:my-[4em]">
           <a
             data-strength="100"
             href="https://www.linkedin.com/in/coex--/"
-            className="anime magnetic footer__heading !absolute right-[0%] top-1/2 !mt-0 -translate-y-1/2  md:!hidden"
+            className="anime magnetic footer__heading  !absolute right-[0%] top-1/2 !mt-0 -translate-y-1/2  md:!hidden"
             target="_blank"
             rel="noreferrer"
           >
@@ -87,21 +104,21 @@ export function AboutSection({}) {
             </span>
           </a>
         </div>
-        <div className="anime flex flex-wrap gap-[1em] ">
+        <div className="anime flex flex-wrap gap-[1em] md:gap-[3em] ">
           <Button
-            className="grow rounded-full border-borderLight px-10 py-[1.8em] text-[0.8em]  "
+            className="border-colorSecondaryLight grow rounded-full border-2  px-10 py-[1.8em] text-[0.9em] text-colorDark  "
             variant="outline"
           >
             Github
           </Button>
           <Button
-            className="grow rounded-full border-borderLight px-10 py-[1.8em] text-[0.8em]  "
+            className="border-colorSecondaryLight grow rounded-full border-2  px-10 py-[1.8em] text-[0.9em] text-colorDark  "
             variant="outline"
           >
             Skills
           </Button>
           <Button
-            className="grow rounded-full border-borderLight bg-foreground px-10 py-[1.8em] text-[0.8em] "
+            className="grow rounded-full  bg-colorDark px-10 py-[1.8em] text-[0.9em] text-colorLight "
             variant="default"
           >
             Contact

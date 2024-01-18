@@ -3,8 +3,8 @@
   --primary-color: hsl(54, 100%, 50%);
   --padding: clamp(20px, 7.8vw + 10px, 150px);
   --padding2: 0vw;
-  --colorDark: #0e0d0c;
-  --colorLight: #fff;
+  /* --colorDark: #0e0d0c;
+  --colorLight: #fff; */
   --fontExtraSmallest: 10px;
   --fontExtraSmall: 16px;
   --fontSmall: 40px;
@@ -681,7 +681,7 @@ textPath {
   /* overflow: hidden; */
 }
 .section__2 {
-  background-color: var(--colorLight);
+  /* background-color: var(--colorLight); */
   overflow: hidden;
   /* padding: var(--padding2); */
   /* padding-inline: 5vw; */

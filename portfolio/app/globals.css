@@ -7,6 +7,12 @@
     --background: 0 0% 100%;
     --foreground: 222.2 84% 4.9%;
 
+    --colorPrimary: #ffe600;
+    --colorDark: #0e0d0c;
+    --colorSecondaryDark: #404040;
+    --colorLight: #ffffff;
+    --colorSecondaryLight: #bfbfbf;
+
     --card: 0 0% 100%;
     --card-foreground: 222.2 84% 4.9%;
 
