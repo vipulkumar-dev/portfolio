@@ -882,20 +882,20 @@ textPath {
 
 #one {
   position: relative;
-  /* height: 27vh; */
+  height: 27vh;
   flex-grow: 1;
   max-height: 25vh;
   width: 100%;
   margin-inline: auto;
   overflow: hidden;
-  border-top: 1px solid rgba(0, 0, 0, 0.106);
+  /* border-top: 1px solid rgba(0, 0, 0, 0.106); */
   padding-block: 15px;
-  max-width: 1620px;
+  /* max-width: 1620px; */
 }
 
 .slider_wip {
   width: 100%;
-  max-width: 1250px;
+  /* max-width: 1250px; */
   height: 100%;
   overflow: hidden;
   position: relative;
@@ -936,7 +936,7 @@ textPath {
 .g-7 .img-wrapper {
   display: flex;
   flex-direction: column;
-  border-radius: 8px;
+  /* border-radius: 8px; */
   overflow: hidden;
   width: 100%;
   justify-content: center;

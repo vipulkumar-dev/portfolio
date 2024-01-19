@@ -11,6 +11,7 @@ import {
   MessageSquare,
 } from "lucide-react";
 import { Header } from "../heroSection/header";
+import { AboutMarquee } from "./aboutMarquee";
 export function AboutSection({}) {
   return (
     <section className="section section__2 second items-center justify-center bg-colorLight px-[5vw] py-10 text-colorDark">
@@ -66,7 +67,7 @@ export function AboutSection({}) {
             </g>
           </svg>
         </div>
-        <div className="anime relative flex grow flex-col gap-[2em] pt-[1em] md:flex-row">
+        <div className="anime relative flex grow flex-col gap-[2em] pt-[1.5em] md:flex-row">
           <h2 className="font-semibold leading-tight tracking-tight">
             Passion for Websites<span className="yellow__it ">.</span>
           </h2>
@@ -101,8 +102,8 @@ export function AboutSection({}) {
             </p>
           </Magentic>
         </div>
-        <div className="anime relative my-[2em]  h-[2px]  w-full bg-colorSecondaryLight md:my-[4em]">
-          {/* <a
+        {/* <div className="anime relative my-[2em]  h-[2px]  w-full bg-colorSecondaryLight md:mt-[4em]">
+           <a
             data-strength="100"
             href="https://www.linkedin.com/in/coex--/"
             className="anime magnetic footer__heading  !absolute right-[0%] top-1/2 !mt-0 -translate-y-1/2  md:!hidden"
@@ -112,31 +113,9 @@ export function AboutSection({}) {
             <span className="shapka">
               About<span className="yellow__it">.</span>
             </span>
-          </a> */}
-        </div>
-        <div className="anime grid grid-cols-2 flex-col flex-wrap gap-[1em] md:flex-row md:gap-x-[3em] md:gap-y-[1em]">
-          <Button
-            className="grow rounded-full  border-2 border-colorSecondaryLight  px-10 py-[1.8em] text-[0.9em] text-colorDark  "
-            variant="outline"
-          >
-            CV
-            <Download
-              strokeWidth={1.8}
-              className="ml-[0.5em] h-[1em] w-[1em] text-colorDark"
-            />
-          </Button>
-
-          <Button
-            className="grow rounded-full border-2 border-colorDark  bg-colorDark px-10 py-[1.8em] text-[0.9em] text-colorLight "
-            variant="default"
-          >
-            About
-            <ArrowRight
-              strokeWidth={1.8}
-              className="ml-[0.5em] h-[1em] w-[1em] text-colorLight"
-            />
-          </Button>
-        </div>
+          </a> 
+        </div> */}
+        <AboutMarquee />
       </main>
     </section>
   );
