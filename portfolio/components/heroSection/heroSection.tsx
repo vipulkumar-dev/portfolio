@@ -1,3 +1,4 @@
+import { Header } from "./header";
 import { Marquee } from "./marquee";
 import React, { useEffect } from "react";
 import Image from "next/image";
@@ -14,30 +15,15 @@ export function HeroSection({}) {
       <div className="rounded__div__up white">
         <div className="round__bg__up black"></div>
       </div>
-      <header className="nav__container anime">
-        <nav className="nav__bar">
-          <ul>
-            <Magentic
-              href="work.html"
-              hoverUnderline
-              strength={50}
-              className="nav__item text-lg before:bg-background"
-            >
-              <p>Work</p>
-            </Magentic>
-            <Magentic
-              hoverUnderline
-              href="https://www.linkedin.com/in/coex-/"
-              strength={50}
-              className="nav__item text-lg before:bg-background"
-            >
-              <p>About</p>
-            </Magentic>
-          </ul>
-        </nav>
-      </header>
+      <Header />
       <div className="section1__wrapper">
-        <div className="myImage"></div>
+        <div className="myImage">
+          {/* <picture>
+            <source media="(min-width:850px)" srcset="img/DSC_00582.webp" />
+            <source media="(min-width:465px)" srcset="img/DSC_00582.webp" />
+            <img src="img/DSC_00582.webp" alt="" />
+          </picture> */}
+        </div>
 
         <div className="email_section1 anime">
           <div className="sqaure">
