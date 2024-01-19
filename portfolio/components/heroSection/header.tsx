@@ -11,15 +11,17 @@ export function Header({}) {
             strength={50}
             className="nav__item text-lg text-inherit before:bg-colorDark"
           >
-            <p>Work</p>
+            <p>@DeveloperCoex</p>
           </Magentic>
           <Magentic
-            hoverUnderline
             href="https://www.linkedin.com/in/coex-/"
             strength={50}
-            className="nav__item text-lg text-inherit before:bg-colorDark"
+            className="nav__item h-full text-lg text-inherit before:bg-colorDark"
           >
-            <p>About</p>
+            <div className="flex h-3 w-10 flex-col justify-between ">
+              <div className="h-0.5 w-full rounded-full bg-colorDark"></div>
+              <div className="h-0.5 w-full rounded-full bg-colorDark"></div>
+            </div>
           </Magentic>
         </ul>
       </nav>

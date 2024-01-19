@@ -30,8 +30,8 @@ export function AboutMarquee({}) {
         repeat: -1,
       },
     );
-
     gsap.set(`.rollingText3`, {
+      //@ts-ignore
       left: `${document.querySelector(".rollingText3").offsetWidth}`,
     });
   });
