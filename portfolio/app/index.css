@@ -933,21 +933,28 @@ textPath {
 
   /* border-left: 1px dashed rgba(0, 0, 0, 0.106); */
 }
-.g-7 .img-wrapper {
+.img-wrapper {
   display: flex;
   flex-direction: column;
   /* border-radius: 8px; */
   overflow: hidden;
+  height: 100%;
+  aspect-ratio: 1/1;
   width: 100%;
   justify-content: center;
   align-items: center;
-  opacity: 0.7;
-  filter: invert(0.9);
+  padding: 1.5rem;
+  /* border-left: 1px dashed var(--colorSecondaryDark); */
+  /* opacity: 0.7;
+  filter: invert(0.9); */
+  /* margin-inline: 20px; */
   /* aspect-ratio: 1/1; */
 }
-.g-7 .img-wrapper img {
+.img-wrapper img {
   display: block;
   width: 100%;
+  height: 100%;
+  object-fit: cover;
   /* background-color: #fff; */
 }
 

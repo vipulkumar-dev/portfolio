@@ -72,10 +72,12 @@ export function AboutSection({}) {
             Passion for Websites<span className="yellow__it ">.</span>
           </h2>
           <p className="text-justify leading-[1.4] text-colorSecondaryDark md:w-[68%]">
-            Hello! ¡Holá! Bonjour!👋 I'm Coex, a New York 🗽 based space
-            enthusiast 🚀 and lead frontend engineer 👨‍💻 working with Nextjs,
-            Typescript and Tailwind. Tailor-made solutions crafted. Tailor-made
-            solutions crafted. Tailor-made solutions crafted.
+            I'm Coex 👋, a passionate designer 🎨 and developer 👨‍💻 based in
+            India. I craft beautiful, modern websites using the latest
+            technologies like Next.js, TypeScript, and Tailwind. Whether you're
+            launching a new business🚀or looking to refresh your existing
+            website, I can help you create a digital experience that truly
+            stands out.
           </p>
           <Magentic
             href=""
