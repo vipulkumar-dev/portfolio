@@ -47,7 +47,7 @@ export function AboutMarquee({}) {
   return (
     <div
       id="one"
-      className="anime mt-[2em] rounded-3xl bg-colorSecondaryLight md:mt-[4em] md:rounded-[3rem]"
+      className="anime bg-colorSecondaryHalfLight mt-[2em] rounded-3xl md:mt-[4em] md:rounded-[3rem]"
     >
       <div className="slider_wip">
         <InnerMarquee className="rollingText2" />

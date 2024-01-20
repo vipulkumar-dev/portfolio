@@ -33,9 +33,9 @@
 }
 
 .nav__container .nav__bar ul .nav__item svg {
-  width: 22px;
+  /* width: 22px;
   height: 22px;
-  color: var(--colorLight);
+  color: var(--colorLight); */
 }
 
 @media screen and (max-width: 500px) {

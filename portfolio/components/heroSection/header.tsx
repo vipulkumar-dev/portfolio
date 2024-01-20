@@ -2,6 +2,7 @@ import React, { use, useEffect, useRef } from "react";
 import Magentic from "../ui/magentic";
 import { gsap } from "gsap";
 import { CustomEase } from "gsap/CustomEase";
+import Logo from "@/public/svg/Logo.svg";
 
 gsap.registerPlugin(CustomEase);
 const ease = CustomEase.create("custom", "M0,0 C0.52,0.01 0.16,1 1,1 ");
@@ -40,7 +41,7 @@ export function Header({ color }: HeaderProps) {
             href="work.html"
             hoverUnderline
             strength={50}
-            className={`nav__item text-lg font-semibold text-color${color} before:bg-color${color}`}
+            className={`nav__item text-xl font-semibold text-color${color} before:bg-color${color}`}
             onMouseEnter={() => {
               console.log("hello");
               logoAnimationTl.current?.play();
@@ -49,8 +50,11 @@ export function Header({ color }: HeaderProps) {
               logoAnimationTl.current?.reverse();
             }}
           >
-            <p className="logo__anim ">
-              <span className="logo__rotate inline-block">?</span>Developer_Coex
+            <p className="logo__anim flex items-center  ">
+              Coex
+              <span className="logo__rotate inline-block h-full p-[0.12em]">
+                <Logo className="h-full" />
+              </span>
             </p>
           </Magentic>
           <Magentic
@@ -58,12 +62,12 @@ export function Header({ color }: HeaderProps) {
             strength={50}
             className="nav__item h-full text-lg text-inherit"
           >
-            <div className="flex h-3 w-10 flex-col justify-between ">
+            <div className="flex h-3 w-9 flex-col justify-between ">
               <div
-                className={`h-0.5 w-full rounded-full bg-color${color}`}
+                className={`h-[0.15rem] w-full rounded-full bg-color${color}`}
               ></div>
               <div
-                className={`h-0.5 w-full rounded-full bg-color${color}`}
+                className={`h-[0.15rem] w-full rounded-full bg-color${color}`}
               ></div>
             </div>
           </Magentic>

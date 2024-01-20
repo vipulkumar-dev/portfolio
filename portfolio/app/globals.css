@@ -10,8 +10,10 @@
     --colorPrimary: #ffe600;
     --colorDark: #0e0d0c;
     --colorSecondaryDark: #404040;
+    --colorSecondaryHalfDark: #1a1a1a;
     --colorLight: #ffffff;
     --colorSecondaryLight: #bfbfbf;
+    --colorSecondaryHalfLight: #f2f2f2;
 
     --card: 0 0% 100%;
     --card-foreground: 222.2 84% 4.9%;

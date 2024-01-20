@@ -72,12 +72,11 @@ export function AboutSection({}) {
             Passion for Websites<span className="yellow__it ">.</span>
           </h2>
           <p className="text-justify leading-[1.4] text-colorSecondaryDark md:w-[68%]">
-            I'm Coex 👋, a passionate designer 🎨 and developer 👨‍💻 based in
-            India. I craft beautiful, modern websites using the latest
-            technologies like Next.js, TypeScript, and Tailwind. Whether you're
-            launching a new business🚀or looking to refresh your existing
-            website, I can help you create a digital experience that truly
-            stands out.
+            I'm Coex 👋, a passionate designer 🎨 & developer 👨‍💻 based in India.
+            I craft beautiful, modern websites using the latest technologies
+            like Next.js, TypeScript, and Tailwind. Whether you're launching a
+            new business🚀or looking to refresh your existing website, I can
+            help you create a digital experience that truly stands out.
           </p>
           <Magentic
             href=""
@@ -87,6 +86,8 @@ export function AboutSection({}) {
                 "--colorDark": "#fff",
                 "--colorSecondaryDark": "#bfbfbf",
                 "--colorSecondaryLight": "#404040",
+                "--colorSecondaryHalfLight": "#1a1a1a",
+                "--colorSecondaryHalfDark": "#f2f2f2",
               });
             }}
             onMouseLeave={() => {
@@ -95,6 +96,8 @@ export function AboutSection({}) {
                 "--colorDark": "#0e0d0c",
                 "--colorSecondaryDark": "#404040",
                 "--colorSecondaryLight": "#bfbfbf",
+                "--colorSecondaryHalfLight": "#f2f2f2",
+                "--colorSecondaryHalfDark": "#1a1a1a",
               });
             }}
             className="absolute bottom-0 hidden aspect-square  h-full items-center justify-center rounded-full bg-colorDark p-2  md:relative  md:ml-auto  md:flex md:aspect-auto md:min-h-full md:w-[22%]"
