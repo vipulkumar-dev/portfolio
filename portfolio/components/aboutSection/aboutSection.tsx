@@ -21,7 +21,7 @@ export function AboutSection({}) {
       <div className="rounded__div__up black">
         <div className="round__bg__up white"></div>
       </div>
-      <Header></Header>
+      <Header color="Dark"></Header>
       <main className="flex w-full max-w-[1600px]  flex-col text-[clamp(16px,_1vw_+_14px,_24px)]  ">
         <div className="anime relative  flex items-center justify-center text-[clamp(16px,_4.3vw_+_12px,_88px)]">
           <h2

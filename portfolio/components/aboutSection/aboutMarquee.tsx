@@ -6,6 +6,11 @@ import { cn } from "@/lib/utils";
 import NextIcon from "@/public/svg/nextjsIcon.svg";
 import TailwindIcon from "@/public/svg/tailwindIcon.svg";
 import TypescriptIcon from "@/public/svg/typescriptIcon.svg";
+import ReduxIcon from "@/public/svg/reduxIcon.svg";
+import FramerMotionIcon from "@/public/svg/framerMotionIcon.svg";
+import ReactIcon from "@/public/svg/reactIcon.svg";
+import FigmaIcon from "@/public/svg/figmaIcon.svg";
+import AdobeIcon from "@/public/svg/adobeIcon.svg";
 
 export function AboutMarquee({}) {
   useEffect(() => {
@@ -42,7 +47,7 @@ export function AboutMarquee({}) {
   return (
     <div
       id="one"
-      className="anime mt-[2em] rounded-[3rem] bg-colorSecondaryLight md:mt-[4em]"
+      className="anime mt-[2em] rounded-3xl bg-colorSecondaryLight md:mt-[4em] md:rounded-[3rem]"
     >
       <div className="slider_wip">
         <InnerMarquee className="rollingText2" />
@@ -66,31 +71,22 @@ export const InnerMarquee = ({ className }: InnerMarqueeProps) => {
         <TailwindIcon />
       </div>
       <div className="img-wrapper">
-        <TypescriptIcon />
+        <TypescriptIcon className="h-[90%]" />
       </div>
       <div className="img-wrapper">
-        <Image
-          width={100}
-          height={100}
-          src="https://cdn-icons-png.flaticon.com/512/5968/5968333.png"
-          alt=""
-        />
+        <ReduxIcon />
       </div>
       <div className="img-wrapper">
-        <Image
-          width={100}
-          height={100}
-          src="https://cdn-icons-png.flaticon.com/512/5968/5968305.png"
-          alt=""
-        />
+        <ReactIcon />
       </div>
       <div className="img-wrapper">
-        <Image
-          width={100}
-          height={100}
-          src="https://cdn-icons-png.flaticon.com/512/5968/5968351.png"
-          alt=""
-        />
+        <FramerMotionIcon className="h-[85%]" />
+      </div>
+      <div className="img-wrapper">
+        <FigmaIcon />
+      </div>
+      <div className="img-wrapper">
+        <AdobeIcon />
       </div>
     </div>
   );

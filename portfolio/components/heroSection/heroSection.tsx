@@ -15,7 +15,7 @@ export function HeroSection({}) {
       <div className="rounded__div__up white">
         <div className="round__bg__up black"></div>
       </div>
-      <Header />
+      <Header color="Light" />
       <div className="section1__wrapper">
         <div className="myImage">
           {/* <picture>
