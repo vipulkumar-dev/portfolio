@@ -10,7 +10,7 @@ import {
   Download,
   MessageSquare,
 } from "lucide-react";
-import { Header } from "../heroSection/header";
+import { Header } from "../header";
 import { AboutMarquee } from "./aboutMarquee";
 export function AboutSection({}) {
   return (

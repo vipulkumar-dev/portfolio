@@ -3,6 +3,7 @@ import React, { use, useRef } from "react";
 import Magentic from "@/components/ui/magentic";
 import { BgImagesContainer } from "@/components/contactSection/bgImagesContainer";
 import { useAppSelector } from "@/hooks/reduxHooks";
+import { Header } from "../header";
 export function ContactSection({}) {
   const { suscribe } = useAppSelector((state) => state.fullpageReducer.fourth);
   const bgImagesSharedRef = useRef<gsap.core.Tween | null>(null);
@@ -15,6 +16,8 @@ export function ContactSection({}) {
       <div className="rounded__div__up black">
         <div className="round__bg__up white"></div>
       </div>
+      <Header color="Dark"></Header>
+
       <Magentic // href="mailto:email.coex@gmail.com"
         className="magnetic footer__heading anime cursor-pointer"
         onMouseEnter={() => {

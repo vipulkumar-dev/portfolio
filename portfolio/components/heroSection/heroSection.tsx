@@ -1,4 +1,4 @@
-import { Header } from "./header";
+import { Header } from "../header";
 import { Marquee } from "./marquee";
 import React, { useEffect } from "react";
 import Image from "next/image";

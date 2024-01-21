@@ -17,7 +17,7 @@ export function BgImage({ total, item, i }: BgImageProps) {
   return (
     <div
       style={{
-        backgroundColor: "black",
+        backgroundColor: getRandRgb(),
         zIndex: `${
           Math.floor(total / 2) == i ? 520 : Math.floor(Math.random() * 10)
         }`,

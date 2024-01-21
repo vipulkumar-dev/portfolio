@@ -1,5 +1,5 @@
 import React, { use, useEffect, useRef } from "react";
-import Magentic from "../ui/magentic";
+import Magentic from "./ui/magentic";
 import { gsap } from "gsap";
 import { CustomEase } from "gsap/CustomEase";
 import Logo from "@/public/svg/Logo.svg";
@@ -17,6 +17,8 @@ export function Header({ color }: HeaderProps) {
     "bg-colorlight",
     "text-colorDark",
     "text-colorlight",
+    "before:bg-colorDark",
+    "before:bg-colorlight",
   ];
 
   const logoAnimationTl = useRef<gsap.core.Timeline | null>(null);
@@ -52,15 +54,18 @@ export function Header({ color }: HeaderProps) {
           >
             <p className="logo__anim flex items-center  ">
               Coex
-              <span className="logo__rotate inline-block h-full p-[0.12em]">
+              <span className="logo__rotate inline-block  h-full p-[0.12em]">
                 <Logo className="h-full" />
               </span>
             </p>
           </Magentic>
           <Magentic
-            href="https://www.linkedin.com/in/coex-/"
             strength={50}
-            className="nav__item h-full text-lg text-inherit"
+            className="nav__item h-full cursor-pointer text-lg text-inherit"
+            // onClick={() => {
+            //   console.log("hello");
+            //   logoAnimationTl.current?.play();
+            // }}
           >
             <div className="flex h-3 w-9 flex-col justify-between ">
               <div

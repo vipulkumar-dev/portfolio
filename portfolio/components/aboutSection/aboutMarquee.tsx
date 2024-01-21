@@ -7,7 +7,7 @@ import NextIcon from "@/public/svg/nextjsIcon.svg";
 import TailwindIcon from "@/public/svg/tailwindIcon.svg";
 import TypescriptIcon from "@/public/svg/typescriptIcon.svg";
 import ReduxIcon from "@/public/svg/reduxIcon.svg";
-import FramerMotionIcon from "@/public/svg/framerMotionIcon.svg";
+import NodejsIcon from "@/public/svg/nodejsIcon.svg";
 import ReactIcon from "@/public/svg/reactIcon.svg";
 import FigmaIcon from "@/public/svg/figmaIcon.svg";
 import AdobeIcon from "@/public/svg/adobeIcon.svg";
@@ -47,7 +47,7 @@ export function AboutMarquee({}) {
   return (
     <div
       id="one"
-      className="anime bg-colorSecondaryHalfLight mt-[2em] rounded-3xl md:mt-[4em] md:rounded-[3rem]"
+      className="anime mt-[2em] rounded-3xl bg-colorSecondaryHalfLight md:mt-[4em] md:rounded-[3rem]"
     >
       <div className="slider_wip">
         <InnerMarquee className="rollingText2" />
@@ -80,7 +80,7 @@ export const InnerMarquee = ({ className }: InnerMarqueeProps) => {
         <ReactIcon />
       </div>
       <div className="img-wrapper">
-        <FramerMotionIcon className="h-[85%]" />
+        <NodejsIcon />
       </div>
       <div className="img-wrapper">
         <FigmaIcon />
