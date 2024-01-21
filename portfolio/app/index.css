@@ -558,7 +558,7 @@ textPath {
 .section3__video {
   position: absolute;
   width: calc(100% - (2 * var(--padding)));
-  height: calc(100% - (var(--padding)));
+  height: calc(100% - (1.5 * var(--padding)));
   overflow: hidden;
   /* padding: var(--padding); */
   /* display: none; */
@@ -566,7 +566,7 @@ textPath {
 }
 
 .section3__video video {
-  border-radius: 0.5vw;
+  /* border-radius: 0.5vw; */
   width: 100%;
   height: 100%;
   object-fit: cover;

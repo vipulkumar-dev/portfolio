@@ -41,7 +41,6 @@ export function Header({ color }: HeaderProps) {
         <ul>
           <Magentic
             href="work.html"
-            hoverUnderline
             strength={50}
             className={`nav__item text-xl font-semibold text-color${color} before:bg-color${color}`}
             onMouseEnter={() => {
@@ -52,9 +51,9 @@ export function Header({ color }: HeaderProps) {
               logoAnimationTl.current?.reverse();
             }}
           >
-            <p className="logo__anim flex items-center  ">
+            <p className="logo__anim grid grid-flow-col items-center  ">
               Coex
-              <span className="logo__rotate inline-block  h-full p-[0.12em]">
+              <span className="logo__rotate inline-block h-full p-[0.12em]">
                 <Logo className="h-full" />
               </span>
             </p>

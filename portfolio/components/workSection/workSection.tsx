@@ -52,8 +52,9 @@ export function WorkSection({}) {
           </div>
         </a>
       </div>
-      <div className="section3__video anime">
+      <div className="section3__video anime ">
         <video
+          className="rounded-3xl  md:rounded-[3rem]"
           id="video"
           autoPlay
           muted
