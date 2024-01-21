@@ -1,4 +1,4 @@
-import React, { use, useEffect, useRef } from "react";
+import React, { use, useEffect, useRef, useState } from "react";
 import Magentic from "./ui/magentic";
 import { gsap } from "gsap";
 import { CustomEase } from "gsap/CustomEase";
@@ -22,6 +22,7 @@ export function Header({ color }: HeaderProps) {
   ];
 
   const logoAnimationTl = useRef<gsap.core.Timeline | null>(null);
+  const [isOpen, setIsOpen] = useState<boolean>(false);
 
   useEffect(() => {
     logoAnimationTl.current = gsap.timeline({ paused: true }).fromTo(
@@ -34,10 +35,14 @@ export function Header({ color }: HeaderProps) {
         ease: ease,
       },
     );
+
+    return () => {
+      logoAnimationTl.current?.kill();
+    };
   });
   return (
     <header className="nav__container anime">
-      <nav className="nav__bar">
+      <nav className="nav__bar ">
         <ul>
           <Magentic
             href="work.html"
@@ -77,6 +82,9 @@ export function Header({ color }: HeaderProps) {
           </Magentic>
         </ul>
       </nav>
+      {isOpen && (
+        <div className="fixed left-0 top-0 -z-10 h-screen w-screen bg-colorDark"></div>
+      )}
     </header>
   );
 }
