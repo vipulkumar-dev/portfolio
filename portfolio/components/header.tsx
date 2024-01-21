@@ -71,7 +71,7 @@ export function Header({ color }: HeaderProps) {
             //   logoAnimationTl.current?.play();
             // }}
           >
-            <div className="flex h-3 w-9 flex-col justify-between ">
+            <div className="flex h-3 w-10 flex-col justify-between ">
               <div
                 className={`h-[0.15rem] w-full rounded-full bg-color${color}`}
               ></div>
