@@ -302,10 +302,10 @@ textPath {
   ); */
   mask-image: linear-gradient(
     90deg,
-    rgba(0, 0, 0, 0) 15%,
-    rgba(7, 7, 8, 1) 30%,
-    rgba(7, 7, 8, 1) 70%,
-    rgba(0, 0, 0, 0) 85%
+    hsla(0, 0%, 0%, 0) 15%,
+    hsl(0, 0%, 100%) 30%,
+    hsl(0, 0%, 100%) 70%,
+    hsla(0, 0%, 0%, 0) 85%
   );
   /* font: 2em/1.6em Arial; */
   /* -webkit-mask: var(--mask);
@@ -369,7 +369,7 @@ textPath {
   position: absolute;
   right: 0;
   bottom: 50%;
-  display: flex;
+
   transform: translateX(15%);
 }
 
@@ -382,15 +382,15 @@ textPath {
   justify-content: flex-start;
   font-size: var(--fontExtraSmall);
   /* padding-left: 40px; */
-  padding-right: 50px;
+  /* padding-right: 50px; */
 }
 
 .email_section1 .round {
   position: relative;
-  transform: translateX(-50%);
+  /* transform: translateX(-50%); */
   width: 130px;
   height: 130px;
-  background-color: #272727;
+
   border-radius: 50%;
   display: flex;
   align-items: center;

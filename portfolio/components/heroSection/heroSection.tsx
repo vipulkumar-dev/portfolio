@@ -16,7 +16,7 @@ export function HeroSection({}) {
         <div className="round__bg__up black"></div>
       </div>
       <Header color="Light" />
-      <main className="section1__wrapper max-w-maxWidth relative">
+      <main className="section1__wrapper relative max-w-maxWidth">
         <div className="myImage">
           {/* <picture>
             <source media="(min-width:850px)" srcset="img/DSC_00582.webp" />
@@ -25,17 +25,23 @@ export function HeroSection({}) {
           </picture> */}
         </div>
 
-        <div className="email_section1 anime isolate !text-[clamp(16px,_1vw_+_14px,_24px)] ">
-          <div className="round -z-10 !translate-x-1/2"></div>
-          <div className="sqaure">
-            Looking For
-            <br />
-            Opportunities
+        <Magentic
+          strength={50}
+          className="email_section1 anime isolate  rounded-full bg-[#272727] !text-[clamp(16px,_1vw_+_14px,_24px)]"
+        >
+          <div className="shapka !flex items-center justify-center gap-24">
+            <div className="round">
+              <p className="absolute left-1/2">
+                Looking For
+                <br />
+                Opportunities
+              </p>
+            </div>
+            <div className="round">
+              <Image width={100} height={100} src="/img/logo.png" alt="" />
+            </div>
           </div>
-          <div className="round">
-            <Image width={100} height={100} src="/img/logo.png" alt="" />
-          </div>
-        </div>
+        </Magentic>
         <h2 className="left">
           <div className="free anime">
             &nbsp;Freelance&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
