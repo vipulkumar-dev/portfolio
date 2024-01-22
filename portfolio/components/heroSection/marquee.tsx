@@ -52,7 +52,7 @@ export function Marquee({}) {
   }, []);
   return (
     <div className="wrapperRollingText anime  tracking-[-0.4em] ">
-      <div className="rollingText  !text-[220px]">
+      <div className="rollingText  !text-[200px]">
         - Vipul - Kumar - Vipul - Kumar&nbsp;
       </div>
     </div>
