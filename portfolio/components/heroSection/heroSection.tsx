@@ -25,7 +25,10 @@ export function HeroSection({}) {
           </picture> */}
         </div>
 
-        <div className="email_section1 anime">
+        <div className="email_section1 anime isolate">
+          <div className="round -z-10 !translate-x-1/2">
+            {/* <Image width={100} height={100} src="/img/logo.png" alt="" /> */}
+          </div>
           <div className="sqaure">
             Looking For
             <br />

@@ -358,7 +358,7 @@ textPath {
   align-items: center;
   justify-content: flex-start;
   font-size: var(--fontExtraSmall);
-  padding-left: 40px;
+  /* padding-left: 40px; */
   padding-right: 50px;
 }
 
