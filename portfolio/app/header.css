@@ -40,10 +40,10 @@
 
 @media screen and (max-width: 500px) {
   .nav__container .nav__bar > ul {
-    height: 28px;
+    height: 40px;
   }
 
   .nav__container .nav__bar ul {
-    padding: 40px 4vw 0;
+    padding: 30px 4vw 0;
   }
 }

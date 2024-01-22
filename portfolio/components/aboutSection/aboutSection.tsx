@@ -14,7 +14,7 @@ import { Header } from "../header";
 import { AboutMarquee } from "./aboutMarquee";
 export function AboutSection({}) {
   return (
-    <section className="section section__2 second items-center justify-center bg-colorLight px-[5vw] py-10 text-colorDark">
+    <section className="section section__2 second items-center justify-center bg-colorLight px-[5vw] pb-10 pt-20 text-colorDark">
       <div className="rounded__div__down black">
         <div className="round__bg__down white"></div>
       </div>
@@ -22,7 +22,7 @@ export function AboutSection({}) {
         <div className="round__bg__up white"></div>
       </div>
       <Header color="Dark"></Header>
-      <main className="flex w-full max-w-[1600px]  flex-col text-[clamp(16px,_1vw_+_14px,_24px)]  ">
+      <main className="flex h-full w-full max-w-[1600px] flex-col  justify-center text-[clamp(16px,_1vw_+_14px,_24px)]  ">
         <div className="anime relative  flex items-center justify-center text-[clamp(16px,_4.3vw_+_12px,_88px)]">
           <h2
             id="my-text"
@@ -67,7 +67,7 @@ export function AboutSection({}) {
             </g>
           </svg>
         </div>
-        <div className="anime relative flex grow flex-col gap-[2em] pt-[1.5em] md:flex-row">
+        <div className="anime relative flex  flex-col gap-[1em] pt-[1em] md:flex-row md:gap-[2em] md:pt-[1.5em]">
           <h2 className="font-semibold leading-tight tracking-tight">
             Passion for Websites<span className="yellow__it ">.</span>
           </h2>

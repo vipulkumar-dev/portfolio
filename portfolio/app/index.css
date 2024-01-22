@@ -882,7 +882,7 @@ textPath {
 
 #one {
   position: relative;
-  height: 27vh;
+  /* height: 27vh; */
   flex-grow: 1;
   max-height: 25vh;
   width: 100%;
