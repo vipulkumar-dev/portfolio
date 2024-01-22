@@ -45,7 +45,7 @@ export function Header({ color }: HeaderProps) {
       <nav className="nav__bar ">
         <ul>
           <Magentic
-            href="work.html"
+            href="#"
             strength={50}
             className={`nav__item text-xl font-semibold text-color${color} before:bg-color${color}`}
             onMouseEnter={() => {
@@ -65,13 +65,13 @@ export function Header({ color }: HeaderProps) {
           </Magentic>
           <Magentic
             strength={50}
-            className="nav__item h-full cursor-pointer text-lg text-inherit"
+            className="nav__item h-full cursor-pointer items-center text-lg text-inherit"
             // onClick={() => {
             //   console.log("hello");
             //   logoAnimationTl.current?.play();
             // }}
           >
-            <div className="flex h-3 w-10 flex-col justify-between ">
+            <div className="flex h-3 w-9 flex-col justify-between ">
               <div
                 className={`h-[0.15rem] w-full rounded-full bg-color${color}`}
               ></div>
