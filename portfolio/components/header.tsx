@@ -57,7 +57,7 @@ export function Header({ color }: HeaderProps) {
             }}
           >
             <p className="logo__anim grid grid-flow-col items-center  ">
-              Coex
+              Vipul
               <span className="logo__rotate inline-block h-full p-[0.12em]">
                 <Logo className="h-full" />
               </span>

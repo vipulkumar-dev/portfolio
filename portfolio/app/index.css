@@ -6,7 +6,7 @@
   /* --colorDark: #0e0d0c;
   --colorLight: #fff; */
   --fontExtraSmallest: 10px;
-  --fontExtraSmall: 16px;
+  --fontExtraSmall: 18px;
   --fontSmall: 40px;
   --fontBig: 66px;
   --fontExtraBig: 240px;
@@ -288,7 +288,7 @@ textPath {
 .wrapperRollingText {
   white-space: nowrap;
   position: absolute;
-  bottom: 7%;
+  bottom: 5%;
   /* width: 100vw; */
 }
 .rollingText {
@@ -308,7 +308,7 @@ textPath {
   /* text-align: center; */
   /* margin-bottom: 21px; */
   position: absolute;
-  right: 7vw;
+  left: 7vw;
   /* top: 34.6%; */
 }
 
@@ -346,12 +346,12 @@ textPath {
 
 .email_section1 {
   position: absolute;
-  left: 0;
+  right: 6vw;
   display: flex;
 }
 
 .email_section1 .sqaure {
-  width: 225px;
+  width: 190px;
   height: 110px;
   background-color: #1c1d20;
   display: flex;
