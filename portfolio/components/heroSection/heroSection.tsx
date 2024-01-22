@@ -8,7 +8,7 @@ export function HeroSection({}) {
   useAppSelector((state) => state.fullpageReducer.first);
 
   return (
-    <section className="section section__1 first">
+    <section className="section section__1 first items-center justify-center">
       <div className="rounded__div__down white">
         <div className="round__bg__down black"></div>
       </div>
@@ -16,7 +16,7 @@ export function HeroSection({}) {
         <div className="round__bg__up black"></div>
       </div>
       <Header color="Light" />
-      <div className="section1__wrapper">
+      <main className="section1__wrapper max-w-maxWidth relative">
         <div className="myImage">
           {/* <picture>
             <source media="(min-width:850px)" srcset="img/DSC_00582.webp" />
@@ -25,7 +25,7 @@ export function HeroSection({}) {
           </picture> */}
         </div>
 
-        <div className="email_section1 anime isolate !text-[clamp(16px,_1vw_+_14px,_24px)]">
+        <div className="email_section1 anime isolate !text-[clamp(16px,_1vw_+_14px,_24px)] ">
           <div className="round -z-10 !translate-x-1/2"></div>
           <div className="sqaure">
             Looking For
@@ -53,7 +53,7 @@ export function HeroSection({}) {
         </h2>
 
         <Marquee />
-      </div>
+      </main>
     </section>
   );
 }

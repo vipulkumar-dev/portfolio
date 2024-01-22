@@ -10,6 +10,7 @@ import ReduxIcon from "@/public/svg/reduxIcon.svg";
 import NodejsIcon from "@/public/svg/nodejsIcon.svg";
 import ReactIcon from "@/public/svg/reactIcon.svg";
 import FigmaIcon from "@/public/svg/figmaIcon.svg";
+import GitIcon from "@/public/svg/gitIcon.svg";
 import AdobeIcon from "@/public/svg/adobeIcon.svg";
 
 export function AboutMarquee({}) {
@@ -84,6 +85,9 @@ export const InnerMarquee = ({ className }: InnerMarqueeProps) => {
       </div>
       <div className="img-wrapper">
         <FigmaIcon />
+      </div>
+      <div className="img-wrapper">
+        <GitIcon />
       </div>
       <div className="img-wrapper">
         <AdobeIcon />

@@ -15,20 +15,20 @@ export function FooterGroup({
       )}
     >
       <h3 className="text-[0.6em]   ">{title}</h3>
-      <ul className=" mt-2  flex gap-5  ">
+      <ul className=" mt-[0.1em]  flex gap-5  ">
         {links.map((link, index) => (
           <li key={index} className="">
             {isMagnetic ? (
               <Magentic
                 strength={50}
-                className="relative text-[0.8em] text-[#a3a3a3] "
+                className="relative text-[0.8em] text-[#cccccc]"
                 href={link.href}
                 hoverUnderline
               >
                 <p>{link.text}</p>
               </Magentic>
             ) : (
-              <p className="text-[0.8em]">{link.text}</p>
+              <p className="text-[0.8em] text-[#cccccc]">{link.text}</p>
             )}
           </li>
         ))}
