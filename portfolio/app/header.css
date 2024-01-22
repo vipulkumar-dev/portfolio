@@ -15,12 +15,12 @@
 .nav__container .nav__bar {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .nav__container .nav__bar ul {
   width: 100%;
-  padding: 40px 2vw 0;
+  padding-top: 40px;
   font-size: 1.8rem;
 }
 

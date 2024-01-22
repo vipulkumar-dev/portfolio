@@ -43,7 +43,7 @@ export function Header({ color }: HeaderProps) {
   return (
     <header className="nav__container anime">
       <nav className="nav__bar ">
-        <ul>
+        <ul className="max-w-maxWidth">
           <Magentic
             href="#"
             strength={50}

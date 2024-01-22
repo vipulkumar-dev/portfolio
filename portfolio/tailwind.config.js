@@ -17,6 +17,10 @@ module.exports = {
       },
     },
     extend: {
+      spacing: {
+        paddingX: "var(--paddingX)",
+        maxWidth: "var(--maxWidth)",
+      },
       colors: {
         colorPrimary: "var(--colorPrimary)",
         colorDark: "var(--colorDark)",
