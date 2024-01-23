@@ -11,7 +11,7 @@ export function WorkSection({}) {
       </div>
       <Header color="Light"></Header>
       <main className="relative flex h-full w-full max-w-maxWidth items-center justify-center">
-        <div className="flex items-center justify-center">
+        <div className="flex flex-col items-center justify-center">
           <div className="anime">
             <h2 className="heading mask">
               recent <br />
