@@ -39,7 +39,7 @@ export function Header({ color }: HeaderProps) {
     return () => {
       logoAnimationTl.current?.kill();
     };
-  });
+  }, []);
   return (
     <header className="nav__container anime">
       <nav className="nav__bar ">
@@ -66,10 +66,9 @@ export function Header({ color }: HeaderProps) {
           <Magentic
             strength={50}
             className={`mask nav__item h-full cursor-pointer items-center text-color${color} before:bg-color${color}`}
-            // onClick={() => {
-            //   console.log("hello");
-            //   logoAnimationTl.current?.play();
-            // }}
+            onClick={() => {
+              setIsOpen(!isOpen);
+            }}
           >
             <div className="flex h-3 w-9 flex-col justify-between ">
               <div

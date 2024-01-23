@@ -1,26 +1,13 @@
 import React from "react";
-import Image from "next/image";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { Button } from "@/components/ui/button";
+import { Bulge } from "@/components/bulge";
 import Magentic from "../ui/magentic";
 import { gsap } from "gsap";
-import {
-  ArrowRight,
-  ArrowUpRight,
-  Download,
-  MessageSquare,
-} from "lucide-react";
 import { Header } from "../header";
 import { AboutMarquee } from "./aboutMarquee";
 export function AboutSection({}) {
   return (
     <section className="section section__2 second lightGradient items-center justify-center  px-paddingX pb-10 pt-20 text-colorDark">
-      <div className="rounded__div__down black">
-        <div className="round__bg__down white"></div>
-      </div>
-      <div className="rounded__div__up black">
-        <div className="round__bg__up white"></div>
-      </div>
+      <Bulge type="Dark" />
       <Header color="Dark"></Header>
       <main className="flex h-full w-full max-w-maxWidth flex-col  justify-center text-[clamp(16px,_1vw_+_14px,_24px)]  ">
         <div className="anime relative  flex items-center justify-center text-[clamp(16px,_4.3vw_+_12px,_88px)]">

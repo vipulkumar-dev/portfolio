@@ -3,7 +3,7 @@ import { gsap } from "gsap";
 import { CustomEase } from "gsap/CustomEase";
 import { cn } from "@/lib/utils";
 
-type MagenticProps = {
+interface MagenticProps extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
   children: React.ReactNode;
   href?: string;
   className?: string;
@@ -11,7 +11,7 @@ type MagenticProps = {
   hoverUnderline?: boolean;
   onMouseEnter?: () => void;
   onMouseLeave?: () => void;
-};
+}
 const Magentic = ({
   children,
   className,

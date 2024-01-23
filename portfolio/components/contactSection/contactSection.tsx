@@ -4,18 +4,15 @@ import Magentic from "@/components/ui/magentic";
 import { BgImagesContainer } from "@/components/contactSection/bgImagesContainer";
 import { useAppSelector } from "@/hooks/reduxHooks";
 import { Header } from "../header";
+import { Bulge } from "../bulge";
 export function ContactSection({}) {
   const { suscribe } = useAppSelector((state) => state.fullpageReducer.fourth);
   const bgImagesSharedRef = useRef<gsap.core.Tween | null>(null);
 
   return (
     <section className="section section__5 fourth lightGradient ">
-      <div className="rounded__div__down black">
-        <div className="round__bg__down white"></div>
-      </div>
-      <div className="rounded__div__up black">
-        <div className="round__bg__up white"></div>
-      </div>
+      <Bulge type="Dark" />
+
       <Header color="Dark"></Header>
 
       <Magentic // href="mailto:email.coex@gmail.com"

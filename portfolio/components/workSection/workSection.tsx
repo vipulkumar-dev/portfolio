@@ -1,14 +1,10 @@
 import React from "react";
 import { Header } from "../header";
+import { Bulge } from "../bulge";
 export function WorkSection({}) {
   return (
     <section className="section section__3 third darkGradient !h-[100vh] overflow-hidden">
-      <div className="rounded__div__down white">
-        <div className="round__bg__down black"></div>
-      </div>
-      <div className="rounded__div__up white">
-        <div className="round__bg__up black"></div>
-      </div>
+      <Bulge type="Light" />
       <Header color="Light"></Header>
       <main className="relative flex h-full w-full max-w-maxWidth items-center justify-center">
         <div className="flex flex-col items-center justify-center">

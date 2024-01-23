@@ -4,17 +4,13 @@ import { Marquee } from "./marquee";
 import React, { useEffect } from "react";
 
 import { useAppSelector } from "@/hooks/reduxHooks";
+import { Bulge } from "../bulge";
 export function HeroSection({}) {
   useAppSelector((state) => state.fullpageReducer.first);
 
   return (
     <section className="section section__1 first items-center justify-center">
-      <div className="rounded__div__down white">
-        <div className="round__bg__down black"></div>
-      </div>
-      <div className="rounded__div__up white">
-        <div className="round__bg__up black"></div>
-      </div>
+      <Bulge type="Light" />
       <Header color="Light" />
       <main className="section1__wrapper relative max-w-maxWidth">
         <div className="myImage">
