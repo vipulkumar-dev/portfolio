@@ -2,7 +2,7 @@ import React from "react";
 import { Header } from "../header";
 export function WorkSection({}) {
   return (
-    <section className="section section__3 third !h-[100vh] overflow-hidden ">
+    <section className="section section__3 third darkGradient !h-[100vh] overflow-hidden">
       <div className="rounded__div__down white">
         <div className="round__bg__down black"></div>
       </div>
@@ -10,10 +10,10 @@ export function WorkSection({}) {
         <div className="round__bg__up black"></div>
       </div>
       <Header color="Light"></Header>
-      <main className="max-w-maxWidth relative flex h-full w-full items-center justify-center">
-        <div>
+      <main className="relative flex h-full w-full max-w-maxWidth items-center justify-center">
+        <div className="flex items-center justify-center">
           <div className="anime">
-            <h2 className="heading">
+            <h2 className="heading mask">
               recent <br />
               work
             </h2>

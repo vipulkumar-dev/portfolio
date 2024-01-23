@@ -463,7 +463,7 @@ textPath {
   display: flex !important;
   align-items: center;
   justify-content: center;
-  background-color: var(--colorDark);
+  /* background-color: var(--colorDark); */
   isolation: isolate;
 }
 /* * {

@@ -9,7 +9,7 @@ export function ContactSection({}) {
   const bgImagesSharedRef = useRef<gsap.core.Tween | null>(null);
 
   return (
-    <section className="section section__5 fourth ">
+    <section className="section section__5 fourth lightGradient ">
       <div className="rounded__div__down black">
         <div className="round__bg__down white"></div>
       </div>

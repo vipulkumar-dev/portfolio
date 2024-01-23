@@ -14,11 +14,11 @@ type HeaderProps = {
 export function Header({ color }: HeaderProps) {
   const possibleTailwindClasses = [
     "bg-colorDark",
-    "bg-colorlight",
+    "bg-colorLight",
     "text-colorDark",
-    "text-colorlight",
+    "text-colorLight",
     "before:bg-colorDark",
-    "before:bg-colorlight",
+    "before:bg-colorLight",
   ];
 
   const logoAnimationTl = useRef<gsap.core.Timeline | null>(null);
@@ -47,7 +47,7 @@ export function Header({ color }: HeaderProps) {
           <Magentic
             href="#"
             strength={50}
-            className={`nav__item text-xl font-semibold text-color${color} before:bg-color${color}`}
+            className={`mask nav__item text-xl font-semibold text-color${color} before:bg-color${color}`}
             onMouseEnter={() => {
               console.log("hello");
               logoAnimationTl.current?.play();
@@ -65,7 +65,7 @@ export function Header({ color }: HeaderProps) {
           </Magentic>
           <Magentic
             strength={50}
-            className="nav__item h-full cursor-pointer items-center text-lg text-inherit"
+            className={`mask nav__item h-full cursor-pointer items-center text-color${color} before:bg-color${color}`}
             // onClick={() => {
             //   console.log("hello");
             //   logoAnimationTl.current?.play();

@@ -94,6 +94,33 @@
   font-size: inherit !important;
 }
 
+.mask {
+  --mask: linear-gradient(
+    90deg,
+    hsla(0, 0%, 100%) 0%,
+    hsla(0, 0%, 100%, 0.7) 100%
+  );
+
+  -webkit-mask-image: var(--mask);
+  mask-image: var(--mask);
+}
+
+.lightGradient {
+  background: linear-gradient(
+    90deg,
+    var(--colorLight) 0%,
+    var(--colorSecondaryHalfLight) 100%
+  );
+}
+
+.darkGradient {
+  background: linear-gradient(
+    90deg,
+    var(--colorDark) 0%,
+    var(--colorSecondaryHalfDark) 100%
+  );
+}
+
 .fp-overflow {
   height: 100% !important;
   width: 100% !important;
