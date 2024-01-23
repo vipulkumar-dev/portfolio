@@ -1,8 +1,8 @@
+import { HeroButton } from "./heroButton";
 import { Header } from "../header";
 import { Marquee } from "./marquee";
 import React, { useEffect } from "react";
-import Image from "next/image";
-import Magentic from "../ui/magentic";
+
 import { useAppSelector } from "@/hooks/reduxHooks";
 export function HeroSection({}) {
   useAppSelector((state) => state.fullpageReducer.first);
@@ -25,23 +25,7 @@ export function HeroSection({}) {
           </picture> */}
         </div>
 
-        <Magentic
-          strength={50}
-          className="email_section1 anime isolate  rounded-full bg-[#272727] !text-[clamp(16px,_1vw_+_14px,_24px)]"
-        >
-          <div className="shapka !flex items-center justify-center gap-24">
-            <div className="round">
-              <p className="absolute left-1/2">
-                Looking For
-                <br />
-                Opportunities
-              </p>
-            </div>
-            <div className="round">
-              <Image width={100} height={100} src="/img/logo.png" alt="" />
-            </div>
-          </div>
-        </Magentic>
+        <HeroButton />
         <h2 className="left">
           <div className="free anime">
             &nbsp;Freelance&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
