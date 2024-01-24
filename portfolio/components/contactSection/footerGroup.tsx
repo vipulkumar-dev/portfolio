@@ -10,7 +10,7 @@ export function FooterGroup({
   return (
     <div
       className={cn(
-        "mask text-[clamp(20px,_1vw_+_14px,_24px)] text-[#a3a3a3]",
+        "mask p-6 text-[clamp(20px,_1vw_+_14px,_24px)] text-[#a3a3a3]",
         className,
       )}
     >

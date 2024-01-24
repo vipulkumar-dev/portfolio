@@ -3,7 +3,7 @@ import { Header } from "../header";
 import { Bulge } from "../bulge";
 export function WorkSection({}) {
   return (
-    <section className="section section__3 third darkGradient !h-[100vh] overflow-hidden">
+    <section className="section section__3 third darkGradient overflow-hidden">
       <Bulge type="Light" />
       <Header color="Light"></Header>
       <main className="relative flex h-full w-full max-w-maxWidth items-center justify-center">

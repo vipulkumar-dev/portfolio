@@ -15,7 +15,7 @@ import { setActiveSlide } from "@/redux/states/fullpageSlice";
 const opts = {
   autoScrolling: true,
   scrollOverflow: false,
-  scrollHorizontally: true,
+  scrollHorizontally: false,
   navigation: false,
   navigationPosition: "left",
   scrollingSpeed: 1300,
@@ -36,6 +36,13 @@ const FullpageProvider = ({ children }: { children: React.ReactNode }) => {
 
   const onLeave = (origin: any, destination?: any, direction?: any) => {
     dispatch(setActiveSlide([destination.anchor, direction]));
+
+    // It will patch border that comes when we snap by include dark gradient class on body that has higher specfitcy than light gradient
+    if (destination.anchor == "second" || destination.anchor == "fourth") {
+      document.body.classList.add("darkGradient");
+    } else {
+      document.body.classList.remove("darkGradient");
+    }
 
     if (destination.anchor == "first") {
       if (direction == "down") {

@@ -9,7 +9,7 @@ export function HeroSection({}) {
   useAppSelector((state) => state.fullpageReducer.first);
 
   return (
-    <section className="section section__1 first items-center justify-center">
+    <section className="section section__1 first items-center justify-center overflow-x-hidden">
       <Bulge type="Light" />
       <Header color="Light" />
       <main className="section1__wrapper relative max-w-maxWidth">
