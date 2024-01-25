@@ -41,9 +41,9 @@ export function Header({ color }: HeaderProps) {
     };
   }, []);
   return (
-    <header className="nav__container anime">
+    <header className="nav__container anime px-paddingX">
       <nav className="nav__bar ">
-        <ul className="max-w-maxWidth">
+        <div className="max-w-maxWidth">
           <Magentic
             href="#"
             strength={50}
@@ -79,7 +79,7 @@ export function Header({ color }: HeaderProps) {
               ></div>
             </div>
           </Magentic>
-        </ul>
+        </div>
       </nav>
       {isOpen && (
         <div className="fixed left-0 top-0 -z-10 h-screen w-screen bg-colorDark"></div>

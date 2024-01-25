@@ -18,13 +18,13 @@
   justify-content: center;
 }
 
-.nav__container .nav__bar ul {
+.nav__container .nav__bar > div {
   width: 100%;
   padding-top: 40px;
   font-size: 1.8rem;
 }
 
-.nav__container .nav__bar ul {
+.nav__container .nav__bar > div {
   display: flex;
   gap: 5.2rem;
   list-style: none;
@@ -32,18 +32,14 @@
   justify-content: space-between;
 }
 
-.nav__container .nav__bar ul .nav__item svg {
+.nav__container .nav__bar > div .nav__item svg {
   /* width: 22px;
   height: 22px;
   color: var(--colorLight); */
 }
 
 @media screen and (max-width: 500px) {
-  .nav__container .nav__bar > ul {
-    height: 40px;
-  }
-
-  .nav__container .nav__bar ul {
-    padding: 30px 4vw 0;
+  .nav__container .nav__bar > div {
+    padding-top: 25px;
   }
 }

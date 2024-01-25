@@ -114,11 +114,21 @@
 }
 
 .darkGradient {
-  background: linear-gradient(
-    90deg,
-    var(--colorDark) 0%,
-    var(--colorSecondaryHalfDark) 100%
-  );
+  background: linear-gradient(90deg, #000000 0%, #222121 100%);
+}
+
+.section {
+  overflow: hidden !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  flex-direction: column !important;
+  overflow: hidden !important;
+  height: 100% !important;
+  width: 100% !important;
+  min-height: 100vh !important;
+  position: relative !important;
+  isolation: isolate !important;
 }
 
 .fp-overflow {

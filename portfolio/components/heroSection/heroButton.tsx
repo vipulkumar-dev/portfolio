@@ -29,19 +29,19 @@ export function HeroButton({}) {
   return (
     <Magentic
       strength={50}
-      className="email_section1 anime isolate  rounded-full bg-[#272727] !text-[clamp(16px,_1vw_+_14px,_24px)]"
+      className="email_section1 anime isolate  rounded-full !text-[clamp(16px,_1vw_+_14px,_24px)] md:bg-[#272727]"
       onMouseEnter={() => rotateImageRef.current?.play()}
       onMouseLeave={() => rotateImageRef.current?.pause()}
     >
       <div className="shapka !flex items-center justify-center gap-24">
-        <div className="round">
+        <div className="round hidden items-center justify-center md:flex">
           <p className="absolute left-1/2 text-[20px]">
             Looking For
             <br />
             Opportunities
           </p>
         </div>
-        <div className="round">
+        <div className="round flex items-center justify-center">
           <Image
             className="rotateAnimation inline-block"
             ref={rotating}

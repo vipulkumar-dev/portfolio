@@ -6,13 +6,11 @@ import React, { useEffect } from "react";
 import { useAppSelector } from "@/hooks/reduxHooks";
 import { Bulge } from "../bulge";
 export function HeroSection({}) {
-  useAppSelector((state) => state.fullpageReducer.first);
-
   return (
-    <section className="section section__1 first items-center justify-center overflow-x-hidden">
+    <section className="section section__1 darkGradient first text-colorLight">
       <Bulge type="Light" />
       <Header color="Light" />
-      <main className="section1__wrapper relative max-w-maxWidth">
+      <main className="section1__wrapper relative max-w-maxWidth grow">
         <div className="myImage">
           {/* <picture>
             <source media="(min-width:850px)" srcset="img/DSC_00582.webp" />

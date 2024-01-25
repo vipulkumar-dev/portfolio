@@ -9,13 +9,13 @@ export function AboutSection({}) {
     <section className="section section__2 second lightGradient items-center justify-center  px-paddingX pb-10 pt-20 text-colorDark">
       <Bulge type="Dark" />
       <Header color="Dark"></Header>
-      <main className="flex h-full w-full max-w-maxWidth flex-col  justify-center text-[clamp(16px,_1vw_+_14px,_24px)]  ">
+      <main className="flex h-full w-full max-w-maxWidth grow flex-col  justify-center text-[clamp(16px,_1vw_+_14px,_24px)]  ">
         <div className="anime relative  flex items-center justify-center text-[clamp(16px,_4.3vw_+_12px,_88px)]">
           <h2
             id="my-text"
             className="mask font-semibold leading-tight tracking-tight"
           >
-            Lets Make Something New in this world
+            Let's Make Something New in This World
           </h2>
           <svg
             className="ml-auto w-[1em] rotate-90 text-colorSecondaryDark md:w-[0.5em]"
