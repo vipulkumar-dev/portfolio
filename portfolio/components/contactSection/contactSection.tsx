@@ -1,5 +1,5 @@
 import { Footer } from "@/components/contactSection/footer";
-import React, { use, useRef } from "react";
+import React, { useRef } from "react";
 import Magentic from "@/components/ui/magentic";
 import { BgImagesContainer } from "@/components/contactSection/bgImagesContainer";
 import { useAppSelector } from "@/hooks/reduxHooks";
@@ -12,7 +12,6 @@ export function ContactSection({}) {
   return (
     <section className="section section__5 fourth lightGradient ">
       <Bulge type="Dark" />
-
       <Header color="Dark"></Header>
 
       <Magentic // href="mailto:email.coex@gmail.com"

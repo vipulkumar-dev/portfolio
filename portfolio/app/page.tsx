@@ -1,12 +1,12 @@
 "use client";
-import { Intro } from "@/components/intro";
 import { Main } from "@/components/main";
+import { Cursor } from "@/components/cursor";
 import FullpageProvider from "@/components/fullpageProvider";
+
 import "./header.css";
 import "./index.css";
-import { Cursor } from "@/components/cursor";
 
-export default function Home({}) {
+export default function HomePage({}) {
   return (
     <>
       <Cursor />

@@ -179,21 +179,6 @@ html.has-scroll-smooth {
 
 .section__1 {
   color: #f3f3f3;
-  position: relative;
-  width: 100vw;
-  min-height: 100vh;
-  top: 0;
-  left: 0;
-  z-index: 99;
-  /* background-color: #000; */
-  overflow: hidden;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  /* padding-bottom: 200px; */
-  /* background-image: url("../img/dennissnellenberg.png"); */
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 .section__hero {

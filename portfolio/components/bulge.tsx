@@ -4,6 +4,8 @@ type bulgeProps = {
   type: "Dark" | "Light";
 };
 
+// Bulge is responsible for giving paralax effect when slide up and down
+
 export function Bulge({ type }: bulgeProps) {
   return (
     <>
