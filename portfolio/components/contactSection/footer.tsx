@@ -5,7 +5,7 @@ export function Footer({ className }: { className?: string }) {
   return (
     <footer
       className={cn(
-        "footer__links absolute flex max-w-maxWidth flex-wrap gap-5  mix-blend-difference md:gap-12",
+        "footer__links absolute flex  flex-wrap gap-0 px-paddingX  mix-blend-difference md:gap-12",
         className,
       )}
     >
