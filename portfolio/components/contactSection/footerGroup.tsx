@@ -10,7 +10,7 @@ export function FooterGroup({
   return (
     <div
       className={cn(
-        "mask flex grow flex-col items-center justify-center pb-6 text-[clamp(20px,_1vw_+_14px,_24px)] text-[#b3b3b3] md:grow-0 md:py-6",
+        "mask flex grow flex-col items-center justify-center pb-6 text-[clamp(20px,_1vw_+_14px,_24px)] text-[#b3b3b3] md:block md:grow-0 md:py-6",
         className,
       )}
     >
