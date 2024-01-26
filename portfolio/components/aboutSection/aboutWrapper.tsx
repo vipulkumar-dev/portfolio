@@ -48,15 +48,13 @@ export function AboutWrapper({}) {
         </svg>
       </div>
       <div className="anime relative flex  flex-col gap-[1em] pt-[1em] md:flex-row md:gap-[2em] md:pt-[1.5em]">
-        <h2 className="font-semibold leading-tight tracking-tight">
-          Passion for Websites<span className="yellow__it ">.</span>
-        </h2>
-        <p className="text-justify leading-[1.4] text-colorSecondaryDark md:w-[68%]">
-          I'm Vipul 👋, a passionate designer & developer based in India. I
-          craft beautiful, modern websites using the latest technologies like
-          Next.js, TypeScript, and Tailwind. Whether you're launching a new
-          business or looking to refresh your existing website, I can help you
-          create a digital experience that truly stands out.
+        <p className="text-justify leading-[1.4] text-colorSecondaryDark md:w-[70%]">
+          <span className="block pb-[1em] font-semibold leading-tight tracking-tight">
+            Passion for Websites<span className="yellow__it ">.</span>
+          </span>
+          I'm Vipul 👋, a designer & developer based in India. I craft
+          beautiful, modern websites using the latest technologies like Next.js,
+          TypeScript, and Tailwind.
         </p>
         <Magentic
           href=""
@@ -80,7 +78,7 @@ export function AboutWrapper({}) {
               "--colorSecondaryHalfDark": "#1a1a1a",
             });
           }}
-          className="mask absolute bottom-0 hidden aspect-square  h-full items-center justify-center rounded-full bg-colorDark p-2  md:relative  md:ml-auto  md:flex md:aspect-auto md:min-h-full md:w-[22%]"
+          className="mask h-full items-center justify-center rounded-full bg-colorDark p-3  md:relative  md:ml-auto    md:min-h-full md:w-[22%]"
         >
           <p className="shapka text-colorLight">
             Learn More<span className="yellow__it">.</span>

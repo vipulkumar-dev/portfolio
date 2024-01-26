@@ -14,6 +14,7 @@ import GitIcon from "@/public/svg/gitIcon.svg";
 import AdobeIcon from "@/public/svg/adobeIcon.svg";
 
 export function AboutMarquee({}) {
+  gsap.registerPlugin(CustomEase);
   useEffect(() => {
     gsap.fromTo(
       `.rollingText2`,

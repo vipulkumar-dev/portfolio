@@ -16,6 +16,7 @@ const opts = {
   autoScrolling: true,
   scrollOverflow: false,
   scrollHorizontally: false,
+  // fixedElements: "#headerNavigation",
   navigation: false,
   navigationPosition: "left",
   scrollingSpeed: 1300,

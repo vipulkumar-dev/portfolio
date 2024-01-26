@@ -1,8 +1,14 @@
 import { FooterGroup } from "@/components/contactSection/footerGroup";
+import { cn } from "@/lib/utils";
 import React from "react";
-export function Footer({}) {
+export function Footer({ className }: { className?: string }) {
   return (
-    <footer className="footer__links absolute flex max-w-maxWidth flex-wrap gap-5  mix-blend-difference md:gap-10">
+    <footer
+      className={cn(
+        "footer__links absolute flex max-w-maxWidth flex-wrap gap-5  mix-blend-difference md:gap-12",
+        className,
+      )}
+    >
       <FooterGroup
         title="VERSION"
         links={[{ href: "", text: "2022 © Edition" }]}

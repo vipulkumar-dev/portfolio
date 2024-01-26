@@ -3,15 +3,20 @@ import Magentic from "./ui/magentic";
 import { gsap } from "gsap";
 import { CustomEase } from "gsap/CustomEase";
 import Logo from "@/public/svg/Logo.svg";
+import { useAppDispatch } from "@/hooks/reduxHooks";
+import { toggleMenu } from "@/redux/states/menuSlice";
+import { cn } from "@/lib/utils";
 
 gsap.registerPlugin(CustomEase);
 const ease = CustomEase.create("custom", "M0,0 C0.52,0.01 0.16,1 1,1 ");
 
 type HeaderProps = {
   color: "Dark" | "Light";
+  className?: string;
+  mode?: "hamburger" | "cross";
 };
 
-export function Header({ color }: HeaderProps) {
+export function Header({ color, className, mode = "hamburger" }: HeaderProps) {
   const possibleTailwindClasses = [
     "bg-colorDark",
     "bg-colorLight",
@@ -22,7 +27,6 @@ export function Header({ color }: HeaderProps) {
   ];
 
   const logoAnimationTl = useRef<gsap.core.Timeline | null>(null);
-  const [isOpen, setIsOpen] = useState<boolean>(false);
 
   useEffect(() => {
     logoAnimationTl.current = gsap.timeline({ paused: true }).fromTo(
@@ -40,8 +44,10 @@ export function Header({ color }: HeaderProps) {
       logoAnimationTl.current?.kill();
     };
   }, []);
+
+  const dispatch = useAppDispatch();
   return (
-    <header className="nav__container anime px-paddingX">
+    <header className={cn("nav__container anime px-paddingX", className)}>
       <nav className="nav__bar ">
         <div className="max-w-maxWidth">
           <Magentic
@@ -65,25 +71,40 @@ export function Header({ color }: HeaderProps) {
           </Magentic>
           <Magentic
             strength={50}
-            className={`mask nav__item h-full cursor-pointer items-center text-color${color} before:bg-color${color}`}
+            className={`mask nav__item h-8 w-8 cursor-pointer items-center text-color${color} before:bg-color${color}`}
             onClick={() => {
-              setIsOpen(!isOpen);
+              if (mode === "cross") {
+                dispatch(toggleMenu({ isMenuOpen: false }));
+              } else {
+                dispatch(toggleMenu({ isMenuOpen: true, color: color }));
+              }
             }}
           >
-            <div className="flex h-3 w-9 flex-col justify-between ">
+            <div
+              className={cn("flex h-3 w-full flex-col justify-between ", {
+                "scale-[.90] justify-center": mode === "cross",
+              })}
+            >
               <div
-                className={`h-[0.15rem] w-full rounded-full bg-color${color}`}
+                className={cn(
+                  `h-[0.15rem] w-full rounded-full bg-color${color}`,
+                  {
+                    "absolute rotate-45": mode === "cross",
+                  },
+                )}
               ></div>
               <div
-                className={`h-[0.15rem] w-full rounded-full bg-color${color}`}
+                className={cn(
+                  `h-[0.15rem] w-full rounded-full bg-color${color}`,
+                  {
+                    "absolute -rotate-45": mode === "cross",
+                  },
+                )}
               ></div>
             </div>
           </Magentic>
         </div>
       </nav>
-      {isOpen && (
-        <div className="fixed left-0 top-0 -z-10 h-screen w-screen bg-colorDark"></div>
-      )}
     </header>
   );
 }

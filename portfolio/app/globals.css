@@ -126,7 +126,7 @@
   overflow: hidden !important;
   height: 100% !important;
   width: 100% !important;
-  min-height: 100vh !important;
+  /* min-height: 100vh !important; */
   position: relative !important;
   isolation: isolate !important;
 }
