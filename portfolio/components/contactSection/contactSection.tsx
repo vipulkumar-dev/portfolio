@@ -15,7 +15,7 @@ export function ContactSection({}) {
       <Header color="Dark"></Header>
 
       <Magentic // href="mailto:email.coex@gmail.com"
-        className="magnetic footer__heading anime cursor-pointer"
+        className="footer__heading anime cursor-pointer"
         onMouseEnter={() => {
           bgImagesSharedRef.current?.restart(true);
         }}
@@ -23,7 +23,7 @@ export function ContactSection({}) {
           bgImagesSharedRef.current?.reverse();
         }}
       >
-        <span className="shapka ">
+        <span className="shapka mask">
           Get a<br />
           Quoute<span className="yellow__it">.</span>
         </span>

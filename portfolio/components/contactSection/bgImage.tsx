@@ -28,7 +28,7 @@ export function BgImage({ total, item, i }: BgImageProps) {
         src={item.imgLink}
         fill={true}
         alt=""
-        className="h-full w-full object-cover !opacity-90"
+        className="h-full w-full object-cover !opacity-80"
       />
     </div>
   );
