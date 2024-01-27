@@ -10,12 +10,12 @@ export function FooterGroup({
   return (
     <div
       className={cn(
-        "mask py-6 text-[clamp(20px,_1vw_+_14px,_24px)] text-[#b3b3b3]",
+        "mask flex grow flex-col items-center justify-center pb-6 text-[clamp(20px,_1vw_+_14px,_24px)] text-[#b3b3b3] md:block md:grow-0 md:py-6",
         className,
       )}
     >
       <h3 className="text-[0.6em]">{title}</h3>
-      <ul className=" mt-[0.1em]  flex gap-5  ">
+      <ul className=" mt-[0.1em] flex  justify-between gap-5 md:justify-normal  ">
         {links.map((link, index) => (
           <li key={index} className="">
             {isMagnetic ? (
