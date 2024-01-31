@@ -20,10 +20,6 @@
   --color-light: #fff;
 }
 
-html {
-  font-size: 62.5%;
-}
-
 html body {
   background-color: var(--color-light);
   font-family: "DM Sans", sans-serif;
@@ -133,7 +129,7 @@ ul {
   text-decoration: none;
 }
 
-.image--works {
+.image--works1 {
   background: url(/img/projects/1.png) no-repeat center;
   background-size: contain;
 }
