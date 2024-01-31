@@ -10,13 +10,11 @@ export function Footer({ className }: { className?: string }) {
       )}
     >
       <FooterGroup
-        title="VERSION"
-        links={[{ href: "", text: "2022 © Edition" }]}
-      />
-      <FooterGroup
         title="LOCAL TIME"
-        links={[{ href: "", text: "10:13 AM GMT+1" }]}
+        links={[{ href: "", text: "10:13:23 AM" }]}
       />
+      <FooterGroup title="VER" links={[{ href: "", text: "v0.1.0" }]} />
+
       <FooterGroup
         title="SOCIALS"
         className="md:ml-auto"
@@ -25,7 +23,6 @@ export function Footer({ className }: { className?: string }) {
           { href: "oggle", text: "Github" },
           { href: "oggle", text: "Twitter" },
           { href: "oggle", text: "LinkedIn" },
-          { href: "oggle", text: "Instagram" },
         ]}
       />
     </footer>

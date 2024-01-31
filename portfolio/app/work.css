@@ -88,11 +88,11 @@ ul {
   /* text-shadow: 0 10px 30px rgba(2, 11, 22, 0.5); */
 }
 
-.title .border {
+.title .borderv {
   margin-bottom: 3.2rem;
 }
 
-.title .border span {
+.title .borderv span {
   display: block;
   width: 88px;
   height: 4px;
@@ -100,11 +100,11 @@ ul {
   background: var(--primary-color);
 }
 
-.title .border span:first-child {
+.title .borderv span:first-child {
   margin-bottom: 1.4rem;
 }
 
-.title .border span:last-child {
+.title .borderv span:last-child {
   margin-left: 54px;
 }
 
@@ -134,27 +134,27 @@ ul {
 }
 
 .image--works {
-  /* background: url(../img/projects/1.png) no-repeat center; */
+  background: url(/img/projects/1.png) no-repeat center;
   background-size: contain;
 }
 
 .image--works2 {
-  /* background: url(../img/projects/2.png) no-repeat center; */
+  background: url(/img/projects/2.png) no-repeat center;
   background-size: contain;
 }
 
 .image--works3 {
-  /* background: url(../img/projects/3.png) no-repeat center; */
+  background: url(/img/projects/3.png) no-repeat center;
   background-size: contain;
 }
 
 .image--works4 {
-  /* background: url(../img/projects/4.png) no-repeat center; */
+  background: url(/img/projects/4.png) no-repeat center;
   background-size: contain;
 }
 
 .image--works5 {
-  /* background: url(../img/projects/5.png) no-repeat center; */
+  background: url(/img/projects/5.png) no-repeat center;
   background-size: contain;
 }
 
@@ -240,7 +240,7 @@ ul {
     margin-bottom: 0.8rem;
   }
 
-  .title .border {
+  .title .borderv {
     margin-bottom: 0.8rem;
   }
 

@@ -109,7 +109,7 @@ const FullpageProvider = ({ children }: { children: React.ReactNode }) => {
           {
             y: "0vh",
             duration: 1.1,
-            stagger: 0.14,
+            stagger: 0.1,
             ease: CustomEase.create("custom", "M0,0 C0.52,0.01 0.16,1 1,1 "),
           },
         );
@@ -245,14 +245,7 @@ const FullpageProvider = ({ children }: { children: React.ReactNode }) => {
     <ReactFullpage
       {...opts}
       onLeave={onLeave}
-      render={({ state, fullpageApi }) => {
-        // console.log(state, fullpageApi);
-        const childrenWithProps = React.Children.map(children, (child) =>
-          React.cloneElement(child as React.ReactElement<any>, {
-            state,
-          }),
-        );
-
+      render={() => {
         return <ReactFullpage.Wrapper>{children}</ReactFullpage.Wrapper>;
       }}
     />

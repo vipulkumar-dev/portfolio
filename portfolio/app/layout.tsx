@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { DM_Sans } from "next/font/google";
 
 import "./globals.css";
-import FullpageProvider from "@/components/fullpageProvider";
 import StoreProvider from "@/redux/storeProvider";
 
 // const dM_Sans = DM_Sans({ subsets: ["latin-ext"] });
