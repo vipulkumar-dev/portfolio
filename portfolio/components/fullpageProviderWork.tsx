@@ -29,15 +29,18 @@ const opts = {
 };
 
 const FullpageProviderWork = ({ children }: { children: React.ReactNode }) => {
+  gsap.registerPlugin(CustomEase);
   const onLeave = function (index: any, nextIndex: any, direction: any) {
+    console.log(nextIndex.index);
+
     if (direction == "down") {
       gsap
         .timeline()
-        .from(`.${nextIndex.anchor} .anime`, {
+        .from(`.s${nextIndex.index} .anime`, {
           duration: 0.3,
         })
         .fromTo(
-          `.${nextIndex.anchor} .anime`,
+          `.s${nextIndex.index} .anime`,
           {
             y: "30vh",
           },
@@ -51,11 +54,11 @@ const FullpageProviderWork = ({ children }: { children: React.ReactNode }) => {
     } else {
       gsap
         .timeline()
-        .from(`.${nextIndex.anchor} .anime`, {
+        .from(`.s${nextIndex.index} .anime`, {
           duration: 0.3,
         })
         .fromTo(
-          `.${nextIndex.anchor} .anime`,
+          `.s${nextIndex.index} .anime`,
           {
             y: "-30vh",
           },
