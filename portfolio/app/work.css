@@ -155,7 +155,7 @@ ul {
   position: relative;
   width: 50%;
   aspect-ratio: 16/9;
-  margin: 0 8% 0 auto;
+  margin: 0 var(--paddingX) 0 auto;
   -webkit-box-shadow: 0 80px 140px -40px rgba(0, 0, 0, 0.25);
   box-shadow: 0 80px 140px -40px rgba(0, 0, 0, 0.25);
   transform-origin: center;
@@ -187,10 +187,10 @@ ul {
 .image .page-num {
   position: absolute;
   overflow-y: hidden;
-  right: -7.549%;
-  bottom: 12.3762%;
-  font-size: 9.3rem;
-  color: #fff;
+  right: 5%;
+  bottom: 7%;
+  font-size: 8rem;
+  /* color: #fff; */
   z-index: 200;
 }
 
@@ -198,6 +198,7 @@ ul {
   line-height: 1.1;
   background-color: hsl(0, 0%, 0%, 0.07);
   border-radius: 10px;
+  padding: 10px;
 }
 
 @media screen and (max-width: 970px) {

@@ -101,7 +101,7 @@ export default function WorkPage() {
                     </p>
                     <div className="btn-wrap js-letter anime">
                       <Magentic strength={50} className="btn" href={item.link}>
-                        <p className="shapka">Show me</p>
+                        <p className="shapka">Show Me</p>
                       </Magentic>
                     </div>
                   </div>

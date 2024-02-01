@@ -151,3 +151,42 @@
 .fp-watermark {
   display: none;
 }
+
+.rounded__div__down,
+.rounded__div__up {
+  height: 0vh;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  overflow: hidden;
+  /* z-index: 999; */
+}
+
+.rounded__div__down {
+  top: 0;
+}
+
+.rounded__div__up {
+  bottom: 0;
+}
+
+.round__bg__down {
+  height: 775%;
+  width: 150%;
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  border-radius: 50%;
+  transform: translateX(-50%);
+}
+
+.round__bg__up {
+  height: 775%;
+  width: 150%;
+  position: absolute;
+  /* background-color: var(--colorLight); */
+  bottom: 0px;
+  left: 50%;
+  border-radius: 50%;
+  transform: translateX(-50%);
+}
