@@ -11,9 +11,9 @@ export function Footer({ className }: { className?: string }) {
     >
       <FooterGroup
         title="LOCAL TIME"
-        links={[{ href: "", text: "10:13:23 AM" }]}
+        links={[{ href: "", text: "10:13 AM" }]}
       />
-      <FooterGroup title="VER" links={[{ href: "", text: "v0.1.0" }]} />
+      <FooterGroup title="VERSION" links={[{ href: "", text: "v0.1.0" }]} />
 
       <FooterGroup
         title="SOCIALS"
