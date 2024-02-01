@@ -6,28 +6,54 @@ import "../header.css";
 import FullpageProviderWork from "@/components/fullpageProviderWork";
 import { Header } from "@/components/header";
 import { HeaderNavigation } from "@/components/headerNavigation";
+import Magentic from "@/components/ui/magentic";
 
 export default function WorkPage() {
   const projectsData = [
     {
-      title: "Sneakers Shop",
+      title: (
+        <>
+          Sneakers <br /> Shop
+        </>
+      ),
       description: "page",
-      link: "",
+      link: "abc",
     },
     {
-      title: "Seo Exp",
+      title: (
+        <>
+          Nike <br /> Store
+        </>
+      ),
       description: "page",
-      link: "",
+      link: "sc",
     },
     {
-      title: "Sports Theme",
+      title: (
+        <>
+          Adidas <br /> Store
+        </>
+      ),
       description: "page",
-      link: "",
+      link: "sds",
     },
     {
-      title: "Nike",
+      title: (
+        <>
+          Puma <br /> Store
+        </>
+      ),
       description: "page",
-      link: "",
+      link: "fsre",
+    },
+    {
+      title: (
+        <>
+          Reebok <br /> Store
+        </>
+      ),
+      description: "page",
+      link: "3r3",
     },
   ];
 
@@ -44,7 +70,7 @@ export default function WorkPage() {
           </div>
 
           {projectsData.map((item, index) => (
-            <div className={`section s${index} `} key={item.title}>
+            <div className={`section s${index} `} key={item.link}>
               <div className="fp-tableCell" style={{ height: 937 }}>
                 <div className="fullpage__slide">
                   <a
@@ -61,8 +87,8 @@ export default function WorkPage() {
                       <p>0{index + 1}</p>
                     </div>
                   </a>
-                  <div className="title">
-                    <h2 className="title__text js-letter anime">
+                  <div className="title ml-paddingX">
+                    <h2 className="title__text js-letter anime font-semibold">
                       {item.title}
                       <br />
                     </h2>
@@ -74,9 +100,9 @@ export default function WorkPage() {
                       {item.description}
                     </p>
                     <div className="btn-wrap js-letter anime">
-                      <a className="btn" href={item.link}>
-                        Show me
-                      </a>
+                      <Magentic strength={50} className="btn" href={item.link}>
+                        <p className="shapka">Show me</p>
+                      </Magentic>
                     </div>
                   </div>
                 </div>

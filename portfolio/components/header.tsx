@@ -51,7 +51,7 @@ export function Header({ color, className, mode = "hamburger" }: HeaderProps) {
       <nav className="nav__bar ">
         <div className="max-w-maxWidth">
           <Magentic
-            href="#"
+            href="/"
             strength={50}
             className={`mask nav__item text-xl font-semibold text-color${color} before:bg-color${color}`}
             onMouseEnter={() => {
