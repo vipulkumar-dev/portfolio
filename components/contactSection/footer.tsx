@@ -11,9 +11,15 @@ export function Footer({ className }: { className?: string }) {
     >
       <FooterGroup
         title="LOCAL TIME"
+        className="hidden md:block"
         links={[{ href: "", text: "10:13 AM" }]}
       />
-      <FooterGroup title="VERSION" links={[{ href: "", text: "v0.1.0" }]} />
+
+      <FooterGroup
+        className="hidden md:block"
+        title="VERSION"
+        links={[{ href: "", text: "v0.1.0" }]}
+      />
 
       <FooterGroup
         title="SOCIALS"
