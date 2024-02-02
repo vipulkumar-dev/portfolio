@@ -24,9 +24,7 @@ export function ContactSection({}) {
         }}
       >
         <span className="shapka mask">
-          Say
-          <br />
-          Hello<span className="yellow__it">.</span>
+          Contact<span className="yellow__it">.</span>
         </span>
       </Magentic>
       <BgImagesContainer bgImagesSharedRef={bgImagesSharedRef} />

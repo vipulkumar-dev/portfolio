@@ -5,47 +5,25 @@ import { AboutMarquee } from "./aboutMarquee";
 export function AboutWrapper({}) {
   return (
     <main className="flex h-full w-full max-w-maxWidth grow flex-col  justify-center text-[clamp(16px,_1vw_+_14px,_24px)]  ">
-      <div className="anime relative  flex items-center justify-center text-[clamp(16px,_4.3vw_+_12px,_88px)]">
+      <div className="anime relative  flex items-center justify-between text-[clamp(16px,_4.3vw_+_12px,_88px)]">
         <h2
           id="my-text"
           className="mask font-semibold leading-tight tracking-tight"
         >
           Let's Make Something New in This World
         </h2>
-        <svg
-          className="ml-auto w-[1em] rotate-90 text-colorSecondaryDark md:w-[0.5em]" // width="34px"
-          // height="34px"
-          viewBox="0 0 14 14"
-          version="1.1"
-          xmlns="http://www.w3.org/2000/svg" // xmlns:xlink="http://www.w3.org/1999/xlink"
-        >
-          <title>arrow-up-right</title>
-          <g
-            id="Page-1"
-            stroke="none"
-            strokeWidth="1"
-            fill="none"
-            fillRule="evenodd"
-          >
-            <g
-              id="Artboard"
-              transform="translate(-1019.000000, -279.000000)"
-              stroke="currentColor"
-              strokeWidth="1.5"
-            >
-              <g
-                id="arrow-up-right"
-                transform="translate(1026.000000, 286.000000) rotate(90.000000) translate(-1026.000000, -286.000000) translate(1020.000000, 280.000000)"
-              >
-                <polyline
-                  id="Path"
-                  points="2.76923077 0 12 0 12 9.23076923"
-                ></polyline>
-                <line x1="12" y1="0" x2="0" y2="12" id="Path"></line>
-              </g>
-            </g>
-          </g>
-        </svg>
+
+        <div className="digital-ball ml-auto">
+          <div className="globe">
+            <div className="globe-wrap">
+              <div className="circle"></div>
+              <div className="circle"></div>
+              <div className="circle"></div>
+              <div className="circle-hor"></div>
+              <div className="circle-hor-middle"></div>
+            </div>
+          </div>
+        </div>
       </div>
       <div className="anime relative flex  flex-col gap-[1em] pt-[1em] md:flex-row md:gap-[2em] md:pt-[1.5em]">
         <p className="text-justify leading-[1.4] text-colorSecondaryDark md:w-[70%]">
@@ -80,8 +58,42 @@ export function AboutWrapper({}) {
           }}
           className="mask h-full items-center justify-center rounded-full bg-colorDark p-3  md:relative  md:ml-auto    md:min-h-full md:w-[22%]"
         >
-          <p className="shapka text-colorLight">
-            Learn More<span className="yellow__it">.</span>
+          <p className="shapka !flex text-colorLight">
+            Learn More
+            <svg
+              className="ml-3 w-[0.7em] -rotate-90 text-colorLight " // width="34px"
+              // height="34px"
+              viewBox="0 0 14 14"
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg" // xmlns:xlink="http://www.w3.org/1999/xlink"
+            >
+              <title>arrow-up-right</title>
+              <g
+                id="Page-1"
+                stroke="none"
+                strokeWidth="1"
+                fill="none"
+                fillRule="evenodd"
+              >
+                <g
+                  id="Artboard"
+                  transform="translate(-1019.000000, -279.000000)"
+                  stroke="currentColor"
+                  strokeWidth="1.5"
+                >
+                  <g
+                    id="arrow-up-right"
+                    transform="translate(1026.000000, 286.000000) rotate(90.000000) translate(-1026.000000, -286.000000) translate(1020.000000, 280.000000)"
+                  >
+                    <polyline
+                      id="Path"
+                      points="2.76923077 0 12 0 12 9.23076923"
+                    ></polyline>
+                    <line x1="12" y1="0" x2="0" y2="12" id="Path"></line>
+                  </g>
+                </g>
+              </g>
+            </svg>
           </p>
         </Magentic>
       </div>
