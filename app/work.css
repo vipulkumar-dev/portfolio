@@ -125,31 +125,6 @@ ul {
   text-decoration: none;
 }
 
-.image--works1 {
-  background: url(/img/projects/1.png) no-repeat center;
-  background-size: contain;
-}
-
-.image--works2 {
-  background: url(/img/projects/2.png) no-repeat center;
-  background-size: contain;
-}
-
-.image--works3 {
-  background: url(/img/projects/3.png) no-repeat center;
-  background-size: contain;
-}
-
-.image--works4 {
-  background: url(/img/projects/4.png) no-repeat center;
-  background-size: contain;
-}
-
-.image--works5 {
-  background: url(/img/projects/5.png) no-repeat center;
-  background-size: contain;
-}
-
 .image {
   display: block;
   position: relative;

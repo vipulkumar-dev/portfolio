@@ -18,6 +18,7 @@ export default function WorkPage() {
       ),
       description: "page",
       link: "abc",
+      imageLink: "/img/projects/1.png",
     },
     {
       title: (
@@ -27,6 +28,7 @@ export default function WorkPage() {
       ),
       description: "page",
       link: "sc",
+      imageLink: "/img/projects/2.png",
     },
     {
       title: (
@@ -36,6 +38,7 @@ export default function WorkPage() {
       ),
       description: "page",
       link: "sds",
+      imageLink: "/img/projects/3.png",
     },
     {
       title: (
@@ -45,6 +48,7 @@ export default function WorkPage() {
       ),
       description: "page",
       link: "fsre",
+      imageLink: "/img/projects/4.png",
     },
     {
       title: (
@@ -54,6 +58,7 @@ export default function WorkPage() {
       ),
       description: "page",
       link: "3r3",
+      imageLink: "/img/projects/5.png",
     },
   ];
 
@@ -78,6 +83,9 @@ export default function WorkPage() {
                       index + 1
                     } anime`}
                     href={item.link}
+                    style={{
+                      background: `url(${item.imageLink}) center center / contain no-repeat`,
+                    }}
                   >
                     <div className="image__over">
                       <div className="image__cover">1</div>

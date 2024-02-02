@@ -804,7 +804,7 @@ textPath {
   width: 100%;
   justify-content: center;
   align-items: center;
-  padding: 1.5rem;
+  padding: 1.5%;
   /* border-left: 1px dashed var(--colorSecondaryDark); */
   /* opacity: 0.7;
   filter: invert(0.9); */
