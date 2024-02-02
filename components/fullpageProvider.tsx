@@ -225,7 +225,7 @@ const FullpageProvider = ({ children }: { children: React.ReactNode }) => {
       // scaleY: 1.5,
       paused: true,
       delay: 1.3,
-      stagger: 0.04,
+      stagger: 0.03,
       ease: CustomEase.create("custom", "M0,0,C0.5,0,0,1,1,1"),
     });
 

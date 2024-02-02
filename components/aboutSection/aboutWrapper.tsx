@@ -5,7 +5,7 @@ import { AboutMarquee } from "./aboutMarquee";
 export function AboutWrapper({}) {
   return (
     <main className="flex h-full w-full max-w-maxWidth grow flex-col  justify-center text-[clamp(16px,_1vw_+_14px,_24px)]  ">
-      <div className="anime relative  flex items-center justify-between text-[clamp(16px,_4.3vw_+_12px,_88px)]">
+      <div className="anime relative  flex items-center justify-between text-[clamp(16px,_4.3vw_+_11px,_88px)]">
         <h2
           id="my-text"
           className="mask font-semibold leading-tight tracking-tight"
