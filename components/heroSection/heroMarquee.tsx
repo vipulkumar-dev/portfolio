@@ -51,7 +51,7 @@ export function HeroMarquee({}) {
     };
   }, []);
   return (
-    <div className="wrapperRollingText anime  select-none  rounded-3xl tracking-[-0.4em]">
+    <div className="wrapperRollingText anime  select-none  rounded-3xl tracking-[-0.2em] md:tracking-[-0.4em]">
       <div className="rollingText  md:!text-[200px]">
         - Vipul - Kumar - Vipul - Kumar&nbsp;
       </div>

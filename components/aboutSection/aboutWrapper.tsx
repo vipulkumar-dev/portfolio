@@ -32,7 +32,7 @@ export function AboutWrapper({}) {
           </span>
           I'm Vipul 👋, a designer & developer based in India. I craft
           beautiful, modern websites using the latest technologies like Next.js,
-          TypeScript, and Tailwind.
+          TypeScript, and Tailwind or Webflow.
         </p>
         <Magentic
           href=""
@@ -44,6 +44,7 @@ export function AboutWrapper({}) {
               "--colorSecondaryLight": "#404040",
               "--colorSecondaryHalfLight": "#1a1a1a",
               "--colorSecondaryHalfDark": "#f2f2f2",
+              "--colorWhite": "#000",
             });
           }}
           onMouseLeave={() => {
@@ -54,14 +55,15 @@ export function AboutWrapper({}) {
               "--colorSecondaryLight": "#bfbfbf",
               "--colorSecondaryHalfLight": "#f2f2f2",
               "--colorSecondaryHalfDark": "#1a1a1a",
+              "--colorWhite": "#fff",
             });
           }}
-          className="mask h-full items-center justify-center rounded-full bg-colorDark p-3  md:relative  md:ml-auto    md:min-h-full md:w-[22%]"
+          className="mask group h-full items-center justify-center rounded-full bg-colorDark p-3  md:relative  md:ml-auto    md:min-h-full md:w-[22%]"
         >
           <p className="shapka !flex text-colorLight">
             Learn More
             <svg
-              className="ml-3 w-[0.7em] -rotate-90 text-colorLight " // width="34px"
+              className="ml-4 w-[0.7em] -rotate-45 text-colorLight  " // width="34px"
               // height="34px"
               viewBox="0 0 14 14"
               version="1.1"

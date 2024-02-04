@@ -745,7 +745,7 @@ textPath {
   position: relative;
   /* height: 27vh; */
   flex-grow: 1;
-  max-height: 25vh;
+  max-height: 24vh;
   width: 100%;
   margin-inline: auto;
   overflow: hidden;

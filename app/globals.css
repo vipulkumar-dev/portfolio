@@ -14,6 +14,7 @@
     --colorLight: #ffffff;
     --colorSecondaryLight: #bfbfbf;
     --colorSecondaryHalfLight: #f2f2f2;
+    --colorWhite: #fff;
     --paddingX: 6vw;
     --maxWidth: 1690px;
 
@@ -108,7 +109,7 @@
 .lightGradient {
   background: linear-gradient(
     90deg,
-    var(--colorLight) 0%,
+    var(--colorWhite) 0%,
     var(--colorSecondaryHalfLight) 100%
   );
 }
