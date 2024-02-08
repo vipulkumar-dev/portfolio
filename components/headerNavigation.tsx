@@ -24,6 +24,9 @@ export function HeaderNavigation() {
   useEffect(() => {
     headerAnimation.current = gsap
       .timeline()
+      .set("#headerNavigation", {
+        display: "flex",
+      })
       .to("#headerNavigation", {
         duration: 1,
         y: "0%",
@@ -90,7 +93,7 @@ export function HeaderNavigation() {
     <>
       <div
         id="headerNavigation"
-        className="fixed left-0 top-0 z-[6000] flex h-full w-full -translate-y-full items-center justify-center p-paddingX"
+        className="fixed left-0 top-0 z-[6000] hidden h-full w-full -translate-y-full flex-col items-center justify-center p-paddingX"
       >
         <Header
           mode="cross"

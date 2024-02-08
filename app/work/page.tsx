@@ -76,7 +76,7 @@ export default function WorkPage() {
 
           {projectsData.map((item, index) => (
             <div className={`section s${index} `} key={item.link}>
-              <div className="fp-tableCell" style={{ height: 937 }}>
+              <div className="fp-tableCell">
                 <div className="fullpage__slide">
                   <a
                     className={`image image--works image--works${

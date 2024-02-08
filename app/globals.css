@@ -219,7 +219,7 @@
   position: relative;
   /* top: 50%;
   left: 50%; */
-  --size: clamp(16px, 0.3em + 8px, 40px);
+  --size: clamp(16px, 0.3em + 8px, 32px);
   width: 2.5em;
   font-size: var(--size);
   aspect-ratio: 1/1;
