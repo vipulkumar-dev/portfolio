@@ -76,42 +76,40 @@ export default function WorkPage() {
 
           {projectsData.map((item, index) => (
             <div className={`section s${index} `} key={item.link}>
-              <div className="fp-tableCell">
-                <div className="fullpage__slide">
-                  <a
-                    className={`image image--works image--works${
-                      index + 1
-                    } anime`}
-                    href={item.link}
-                    style={{
-                      background: `url(${item.imageLink}) center center / contain no-repeat`,
-                    }}
-                  >
-                    <div className="image__over">
-                      <div className="image__cover">1</div>
-                      <div className="image__cover">2</div>
-                    </div>
-                    <div className="page-num anime">
-                      <p>0{index + 1}</p>
-                    </div>
-                  </a>
-                  <div className="title ml-paddingX">
-                    <h2 className="title__text js-letter anime font-semibold">
-                      {item.title}
-                      <br />
-                    </h2>
-                    <div className="js-letter anime borderv">
-                      <span></span>
-                      <span className="js-letter"></span>
-                    </div>
-                    <p className="title__lead js-letter anime">
-                      {item.description}
-                    </p>
-                    <div className="btn-wrap js-letter anime">
-                      <Magentic strength={50} className="btn" href={item.link}>
-                        <p className="shapka">Show Me</p>
-                      </Magentic>
-                    </div>
+              <div className="fullpage__slide">
+                <a
+                  className={`image image--works image--works${
+                    index + 1
+                  } anime`}
+                  href={item.link}
+                  style={{
+                    background: `url(${item.imageLink}) center center / contain no-repeat`,
+                  }}
+                >
+                  <div className="image__over">
+                    <div className="image__cover">1</div>
+                    <div className="image__cover">2</div>
+                  </div>
+                  <div className="page-num anime">
+                    <p>0{index + 1}</p>
+                  </div>
+                </a>
+                <div className="title ml-paddingX">
+                  <h2 className="title__text js-letter anime font-semibold">
+                    {item.title}
+                    <br />
+                  </h2>
+                  <div className="js-letter anime borderv">
+                    <span></span>
+                    <span className="js-letter"></span>
+                  </div>
+                  <p className="title__lead js-letter anime">
+                    {item.description}
+                  </p>
+                  <div className="btn-wrap js-letter anime">
+                    <Magentic strength={50} className="btn" href={item.link}>
+                      <p className="shapka">Show Me</p>
+                    </Magentic>
                   </div>
                 </div>
               </div>

@@ -89,6 +89,9 @@
   body {
     @apply lightGradient text-foreground;
   }
+  .darkGradient {
+    background: linear-gradient(90deg, #000000 0%, #222121 100%);
+  }
 }
 
 .fontsize-inherit {

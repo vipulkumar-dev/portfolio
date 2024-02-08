@@ -5,12 +5,12 @@ import { AboutMarquee } from "./aboutMarquee";
 export function AboutWrapper({}) {
   return (
     <main className="flex h-full w-full max-w-maxWidth grow flex-col  justify-center text-[clamp(16px,_1vw_+_14px,_24px)]  ">
-      <div className="anime relative  flex items-center justify-between text-[clamp(16px,_4.3vw_+_11px,_88px)]">
+      <div className="anime relative  flex items-center justify-between text-[clamp(16px,_4.3vw_+_11px,_86px)]">
         <h2
           id="my-text"
           className="mask font-semibold leading-tight tracking-tight"
         >
-          Let's Make Something New in This World
+          Let's Create Something New in This World
         </h2>
 
         <div className="digital-ball ml-auto">
@@ -28,11 +28,12 @@ export function AboutWrapper({}) {
       <div className="anime relative flex  flex-col gap-[1em] pt-[1em] md:flex-row md:gap-[2em] md:pt-[1.5em]">
         <p className="text-justify leading-[1.4] text-colorSecondaryDark md:w-[70%]">
           <span className="block pb-[1em] font-semibold leading-tight tracking-tight">
-            Passion for Websites<span className="yellow__it ">.</span>
+            Not Your Typical Freelancer<span className="yellow__it ">.</span>
           </span>
           I'm Vipul 👋, a designer & developer based in India. I craft
           beautiful, modern websites using the latest technologies like Next.js,
-          TypeScript, and Tailwind or Webflow.
+          TypeScript, and Tailwind or Webflow, Next.js, TypeScript, and Tailwind
+          or Webflow.
         </p>
         <Magentic
           href=""

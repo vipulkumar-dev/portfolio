@@ -745,7 +745,7 @@ textPath {
   position: relative;
   /* height: 27vh; */
   flex-grow: 1;
-  max-height: 24vh;
+  max-height: 22vh;
   width: 100%;
   margin-inline: auto;
   overflow: hidden;
@@ -837,6 +837,7 @@ a {
   #one {
     width: 100%;
     flex-grow: 1;
+    max-height: 20vh;
     /* height: 27vh; */
   }
 }

@@ -9,7 +9,7 @@ export function WorkWrapper({}) {
             work
           </h2>
         </div>
-        <a href="work.html" className="work__cto anime">
+        <a href="/work" className="work__cto anime">
           <div className="left">
             <svg
               width="21"
