@@ -16,6 +16,7 @@
     --colorSecondaryHalfLight: #f2f2f2;
     --colorWhite: #fff;
     --paddingX: 6vw;
+    --paddingY: 110px;
     --maxWidth: 1690px;
 
     --card: 0 0% 100%;
@@ -79,6 +80,12 @@
     --border: 217.2 32.6% 17.5%;
     --input: 217.2 32.6% 17.5%;
     --ring: 212.7 26.8% 83.9%;
+  }
+
+  @media only screen and (max-width: 500px) {
+    :root {
+      --paddingY: 85px;
+    }
   }
 }
 

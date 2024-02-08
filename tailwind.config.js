@@ -19,6 +19,7 @@ module.exports = {
     extend: {
       spacing: {
         paddingX: "var(--paddingX)",
+        paddingY: "var(--paddingY)",
         maxWidth: "var(--maxWidth)",
       },
       colors: {
