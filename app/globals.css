@@ -84,7 +84,7 @@
 
   @media only screen and (max-width: 500px) {
     :root {
-      --paddingY: 85px;
+      --paddingY: 80px;
     }
   }
 }

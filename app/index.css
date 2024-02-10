@@ -329,7 +329,7 @@ textPath {
   height: 0.8em;
   width: 0.8em;
   position: absolute;
-  transform: translate(10px, -2em);
+  transform: translate(0px, -2em);
 }
 
 .email_section1 {
@@ -343,6 +343,7 @@ textPath {
   /* transform: translateX(-50%); */
   width: 130px;
   height: 130px;
+
   border-radius: 50%;
 }
 
@@ -350,7 +351,6 @@ textPath {
   width: 65%;
   background-color: var(--colorDark);
   border-radius: 50%;
-  padding: 4px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -361,7 +361,7 @@ textPath {
     /* text-align: center; */
     /* margin-bottom: 21px; */
     position: absolute;
-    left: 10px;
+    left: 0px;
     bottom: 30px;
     /* top: 34.6%; */
   }
@@ -384,6 +384,7 @@ textPath {
   .email_section1 .round {
     transform: translateX(0%);
     background-color: transparent;
+    width: 100px;
   }
 
   .email_section1 .round img {
