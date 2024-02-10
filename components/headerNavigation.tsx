@@ -5,6 +5,7 @@ import { Header } from "./header";
 import { useAppSelector } from "@/hooks/reduxHooks";
 import { Footer } from "./contactSection/footer";
 import Magentic from "./ui/magentic";
+import { isMobile } from "@/lib/utils";
 export function HeaderNavigation() {
   const { isMenuOpen, color } = useAppSelector((state) => state.menuReducer);
   const possibleTailwindClasses = [
@@ -22,6 +23,7 @@ export function HeaderNavigation() {
   const headerAnimation = useRef<gsap.core.Timeline | null>(null);
 
   useEffect(() => {
+    const flexHeight = isMobile() ? "20vh" : "7vh";
     headerAnimation.current = gsap
       .timeline()
       .set("#headerNavigation", {
@@ -35,7 +37,7 @@ export function HeaderNavigation() {
       .fromTo(
         "#headerNavigation .rounded__div__up",
         {
-          height: "20vh",
+          height: flexHeight,
         },
         {
           height: "0vh",

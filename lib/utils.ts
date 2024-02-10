@@ -36,3 +36,7 @@ export const shuffle = (array: any[]) => {
 
   return array;
 };
+
+export const isMobile = () => {
+  return screen.width > 540;
+};
