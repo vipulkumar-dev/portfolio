@@ -10,7 +10,7 @@ export function FooterGroup({
   return (
     <div
       className={cn(
-        "mask flex grow flex-col items-center justify-center pb-6 text-[clamp(20px,_1vw_+_14px,_24px)] text-[#b3b3b3] md:block md:grow-0 md:py-6",
+        "mask flex grow flex-col items-center justify-center pb-6 text-[clamp(20px,_1vw_+_14px,_24px)] text-[#ffffffbf] md:block md:grow-0 md:py-6",
         className,
       )}
     >
@@ -21,14 +21,14 @@ export function FooterGroup({
             {isMagnetic ? (
               <Magentic
                 strength={50}
-                className="relative text-[0.8em] text-[#d9d9d9]"
+                className="relative text-[0.8em] text-[#ffffffd9]"
                 href={link.href}
                 hoverUnderline
               >
                 <p>{link.text}</p>
               </Magentic>
             ) : (
-              <p className="text-[0.8em] text-[#d9d9d9]">{link.text}</p>
+              <p className="text-[0.8em] text-[#ffffffd9]">{link.text}</p>
             )}
           </li>
         ))}
