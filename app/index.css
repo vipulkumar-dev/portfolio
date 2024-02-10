@@ -572,11 +572,6 @@ textPath {
   z-index: -1;
 }
 
-.section__5 img {
-  height: 450px;
-  opacity: 0.5;
-}
-
 .section__5 .footer__links {
   min-height: 52.2px;
   /* min-width: calc(100% - (var(--padding))); */

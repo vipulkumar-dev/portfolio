@@ -204,7 +204,7 @@ ul {
   }
 
   .section .title__text {
-    font-size: 3.8rem;
+    font-size: 2.356rem;
     margin-bottom: 0.8rem;
   }
 
@@ -213,7 +213,7 @@ ul {
   }
 
   .title__lead {
-    font-size: 1.2rem;
+    font-size: 0.744rem;
   }
 
   .btn-wrap {
@@ -222,7 +222,7 @@ ul {
   }
 
   .btn {
-    font-size: 1.2rem;
+    font-size: 0.744rem;
   }
   .image .page-num {
     display: none;

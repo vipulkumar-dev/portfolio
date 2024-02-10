@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    unoptimized: true,
+    // unoptimized: true,
   },
   webpack(config) {
     config.module.rules.push({
