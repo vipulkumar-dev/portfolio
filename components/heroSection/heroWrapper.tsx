@@ -8,7 +8,7 @@ export function HeroWrapper({}) {
       <HeroButton />
       <h2 className="left mask pt-20">
         <div className="free anime">
-          Freelance&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          Website&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         </div>
         <div className="animation__wrapper anime">
           <span className="animate__this animate__this1">
