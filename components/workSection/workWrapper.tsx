@@ -1,3 +1,4 @@
+import { links } from "@/data/data";
 import React from "react";
 export function WorkWrapper({}) {
   return (
@@ -9,7 +10,7 @@ export function WorkWrapper({}) {
             work
           </h2>
         </div>
-        <a href="/work" className="work__cto anime">
+        <a href={links.work} className="work__cto anime">
           <div className="left">
             <svg
               width="21"

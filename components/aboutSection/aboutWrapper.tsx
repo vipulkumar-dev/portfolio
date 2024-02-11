@@ -2,6 +2,7 @@ import React from "react";
 import Magentic from "../ui/magentic";
 import { gsap } from "gsap";
 import { AboutMarquee } from "./aboutMarquee";
+import { links } from "@/data/data";
 export function AboutWrapper({}) {
   return (
     <main className="flex h-full w-full max-w-maxWidth grow flex-col  justify-center text-[clamp(16px,_1vw_+_14px,_24px)]  ">
@@ -36,7 +37,7 @@ export function AboutWrapper({}) {
           or Webflow.
         </p>
         <Magentic
-          href=""
+          href={links.about}
           onMouseEnter={() => {
             gsap.to("body", {
               "--colorLight": "#0e0d0c",

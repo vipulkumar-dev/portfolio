@@ -223,6 +223,7 @@ ul {
 
   .btn {
     font-size: 0.744rem;
+    width: 100%;
   }
   .image .page-num {
     display: none;

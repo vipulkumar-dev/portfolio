@@ -384,7 +384,7 @@ textPath {
   .email_section1 .round {
     transform: translateX(0%);
     background-color: transparent;
-    width: 100px;
+    width: 105px;
   }
 
   .email_section1 .round img {

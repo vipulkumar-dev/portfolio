@@ -6,6 +6,7 @@ import Logo from "@/public/svg/Logo.svg";
 import { useAppDispatch } from "@/hooks/reduxHooks";
 import { toggleMenu } from "@/redux/states/menuSlice";
 import { cn } from "@/lib/utils";
+import { links } from "@/data/data";
 
 gsap.registerPlugin(CustomEase);
 const ease = CustomEase.create("custom", "M0,0 C0.52,0.01 0.16,1 1,1 ");
@@ -51,7 +52,7 @@ export function Header({ color, className, mode = "hamburger" }: HeaderProps) {
       <nav className="nav__bar ">
         <div className="max-w-maxWidth">
           <Magentic
-            href="/"
+            href={links.home}
             strength={50}
             className={`mask nav__item text-xl font-semibold text-color${color} before:bg-color${color}`}
             onMouseEnter={() => {

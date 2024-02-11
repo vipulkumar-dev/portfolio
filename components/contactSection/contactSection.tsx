@@ -5,6 +5,7 @@ import { BgImagesContainer } from "@/components/contactSection/bgImagesContainer
 import { useAppSelector } from "@/hooks/reduxHooks";
 import { Header } from "../header";
 import { Bulge } from "../bulge";
+import { links } from "@/data/data";
 export function ContactSection({}) {
   const { suscribe } = useAppSelector((state) => state.fullpageReducer.fourth);
   const bgImagesSharedRef = useRef<gsap.core.Tween | null>(null);
@@ -15,6 +16,7 @@ export function ContactSection({}) {
       <Header color="Dark"></Header>
 
       <Magentic // href="mailto:email.coex@gmail.com"
+        href={links.contact}
         className="footer__heading anime cursor-pointer"
         onMouseEnter={() => {
           bgImagesSharedRef.current?.restart(true);

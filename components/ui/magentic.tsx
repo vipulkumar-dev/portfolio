@@ -1,7 +1,7 @@
 import React, { memo, use, useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { CustomEase } from "gsap/CustomEase";
-import { cn } from "@/lib/utils";
+import { cn, isDesktop } from "@/lib/utils";
 
 interface MagenticProps extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
   children: React.ReactNode;
@@ -28,10 +28,10 @@ const Magentic = ({
       return;
     }
 
-    const magnetButton = magnet.current;
+    const magnetButton = magnet.current as HTMLAnchorElement;
     const shapka = magnetButton.querySelector(".shapka");
 
-    if (screen.width > 540) {
+    if (isDesktop()) {
       magnetButton.addEventListener("mousemove", handleMagnetMove);
       magnetButton.addEventListener("mouseout", handleMagnetOut);
     }

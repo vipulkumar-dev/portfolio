@@ -41,9 +41,9 @@ export function HeroButton({}) {
             Opportunities
           </p>
         </div>
-        <div className="round flex items-center  justify-end md:justify-center">
+        <div className="round flex items-center  justify-end md:justify-center ">
           <Image
-            className="rotateAnimation inline-block  p-0"
+            className="rotateAnimation inline-block  p-0 md:p-1"
             ref={rotating}
             width={100}
             height={100}

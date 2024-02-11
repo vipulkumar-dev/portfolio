@@ -5,7 +5,9 @@ import { Header } from "./header";
 import { useAppSelector } from "@/hooks/reduxHooks";
 import { Footer } from "./contactSection/footer";
 import Magentic from "./ui/magentic";
-import { isMobile } from "@/lib/utils";
+import { isDesktop } from "@/lib/utils";
+import { link } from "fs";
+import { links } from "@/data/data";
 export function HeaderNavigation() {
   const { isMenuOpen, color } = useAppSelector((state) => state.menuReducer);
   const possibleTailwindClasses = [
@@ -23,7 +25,7 @@ export function HeaderNavigation() {
   const headerAnimation = useRef<gsap.core.Timeline | null>(null);
 
   useEffect(() => {
-    const flexHeight = isMobile() ? "20vh" : "7vh";
+    const flexHeight = isDesktop() ? "20vh" : "7vh";
     headerAnimation.current = gsap
       .timeline()
       .set("#headerNavigation", {
@@ -73,22 +75,22 @@ export function HeaderNavigation() {
     }
   }, [isMenuOpen]);
 
-  const links = [
+  const headerData = [
     {
       name: "Home",
-      href: "/",
+      href: links.home,
     },
     {
       name: "About",
-      href: "/about",
+      href: links.about,
     },
     {
       name: "Work",
-      href: "/work",
+      href: links.work,
     },
     {
       name: "Contact",
-      href: "/contact",
+      href: links.contact,
     },
   ];
   return (
@@ -104,15 +106,15 @@ export function HeaderNavigation() {
         />
         <nav>
           <ul className="mask flex flex-col items-center justify-center px-8 py-[10vh]">
-            {links.map((link) => (
-              <li className="headerAnimate" key={link.name}>
+            {headerData.map((data) => (
+              <li className="headerAnimate" key={data.name}>
                 <Magentic
                   className={`text-[clamp(32px,_3.3vw_+_32px,_88px)] font-semibold text-color${
                     color == "Light" ? "Dark" : "Light"
                   }`}
-                  href={link.href}
+                  href={data.href}
                 >
-                  {link.name}
+                  {data.name}
                 </Magentic>
               </li>
             ))}
