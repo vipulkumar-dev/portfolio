@@ -11,15 +11,14 @@ export function Footer({ className }: { className?: string }) {
       )}
     >
       <FooterGroup
+        className="hidden md:block"
+        title="COPYRIGHT"
+        links={[{ href: "", text: "Copyright © 2024." }]}
+      />
+      <FooterGroup
         title="LOCAL TIME"
         className="hidden md:block"
-        links={[{ href: "", text: "10:13:23 AM" }]}
-      />
-
-      <FooterGroup
-        className="hidden md:block"
-        title="VERSION"
-        links={[{ href: "", text: "v0.1.0 ©2024" }]}
+        links={[{ href: "", text: "7 Feb | 10:13 AM" }]}
       />
 
       <FooterGroup
