@@ -11,7 +11,8 @@ import NodejsIcon from "@/public/svg/nodejsIcon.svg";
 import ReactIcon from "@/public/svg/reactIcon.svg";
 import FigmaIcon from "@/public/svg/figmaIcon.svg";
 import GitIcon from "@/public/svg/gitIcon.svg";
-import AdobeIcon from "@/public/svg/adobeIcon.svg";
+import Framer from "@/public/svg/framer.svg";
+import Webflow from "@/public/svg/webflow.svg";
 
 export function AboutMarquee({}) {
   gsap.registerPlugin(CustomEase);
@@ -91,7 +92,10 @@ export const InnerMarquee = ({ className }: InnerMarqueeProps) => {
         <GitIcon />
       </div>
       <div className="img-wrapper">
-        <AdobeIcon />
+        <Webflow />
+      </div>
+      <div className="img-wrapper">
+        <Framer />
       </div>
     </div>
   );

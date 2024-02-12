@@ -27,14 +27,13 @@ export function AboutWrapper({}) {
         </div>
       </div>
       <div className="anime relative flex  flex-col gap-[1em] pt-[1em] md:flex-row md:gap-[2em] md:pt-[1.5em]">
-        <p className="text-justify leading-[1.4] text-colorSecondaryDark md:w-[70%]">
+        <p className="text-justify leading-[1.4] text-colorSecondaryDark md:w-[69.4%]">
           <span className="block pb-[1em] font-semibold leading-tight tracking-tight">
             Not Your Typical Freelancer<span className="yellow__it ">.</span>
           </span>
-          I'm Vipul 👋, a designer & developer based in India. I craft
-          beautiful, modern websites using the latest technologies like Next.js,
-          TypeScript, and Tailwind or Webflow, Next.js, TypeScript, and Tailwind
-          or Webflow.
+          Hello there!👋 I'm Vipul kumar, a website designer & developer. I
+          craft beautiful and modern websites using the newest technologies—such
+          as Next.js, TypeScript, and Tailwind—or tools like Webflow or Framer.
         </p>
         <Magentic
           href={links.about}
