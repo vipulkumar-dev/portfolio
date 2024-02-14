@@ -111,7 +111,7 @@ export default function WorkPage() {
                       <p className="shapka">
                         Show Me
                         <svg
-                          className="ml-4 inline w-[0.7em] -rotate-[75deg] text-inherit" // width="34px"
+                          className="ml-4 inline w-[0.8em] -rotate-[75deg] text-inherit" // width="34px"
                           // height="34px"
                           viewBox="0 0 14 14"
                           version="1.1"
