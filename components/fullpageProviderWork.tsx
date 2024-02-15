@@ -47,7 +47,7 @@ const FullpageProviderWork = ({ children }: { children: React.ReactNode }) => {
           {
             y: "0vh",
             duration: 1.1,
-            stagger: 0.05,
+            stagger: 0.03,
             ease: CustomEase.create("custom", "M0,0 C0.52,0.01 0.16,1 1,1 "),
           },
         );
@@ -65,7 +65,46 @@ const FullpageProviderWork = ({ children }: { children: React.ReactNode }) => {
           {
             y: "0vh",
             duration: 1.1,
-            stagger: -0.045,
+            stagger: 0.03,
+            ease: CustomEase.create("custom", "M0,0 C0.52,0.01 0.16,1 1,1 "),
+          },
+        );
+    }
+
+    var flex = screen.width > 540 ? 17 : 5;
+    if (direction == "down") {
+      console.log();
+
+      gsap
+        .timeline()
+        .from(`.s${nextIndex.index} .rounded__div__down`, {
+          duration: 0.1,
+        })
+        .fromTo(
+          `.s${nextIndex.index} .rounded__div__down`,
+          {
+            height: `${flex}vh`,
+          },
+          {
+            height: "0vh",
+            duration: 1.2,
+            ease: CustomEase.create("custom", "M0,0 C0.52,0.01 0.16,1 1,1 "),
+          },
+        );
+    } else {
+      gsap
+        .timeline()
+        .from(`.s${nextIndex.index} .rounded__div__up`, {
+          duration: 0.1,
+        })
+        .fromTo(
+          `.s${nextIndex.index} .rounded__div__up`,
+          {
+            height: `${flex}vh`,
+          },
+          {
+            height: "0vh",
+            duration: 1.2,
             ease: CustomEase.create("custom", "M0,0 C0.52,0.01 0.16,1 1,1 "),
           },
         );

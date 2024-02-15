@@ -74,7 +74,7 @@ export function AboutWrapper({}) {
               <g
                 id="Page-1"
                 stroke="none"
-                strokeWidth="1"
+                strokeWidth="2"
                 fill="none"
                 fillRule="evenodd"
               >
@@ -82,7 +82,7 @@ export function AboutWrapper({}) {
                   id="Artboard"
                   transform="translate(-1019.000000, -279.000000)"
                   stroke="currentColor"
-                  strokeWidth="1.5"
+                  strokeWidth="2"
                 >
                   <g
                     id="arrow-up-right"
