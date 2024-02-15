@@ -75,8 +75,10 @@ export default function WorkPage() {
 
           {projectsData.map((item, index) => (
             <WorkSection
+              key={index}
               item={item}
               index={index}
+              length={projectsData.length}
               color={index % 2 !== 0 ? "Light" : "Dark"}
             />
           ))}

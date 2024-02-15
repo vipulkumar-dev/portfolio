@@ -103,6 +103,11 @@
   body::-webkit-scrollbar {
     width: 0;
   }
+
+  *::selection {
+    color: var(--colorDark);
+    background-color: var(--primary-color);
+  }
 }
 
 .fontsize-inherit {

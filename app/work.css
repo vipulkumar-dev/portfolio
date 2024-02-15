@@ -162,11 +162,17 @@ ul {
 .image .page-num {
   position: absolute;
   overflow-y: hidden;
-  right: 5%;
+  right: 4%;
   bottom: 7%;
   font-size: 8rem;
   /* color: #fff; */
   z-index: 200;
+  width: 1.7em;
+  aspect-ratio: 1/1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
 
 .image .page-num p {

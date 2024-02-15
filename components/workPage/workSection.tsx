@@ -2,10 +2,12 @@ import React from "react";
 import Magentic from "@/components/ui/magentic";
 import { Header } from "@/components/header";
 import { Bulge } from "../bulge";
+import { cn } from "@/lib/utils";
 export function WorkSection({
   index,
   item,
   color,
+  length,
 }: {
   index: number;
   item: {
@@ -15,6 +17,7 @@ export function WorkSection({
     imageLink: string;
   };
   color: "Dark" | "Light";
+  length: number;
 }) {
   const possibleTailwindClasses = [
     "text-colorDark",
@@ -24,6 +27,7 @@ export function WorkSection({
     "bg-colorSecondaryDark",
     "bg-colorSecondaryLight",
   ];
+
   return (
     <div
       className={`section s${index} ${
@@ -115,6 +119,21 @@ export function WorkSection({
             </Magentic>
           </div>
         </div>
+      </div>
+
+      <div className="anime absolute bottom-10 flex w-full items-end justify-center gap-6">
+        {Array(length)
+          .fill(0)
+          .map((_, i) => {
+            return (
+              <div
+                className={cn(
+                  `h-4 w-1 bg-colorSecondary${color} rounded-full`,
+                  ` ${i === index ? `h-10 bg-color${color}` : ""}`,
+                )}
+              ></div>
+            );
+          })}
       </div>
     </div>
   );

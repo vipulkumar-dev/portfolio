@@ -65,7 +65,7 @@ const FullpageProviderWork = ({ children }: { children: React.ReactNode }) => {
           {
             y: "0vh",
             duration: 1.1,
-            stagger: 0.03,
+            stagger: -0.03,
             ease: CustomEase.create("custom", "M0,0 C0.52,0.01 0.16,1 1,1 "),
           },
         );
