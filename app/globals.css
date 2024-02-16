@@ -95,9 +95,14 @@
   }
   body {
     @apply lightGradient text-foreground;
+    font-family: "DM Sans", sans-serif;
   }
   .darkGradient {
     background: linear-gradient(90deg, #000000 0%, #222121 100%);
+  }
+
+  .fontsize-inherit {
+    font-size: inherit;
   }
 
   body::-webkit-scrollbar {
@@ -106,12 +111,8 @@
 
   *::selection {
     color: var(--colorDark);
-    background-color: var(--primary-color);
+    background-color: var(--colorPrimary);
   }
-}
-
-.fontsize-inherit {
-  font-size: inherit !important;
 }
 
 .mask {
