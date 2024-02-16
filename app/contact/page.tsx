@@ -1,38 +1,83 @@
+"use client";
+
+import { zodResolver } from "@hookform/resolvers/zod";
+import { useForm } from "react-hook-form";
+import { z } from "zod";
+
+import { Button } from "@/components/ui/button";
+import {
+  Form,
+  FormControl,
+  FormDescription,
+  FormField,
+  FormItem,
+  FormLabel,
+  FormMessage,
+} from "@/components/ui/form";
+import { Input } from "@/components/ui/input";
 import { Resend } from "resend";
-export default function Page() {
-  async function create(formData: FormData) {
-    "use server";
+import { sendEmail } from "@/actions/sendEmail";
 
-    const resend = new Resend("re_Y6dR2iax_BZ7NicNCUAEYtXjaCuMAz6rr");
+export const formSchema = z.object({
+  name: z.string().min(2, {
+    message: "Username must be at least 2 characters.",
+  }),
+  email: z
+    .string()
+    .min(1, { message: "This field has to be filled." })
+    .email("This is not a valid email."),
 
-    // await fetch("https://api.resend.com/emails", {
-    //   method: "POST",
-    //   headers: {
-    //     "Content-Type": "application/json",
-    //     Authorization: `Bearer ${"re_Y6dR2iax_BZ7NicNCUAEYtXjaCuMAz6rr"}`,
-    //   },
-    //   body: JSON.stringify({
-    //     from: "vipulkumar13579@gmail.com",
-    //     to: "email.coex@gmail.com",
-    //     subject: formData.get("subject"),
-    //     text: "This works!",
-    //   }),
-    // });
+  message: z.string().min(1, { message: "This field has to be filled." }),
+});
 
-    await resend.emails.send({
-      from: `${formData.get("name")} <onboarding@resend.dev>`,
-      to: ["email.coex@gmail.com"],
-      subject: formData.get("subject"),
-      text: formData.get("text"),
-    });
-    console.log(formData.get("subject"));
-  }
+export default function ProfileForm() {
+  // ...
+
+  const form = useForm<z.infer<typeof formSchema>>({
+    resolver: zodResolver(formSchema),
+    defaultValues: {
+      name: "",
+      email: "",
+      message: "",
+    },
+  });
+
+  const onMyFormSubmit = async (data: z.infer<typeof formSchema>) => {
+    await sendEmail(data);
+  };
+
   return (
-    <form action={create}>
-      <input type="text" name="name" />
-      <input type="text" name="subject" />
-      <input type="text" name="text" />
-      <button type="submit">Submit</button>
-    </form>
+    <Form {...form}>
+      <form onSubmit={form.handleSubmit(onMyFormSubmit)} className="space-y-8">
+        <FormField
+          control={form.control}
+          name="name"
+          render={({ field }) => (
+            <FormItem>
+              <FormLabel>name</FormLabel>
+              <FormControl>
+                <Input placeholder="shadcn" {...field} />
+              </FormControl>
+
+              <FormMessage />
+            </FormItem>
+          )}
+        />
+        <FormField
+          control={form.control}
+          name="email"
+          render={({ field }) => (
+            <FormItem>
+              <FormLabel>Email</FormLabel>
+              <FormControl>
+                <Input placeholder="shadcn" {...field} />
+              </FormControl>
+              <FormMessage />
+            </FormItem>
+          )}
+        />
+        <Button type="submit">Submit</Button>
+      </form>
+    </Form>
   );
 }
