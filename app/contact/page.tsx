@@ -22,7 +22,7 @@ import { Header } from "@/components/header";
 import { HeaderNavigation } from "@/components/headerNavigation";
 import { Footer } from "@/components/contactSection/footer";
 
-export const formSchema = z.object({
+const formSchema = z.object({
   name: z.string().min(1, {
     message: "This field has to be filled.",
   }),
@@ -34,10 +34,12 @@ export const formSchema = z.object({
   message: z.string().min(1, { message: "This field has to be filled." }),
 });
 
+export type TFormSchema = z.infer<typeof formSchema>;
+
 export default function ProfileForm() {
   // ...
 
-  const form = useForm<z.infer<typeof formSchema>>({
+  const form = useForm<TFormSchema>({
     resolver: zodResolver(formSchema),
     defaultValues: {
       name: "",
