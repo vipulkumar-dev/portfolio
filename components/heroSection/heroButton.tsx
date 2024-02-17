@@ -32,13 +32,14 @@ export function HeroButton({}) {
       className="email_section1 anime isolate  rounded-full !text-[clamp(16px,_1vw_+_14px,_24px)] md:bg-[#272727]"
       onMouseEnter={() => rotateImageRef.current?.play()}
       onMouseLeave={() => rotateImageRef.current?.pause()}
+      href="#third"
     >
       <div className="shapka !flex items-center justify-center gap-24">
         <div className="round hidden items-center justify-center md:flex">
-          <p className="absolute left-1/2 text-[20px]">
-            Looking For
+          <p className="absolute left-1/2 whitespace-nowrap text-[22px]">
+            Check out
             <br />
-            Opportunities
+            Latest Work
           </p>
         </div>
         <div className="round flex items-center  justify-end md:justify-center ">
