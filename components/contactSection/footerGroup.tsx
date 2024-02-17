@@ -15,7 +15,7 @@ export function FooterGroup({
       )}
     >
       <h3 className="text-[0.6em]">{title}</h3>
-      <ul className=" mt-[0.1em] flex  justify-between gap-5 md:justify-normal  ">
+      <ul className=" mt-[0.6em] flex w-full justify-between gap-5  md:mt-[0.1em] md:w-auto md:justify-normal  ">
         {links.map((link, index) => (
           <li key={index} className="">
             {isMagnetic ? (

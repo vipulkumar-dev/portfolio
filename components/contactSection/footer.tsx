@@ -45,10 +45,10 @@ export function Footer({ className }: { className?: string }) {
         className="md:ml-auto"
         isMagnetic={true}
         links={[
-          { href: links.resume, text: "Resume" },
-          { href: links.github, text: "Github" },
           { href: links.twitter, text: "Twitter" },
           { href: links.linkedin, text: "LinkedIn" },
+          { href: links.resume, text: "Resume" },
+          { href: links.github, text: "Github" },
         ]}
       />
     </footer>

@@ -16,5 +16,5 @@ export async function sendEmail(values: TFormSchema) {
     return console.error({ error });
   }
 
-  console.log({ data });
+  return data !== null;
 }
