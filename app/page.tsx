@@ -4,7 +4,6 @@ import { Cursor } from "@/components/cursor";
 import FullpageProvider from "@/components/fullpageProvider";
 import { HeaderNavigation } from "@/components/headerNavigation";
 
-import "./header.css";
 import "./index.css";
 
 export default function HomePage({}) {

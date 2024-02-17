@@ -7,6 +7,7 @@ import { useAppDispatch } from "@/hooks/reduxHooks";
 import { toggleMenu } from "@/redux/states/menuSlice";
 import { cn } from "@/lib/utils";
 import { links } from "@/data/data";
+import "@/app/header.css";
 
 gsap.registerPlugin(CustomEase);
 const ease = CustomEase.create("custom", "M0,0 C0.52,0.01 0.16,1 1,1 ");

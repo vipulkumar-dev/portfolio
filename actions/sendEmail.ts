@@ -9,8 +9,8 @@ export async function sendEmail(values: z.infer<typeof formSchema>) {
   const { data, error } = await resend.emails.send({
     from: `${values.name} <onboarding@resend.dev>`,
     to: ["email.coex@gmail.com"],
-    subject: " values.get",
-    text: values.email,
+    subject: "Customer Email",
+    text: `Email = ${values.email} \n\nMessage = ${values.message}`,
   });
   if (error) {
     return console.error({ error });
