@@ -13,7 +13,7 @@ export async function sendEmail(values: TFormSchema) {
     text: `Email = ${values.email} \n\nMessage = ${values.message}`,
   });
   if (error) {
-    return console.error({ error });
+    return false;
   }
 
   return data !== null;
