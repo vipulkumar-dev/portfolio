@@ -37,8 +37,6 @@ const formSchema = z.object({
 export type TFormSchema = z.infer<typeof formSchema>;
 
 export default function ProfileForm() {
-  // ...
-
   const form = useForm<TFormSchema>({
     resolver: zodResolver(formSchema),
     defaultValues: {
