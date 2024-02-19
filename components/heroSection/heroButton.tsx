@@ -36,7 +36,7 @@ export function HeroButton({}) {
     >
       <div className="shapka !flex items-center justify-center gap-24">
         <div className="round hidden items-center justify-center md:flex">
-          <p className="absolute left-1/2 whitespace-nowrap text-[22px]">
+          <p className="absolute left-1/2 whitespace-nowrap text-[21px]">
             Check out
             <br />
             Latest Work
