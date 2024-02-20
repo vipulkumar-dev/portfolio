@@ -3,37 +3,17 @@ import Magentic from "../ui/magentic";
 import { gsap } from "gsap";
 import { AboutMarquee } from "./aboutMarquee";
 import { links } from "@/data/data";
+import TestimonialCard from "./testimonialCard";
 export function AboutWrapper({}) {
   return (
-    <main className="flex h-full w-full max-w-maxWidth grow flex-col  justify-center text-[clamp(16px,_1vw_+_14px,_24px)]  ">
-      <div className="anime relative  flex items-center justify-between text-[7.2vw] md:text-[clamp(16px,_4.3vw_+_8px,_86px)]">
-        <h2
-          id="my-text"
-          className="mask font-semibold leading-tight tracking-tight"
-        >
-          Let's Create Something New in This World
-        </h2>
+    <main className="flex h-full w-full max-w-maxWidth grow flex-col justify-center   text-[clamp(16px,_2vw_+_14px,_32px)]  ">
+      <div className="anime mb-auto h-[2px] w-full self-start rounded-full bg-colorSecondaryLight opacity-30"></div>
 
-        <div className="digital-ball ml-auto">
-          <div className="globe">
-            <div className="globe-wrap">
-              <div className="circle"></div>
-              <div className="circle"></div>
-              <div className="circle"></div>
-              <div className="circle-hor"></div>
-              <div className="circle-hor-middle"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="anime relative flex  flex-col gap-[1em] pt-[1em] md:flex-row md:gap-[2em] md:pt-[1.5em]">
-        <p className="text-justify leading-[1.4] text-colorSecondaryDark md:w-[69.4%]">
-          <span className="block pb-[1em] font-semibold leading-tight tracking-tight">
-            Not Your Typical Freelancer<span className="yellow__it ">.</span>
-          </span>
-          Hello there!👋 I'm Vipul kumar, a website designer & developer. I
-          craft beautiful and modern websites using the newest technologies—such
-          as Next.js, TypeScript, and Tailwind—or tools like Webflow or Framer.
+      <div className="anime relative flex flex-col  gap-[1em] pt-[1em]  md:flex-row-reverse md:gap-[2em] md:pt-[1.5em]">
+        <p className="text-justify leading-[1.3] text-colorSecondaryDark md:w-[69.4%]">
+          Over the years, we’ve been privileged to work with a diverse client
+          range, all of whom have found value and success through our services.
+          Here’s what our partners have to say about us.
         </p>
         <Magentic
           href={links.about}
@@ -59,9 +39,9 @@ export function AboutWrapper({}) {
               "--colorWhite": "#fff",
             });
           }}
-          className="mask group h-full items-center justify-center rounded-full bg-colorDark p-3  md:relative  md:ml-auto    md:min-h-full md:w-[22%]"
+          className="mask group h-full items-center justify-center rounded-full bg-colorDark p-3  md:relative  md:mr-auto   md:min-h-full md:w-[22%]"
         >
-          <p className="shapka !flex text-colorLight">
+          <p className="shapka !flex text-[0.7em] text-colorLight">
             Learn More
             <svg
               className="ml-4 w-[0.7em] -rotate-45 text-colorLight  " // width="34px"
@@ -100,7 +80,17 @@ export function AboutWrapper({}) {
           </p>
         </Magentic>
       </div>
-      <AboutMarquee />
+      {/* <AboutMarquee></AboutMarquee> */}
+      <div className="anime mb-auto  flex gap-[1.5em] ">
+        <TestimonialCard
+          clientName="Client Name"
+          testimonial="Over the years, we've been privileged to work with a diverse client range, all of whom have found value and success through our services."
+        />
+        <TestimonialCard
+          clientName="Client Name"
+          testimonial="Over the years, we've been privileged to work with a diverse client range, all of whom have found value and success through our services."
+        />
+      </div>
     </main>
   );
 }
