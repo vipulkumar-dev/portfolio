@@ -115,6 +115,20 @@
   }
 }
 
+/* custom border remove on small height */
+@media screen and (max-height: 645px) {
+  .customBorder {
+    display: none;
+  }
+}
+
+@media screen and (min-height: 745px) {
+  .testimonialHeader {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
