@@ -4,13 +4,29 @@ import { gsap } from "gsap";
 import { AboutMarquee } from "./aboutMarquee";
 import { links } from "@/data/data";
 import TestimonialCard from "./testimonialCard";
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import { isDesktop } from "@/lib/utils";
+
 export function AboutWrapper({}) {
+  let sliderDistance;
+  let perPageSlide;
+  if (isDesktop()) {
+    sliderDistance = 50;
+    perPageSlide = 1.7;
+  } else {
+    sliderDistance = 20;
+    perPageSlide = 1.05;
+  }
+
   return (
     <main className="flex h-full w-full max-w-maxWidth grow flex-col justify-center   text-[clamp(18px,_1vw_+_14px,_32px)]  ">
-      <div className="customBorder anime mb-auto h-[2px] w-full self-start rounded-full bg-colorSecondaryLight opacity-30"></div>
+      <div className="customBorder anime mb-[1em] h-[2px] w-full self-start rounded-full bg-colorSecondaryLight opacity-30"></div>
 
-      <div className=" relative flex flex-col  gap-[1em]   md:flex-row-reverse md:gap-[2em] ">
-        <p className="anime text-justify leading-[1.3] text-colorSecondaryDark md:w-[69.4%]">
+      <div className="anime relative flex flex-col  gap-[1em]   md:flex-row-reverse md:gap-[2em] ">
+        <p className=" text-justify leading-[1.3] text-colorSecondaryDark md:w-[69.4%]">
           Over the years, we’ve been privileged to work with a diverse client
           range, all of whom have found value and success through our services.
           Here’s what our partners have to say about.
@@ -39,10 +55,10 @@ export function AboutWrapper({}) {
               "--colorWhite": "#fff",
             });
           }}
-          className="mask anime group h-full items-center justify-center rounded-2xl bg-colorDark p-3 md:relative  md:mr-auto  md:min-h-full   md:w-[22%] md:rounded-full"
+          className="mask  group h-full items-center justify-center rounded-2xl bg-colorDark p-3 md:relative  md:mr-auto  md:min-h-full   md:w-[22%] md:rounded-full"
         >
           <p className="shapka !flex text-[0.8em] text-colorLight md:text-[0.7em]">
-            Learn More
+            About
             <svg
               className="ml-4 w-[0.7em] -rotate-45 text-colorLight  " // width="34px"
               // height="34px"
@@ -81,16 +97,26 @@ export function AboutWrapper({}) {
         </Magentic>
       </div>
       {/* <AboutMarquee></AboutMarquee> */}
-      <div className="anime mb-auto  flex gap-paddingX md:gap-[1.5em] ">
-        <TestimonialCard
-          clientName="Client Name"
-          testimonial="Over the years, we've been privileged to work with a diverse client range, all of whom have found value and success through our services."
-        />
-        <TestimonialCard
-          clientName="Client Name"
-          testimonial="Over the years, we've been privileged to work with a diverse client range, all of whom have found value and success through our services."
-        />
-      </div>
+      <Swiper
+        spaceBetween={sliderDistance}
+        slidesPerView={perPageSlide}
+        onSlideChange={() => console.log("slide change")}
+        onSwiper={(swiper) => console.log(swiper)}
+        className="anime sliderMask slider left-1/2 mt-[1.5em] !w-screen -translate-x-1/2  gap-paddingX  !overflow-visible  !px-paddingX  md:mb-0 md:gap-[1.5em]"
+      >
+        <SwiperSlide>
+          <TestimonialCard
+            clientName="Client Name"
+            testimonial="Over the years, we've been privileged to work with a diverse client range, all of whom have found value and success through our services."
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <TestimonialCard
+            clientName="Client Name"
+            testimonial="Over the years, we've been privileged to work with a diverse client range, all of whom have found value and success through our services."
+          />
+        </SwiperSlide>
+      </Swiper>
     </main>
   );
 }

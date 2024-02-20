@@ -29,6 +29,7 @@
     "react-redux": "^9.0.4",
     "resend": "^3.2.0",
     "split-type": "^0.3.4",
+    "swiper": "^11.0.6",
     "tailwind-merge": "^2.2.0",
     "tailwindcss-animate": "^1.0.7",
     "zod": "^3.22.4"
