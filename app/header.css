@@ -34,12 +34,6 @@
   justify-content: space-between;
 }
 
-.nav__container .nav__bar > div .nav__item svg {
-  /* width: 22px;
-  height: 22px;
-  color: var(--colorLight); */
-}
-
 @media screen and (max-width: 500px) {
   .nav__container .nav__bar > div {
     padding-top: 25px;
