@@ -1,6 +1,6 @@
 import React, { memo, use, useEffect, useRef } from "react";
 import { gsap } from "gsap";
-import { CustomEase } from "gsap/CustomEase";
+
 import { cn, isDesktop } from "@/lib/utils";
 
 interface MagenticProps extends React.AnchorHTMLAttributes<HTMLAnchorElement> {

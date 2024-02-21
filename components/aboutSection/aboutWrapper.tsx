@@ -11,16 +11,6 @@ import "swiper/css";
 import { isDesktop } from "@/lib/utils";
 
 export function AboutWrapper({}) {
-  let sliderDistance;
-  let perPageSlide;
-  if (isDesktop()) {
-    sliderDistance = 50;
-    perPageSlide = 1.7;
-  } else {
-    sliderDistance = 20;
-    perPageSlide = 1.05;
-  }
-
   return (
     <main className="flex h-full w-full max-w-maxWidth grow flex-col justify-center   text-[clamp(18px,_1vw_+_14px,_32px)]  ">
       <div className="customBorder anime mb-[1em] h-[2px] w-full self-start rounded-full bg-colorSecondaryLight opacity-30"></div>
@@ -98,8 +88,14 @@ export function AboutWrapper({}) {
       </div>
       {/* <AboutMarquee></AboutMarquee> */}
       <Swiper
-        spaceBetween={sliderDistance}
-        slidesPerView={perPageSlide}
+        spaceBetween={20}
+        slidesPerView={1.05}
+        breakpoints={{
+          1024: {
+            slidesPerView: 1.7,
+            spaceBetween: 50,
+          },
+        }}
         onSlideChange={() => console.log("slide change")}
         onSwiper={(swiper) => console.log(swiper)}
         className="anime sliderMask slider left-1/2 mt-[1.5em] !w-screen -translate-x-1/2  gap-paddingX  !overflow-visible  !px-paddingX  md:mb-0 md:gap-[1.5em]"

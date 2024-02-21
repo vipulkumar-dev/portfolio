@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { gsap } from "gsap";
-import { CustomEase } from "gsap/CustomEase";
+
 export function HeroMarquee({}) {
   useEffect(() => {
     function roll(

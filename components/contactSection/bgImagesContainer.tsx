@@ -86,6 +86,7 @@ export const BgImagesContainer = ({
   const bgImagesTween = useRef<gsap.core.Tween | null>(null);
   const GAP = 10;
   useEffect(() => {
+    gsap.registerPlugin(CustomEase);
     bgImagesTween.current = gsap.fromTo(
       ".bgImages",
       {
