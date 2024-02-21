@@ -15,7 +15,6 @@ import Framer from "@/public/svg/framer.svg";
 import Webflow from "@/public/svg/webflow.svg";
 
 export function AboutMarquee({}) {
-  gsap.registerPlugin(CustomEase);
   useEffect(() => {
     gsap.fromTo(
       `.rollingText2`,

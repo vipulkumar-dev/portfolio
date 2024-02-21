@@ -56,7 +56,7 @@ const FullpageProvider = ({ children }: { children: React.ReactNode }) => {
     if (destination.anchor == "second") {
       if (direction == "down") {
         // anim__section2__down.restart();
-        textAnim__section2__down.current?.restart();
+        textAnim__section2__down.current?.restart(true);
       } else {
         // textAnim__section2__up.restart();
         // anim__section2__up.restart();
@@ -155,7 +155,6 @@ const FullpageProvider = ({ children }: { children: React.ReactNode }) => {
   };
 
   useEffect(() => {
-    gsap.registerPlugin(CustomEase);
     const ease = CustomEase.create("custom", "M0,0 C0.52,0.01 0.16,1 1,1 ");
     about.current = gsap
       .timeline({ defaults: { ease: "none" }, repeat: -1 })
@@ -216,18 +215,26 @@ const FullpageProvider = ({ children }: { children: React.ReactNode }) => {
         "-=0.9",
       );
 
-    const myText = new SplitType("#my-text", { types: "lines,chars" });
-
-    textAnim__section2__down.current = gsap.from("#my-text .char", 1.4, {
-      y: "200%",
-      opacity: 0,
-      skewX: -10,
-      // scaleY: 1.5,
-      paused: true,
-      delay: 1.3,
-      stagger: 0.03,
-      ease: CustomEase.create("custom", "M0,0,C0.5,0,0,1,1,1"),
+    const myText = new SplitType("#my-text", { types: "lines" });
+    const myText2 = new SplitType("#my-text .line", {
+      types: "lines",
+      lineClass: "innnerLine",
     });
+
+    textAnim__section2__down.current = gsap.from(
+      "#my-text .line .innnerLine",
+      1.5,
+      {
+        y: "200%",
+        opacity: 0,
+        skewX: -10,
+        // scaleY: 1.5,
+        paused: true,
+        delay: 0.25,
+        stagger: 0.12,
+        ease: CustomEase.create("custom", "M0,0,C0.5,0,0,1,1,1"),
+      },
+    );
 
     videoElement.current = document.querySelector("#video") as HTMLVideoElement;
 

@@ -17,7 +17,6 @@ export function HeaderNavigation() {
     "darkGradient",
   ];
 
-  gsap.registerPlugin(CustomEase);
   const ease = CustomEase.create("custom", "M0,0 C0.52,0.01 0.16,1 1,1 ");
 
   const headerAnimation = useRef<gsap.core.Timeline | null>(null);

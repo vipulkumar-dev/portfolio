@@ -29,7 +29,6 @@ const opts = {
 };
 
 const FullpageProviderWork = ({ children }: { children: React.ReactNode }) => {
-  gsap.registerPlugin(CustomEase);
   const onLeave = function (index: any, nextIndex: any, direction: any) {
     console.log(nextIndex.index);
 

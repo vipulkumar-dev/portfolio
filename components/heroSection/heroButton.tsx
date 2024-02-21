@@ -9,7 +9,6 @@ export function HeroButton({}) {
   const rotating = useRef(null);
 
   useEffect(() => {
-    gsap.registerPlugin(CustomEase);
     const ease = CustomEase.create("custom", "M0,0 C0.52,0.01 0.16,1 1,1 ");
     rotateImageRef.current = gsap
       .timeline({ defaults: { ease: "none" }, repeat: -1, paused: true })
