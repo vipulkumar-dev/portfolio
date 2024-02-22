@@ -106,7 +106,7 @@ export function HeaderNavigation() {
             {headerData.map((data) => (
               <li className="headerAnimate" key={data.name}>
                 <Magentic
-                  className={`text-[clamp(32px,_3.3vw_+_32px,_88px)] font-semibold text-color${
+                  className={`text-[clamp(32px,_3.3vw_+_32px,_88px)] font-bold text-color${
                     color == "Light" ? "Dark" : "Light"
                   }`}
                   href={data.href}

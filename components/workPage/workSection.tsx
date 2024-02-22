@@ -62,7 +62,7 @@ export function WorkSection({
           </div>
         </a>
         <div className="title ml-paddingX">
-          <h2 className="title__text js-letter anime mask font-semibold tracking-tight">
+          <h2 className="title__text js-letter anime mask font-bold tracking-tight">
             {item.title}
             <br />
           </h2>

@@ -252,7 +252,6 @@ textPath {
 /* ad/ */
 .section__1 .left {
   font-size: var(--fontSmall);
-  font-weight: lighter;
   position: absolute;
   left: 0;
   bottom: 50%;
@@ -313,7 +312,6 @@ textPath {
 
 @media only screen and (max-width: 768px) {
   .section__1 .left {
-    font-weight: lighter;
     /* letter-spacing: -1.68px; */
     /* line-height: 1.2em; */
     /* text-align: center; */

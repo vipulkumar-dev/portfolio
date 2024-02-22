@@ -13,8 +13,6 @@ import { isDesktop } from "@/lib/utils";
 export function AboutWrapper({}) {
   return (
     <main className="flex h-full w-full max-w-maxWidth grow flex-col justify-center   text-[clamp(18px,_1vw_+_14px,_32px)]  ">
-      <div className="customBorder anime mb-[1.5em] h-[2px] w-full self-start rounded-full bg-colorSecondaryLight opacity-30"></div>
-
       <div className="anime relative flex flex-col  gap-[1em]   md:flex-row-reverse md:gap-[2em] ">
         <p
           id="my-text"
@@ -50,8 +48,8 @@ export function AboutWrapper({}) {
           }}
           className="mask  group h-full items-center justify-center rounded-2xl bg-colorDark p-3 md:relative  md:mr-auto  md:min-h-full   md:w-[22%] md:rounded-full"
         >
-          <p className="shapka !flex text-[0.8em] text-colorLight md:text-[0.7em]">
-            About
+          <p className="shapka !flex text-[0.8em] font-bold text-colorLight md:text-[0.7em]">
+            Learn More
             <svg
               className="ml-4 w-[0.7em] -rotate-45 text-colorLight  " // width="34px"
               // height="34px"
@@ -63,7 +61,7 @@ export function AboutWrapper({}) {
               <g
                 id="Page-1"
                 stroke="none"
-                strokeWidth="2"
+                strokeWidth="2.5"
                 fill="none"
                 fillRule="evenodd"
               >
@@ -71,7 +69,7 @@ export function AboutWrapper({}) {
                   id="Artboard"
                   transform="translate(-1019.000000, -279.000000)"
                   stroke="currentColor"
-                  strokeWidth="2"
+                  strokeWidth="2.5"
                 >
                   <g
                     id="arrow-up-right"
@@ -90,6 +88,8 @@ export function AboutWrapper({}) {
         </Magentic>
       </div>
       {/* <AboutMarquee></AboutMarquee> */}
+      <div className="customBorder anime my-[1.5em] h-[2px] w-full self-start rounded-full bg-colorSecondaryLight opacity-30"></div>
+
       <Swiper
         spaceBetween={20}
         slidesPerView={1.05}
@@ -101,7 +101,7 @@ export function AboutWrapper({}) {
         }}
         onSlideChange={() => console.log("slide change")}
         onSwiper={(swiper) => console.log(swiper)}
-        className="anime sliderMask slider left-1/2 mt-[1.5em] !w-screen -translate-x-1/2  gap-paddingX  !overflow-visible  !px-paddingX  md:mb-[1em] md:gap-[1.5em]"
+        className="anime sliderMask slider left-1/2  !w-screen -translate-x-1/2  gap-paddingX  !overflow-visible  !px-paddingX  md:mb-[1em] md:gap-[1.5em]"
       >
         <SwiperSlide>
           <TestimonialCard

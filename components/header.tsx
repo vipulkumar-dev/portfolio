@@ -54,7 +54,7 @@ export function Header({ color, className, mode = "hamburger" }: HeaderProps) {
           <Magentic
             href={links.home}
             strength={50}
-            className={`mask nav__item text-xl font-semibold text-color${color} before:bg-color${color}`}
+            className={`mask nav__item text-xl font-bold text-color${color} before:bg-color${color}`}
             onMouseEnter={() => {
               console.log("hello");
               logoAnimationTl.current?.play();
@@ -63,7 +63,7 @@ export function Header({ color, className, mode = "hamburger" }: HeaderProps) {
               logoAnimationTl.current?.reverse();
             }}
           >
-            <p className="logo__anim grid grid-flow-col items-center  ">
+            <p className="logo__anim grid  grid-flow-col items-center font-semibold   ">
               Vipul
               <span className="logo__rotate inline-block h-full p-[0.12em]">
                 <Logo className="h-full" />
