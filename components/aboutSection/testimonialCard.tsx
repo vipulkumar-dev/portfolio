@@ -17,7 +17,7 @@ export default function TestimonialCard({
           {clientName}
         </p>
       </div>
-      <p className="mt-[1em] text-[0.9em]  tracking-tight  max-md:max-w-full  ">
+      <p className="mt-[1em] text-[0.8em]  tracking-tight  max-md:max-w-full  ">
         {testimonial}
       </p>
     </article>

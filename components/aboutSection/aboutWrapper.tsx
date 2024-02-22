@@ -48,7 +48,7 @@ export function AboutWrapper({}) {
           }}
           className="mask  group h-full items-center justify-center rounded-2xl bg-colorDark p-3 md:relative  md:mr-auto  md:min-h-full   md:w-[22%] md:rounded-full"
         >
-          <p className="shapka !flex text-[0.8em] font-bold text-colorLight md:text-[0.7em]">
+          <p className="shapka !flex text-[0.8em]  text-colorLight md:text-[0.7em]">
             Learn More
             <svg
               className="ml-4 w-[0.7em] -rotate-45 text-colorLight  " // width="34px"
@@ -105,14 +105,14 @@ export function AboutWrapper({}) {
       >
         <SwiperSlide>
           <TestimonialCard
-            clientName="Client Name"
-            testimonial="Over the years, we've been privileged to work with a diverse client range, all of whom have found value and success through our services."
+            clientName="Yash Goda"
+            testimonial="Vipul's expertise, professionalism, and dedication resulted in a top-notch website. Highly recommended for any web development project."
           />
         </SwiperSlide>
         <SwiperSlide>
           <TestimonialCard
-            clientName="Client Name"
-            testimonial="Over the years, we've been privileged to work with a diverse client range, all of whom have found value and success through our services."
+            clientName="Deepak Verma"
+            testimonial="Impressed with Vipul's work; will definitely collaborate again for future projects. Highly recommended for web development needs."
           />
         </SwiperSlide>
       </Swiper>
