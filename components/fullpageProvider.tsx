@@ -55,11 +55,9 @@ const FullpageProvider = ({ children }: { children: React.ReactNode }) => {
 
     if (destination.anchor == "second") {
       if (direction == "down") {
-        // anim__section2__down.restart();
         textAnim__section2__down.current?.restart(true);
       } else {
-        // textAnim__section2__up.restart();
-        // anim__section2__up.restart();
+        textAnim__section2__down.current?.restart();
       }
     }
 

@@ -65,7 +65,7 @@ export function Header({ color, className, mode = "hamburger" }: HeaderProps) {
           >
             <p className="logo__anim grid  grid-flow-col items-center font-semibold   ">
               Vipul
-              <span className="logo__rotate inline-block h-full p-[0.12em]">
+              <span className="logo__rotate inline-block h-full p-[0.16em] pl-[0.1em]">
                 <Logo className="h-full" />
               </span>
             </p>
