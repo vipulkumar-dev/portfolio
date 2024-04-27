@@ -15,29 +15,19 @@ export default function WorkPage() {
           Portfolio <br /> Website
         </>
       ),
-      description: "Tech : Next.js",
-      link: "abc",
+      description: "Website",
+      link: "https://vipulkumar.dev",
       imageLink: "/img/projects/1.png",
     },
     {
       title: (
         <>
-          Nike <br /> Store
+          Therapist <br /> Website
         </>
       ),
-      description: "Webflow Page",
-      link: "sc",
+      description: "UI Design",
+      link: "https://www.figma.com/proto/Tzz9bwrjHtSza87b1l3D0i/Inner-Strength-UI-Design?type=design&node-id=37-10&t=pq2KDLjYbMU4LFgA-1&scaling=min-zoom&page-id=0%3A1&mode=design",
       imageLink: "/img/projects/2.png",
-    },
-    {
-      title: (
-        <>
-          Adidas <br /> Store
-        </>
-      ),
-      description: "Wordpress Theme",
-      link: "sds",
-      imageLink: "/img/projects/3.png",
     },
     {
       title: (
@@ -47,8 +37,19 @@ export default function WorkPage() {
       ),
       description: "UI Design",
       link: "fsre",
+      imageLink: "/img/projects/3.png",
+    },
+    {
+      title: (
+        <>
+          InfoBot <br /> Page
+        </>
+      ),
+      description: "UI Design",
+      link: "https://www.figma.com/proto/7CmQQMDo0rdns5SkHqJBxa/AI-Bot-UI?type=design&node-id=3-75&t=wVQT7zV2hi9Ejb43-1&scaling=min-zoom&page-id=0%3A1&mode=design",
       imageLink: "/img/projects/4.png",
     },
+
     {
       title: (
         <>
