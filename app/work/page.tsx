@@ -35,7 +35,7 @@ export default function WorkPage() {
           Gulessence <br /> Store
         </>
       ),
-      description: "UI Design",
+      description: "Ecommere Store",
       link: "https://gulessence.com/",
       imageLink: "/img/projects/3.png",
     },
@@ -56,7 +56,7 @@ export default function WorkPage() {
           Skin Loyalty <br /> Store
         </>
       ),
-      description: "page",
+      description: "Ecommere Store",
       link: "https://skinloyalty.com/",
       imageLink: "/img/projects/5.png",
     },
