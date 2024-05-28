@@ -32,11 +32,11 @@ export default function WorkPage() {
     {
       title: (
         <>
-          Puma <br /> Store
+          Gulessence <br /> Store
         </>
       ),
       description: "UI Design",
-      link: "fsre",
+      link: "https://gulessence.com/",
       imageLink: "/img/projects/3.png",
     },
     {
@@ -53,12 +53,22 @@ export default function WorkPage() {
     {
       title: (
         <>
-          Reebok <br /> Store
+          Skin Loyalty <br /> Store
         </>
       ),
       description: "page",
-      link: "3r3",
+      link: "https://skinloyalty.com/",
       imageLink: "/img/projects/5.png",
+    },
+    {
+      title: (
+        <>
+          Old <br /> Portfolio
+        </>
+      ),
+      description: "page",
+      link: "https://vipulkumar-dev.github.io/Portfolio-old/",
+      imageLink: "/img/projects/6.png",
     },
   ];
 
