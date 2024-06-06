@@ -12,11 +12,11 @@ export default function WorkPage() {
     {
       title: (
         <>
-          Portfolio <br /> Website
+          Simple Font <br /> Replacer
         </>
       ),
-      description: "Website",
-      link: "https://vipulkumar.dev",
+      description: "Figma Plugin",
+      link: "https://www.figma.com/community/plugin/1380643582596908985/simple-font-replacer",
       imageLink: "/img/projects/1.png",
     },
     {
