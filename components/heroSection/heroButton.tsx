@@ -28,7 +28,7 @@ export function HeroButton({}) {
   return (
     <Magentic
       strength={50}
-      className="email_section1 anime isolate  rounded-full !text-[clamp(16px,_1vw_+_14px,_24px)] md:bg-[#272727]"
+      className="email_section1 anime isolate z-20  rounded-full !text-[clamp(16px,_1vw_+_14px,_24px)] md:bg-[#272727]"
       onMouseEnter={() => rotateImageRef.current?.play()}
       onMouseLeave={() => rotateImageRef.current?.pause()}
       href="#third"

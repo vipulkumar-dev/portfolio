@@ -6,7 +6,7 @@ export function HeroWrapper({}) {
     <main className="section1__wrapper relative max-w-maxWidth grow ">
       <div className="myImage"></div>
       <HeroButton />
-      <h2 className="left mask pt-20">
+      <h2 className="left mask pointer-events-none z-20 pt-20">
         <div className="free anime">
           Website&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         </div>
