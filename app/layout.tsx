@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { DM_Sans } from "next/font/google";
+import GoogleAnalytics from "@/app/GoogleAnalytics";
 
 import "./globals.css";
 import StoreProvider from "@/redux/storeProvider";
@@ -35,6 +36,8 @@ export default function RootLayout({
           name="viewport"
           content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no"
         ></meta>
+
+        <GoogleAnalytics />
       </head>
 
       <body className={dM_Sans.className}>
