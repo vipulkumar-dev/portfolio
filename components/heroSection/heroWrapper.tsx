@@ -11,11 +11,11 @@ export function HeroWrapper({}) {
           Website&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         </div>
         <div className="animation__wrapper anime">
-          <span className="animate__this animate__this1">
+          <span className="animate__this animate__this1 left-0">
             Designer <span className="yellow__it">.</span>
             <br />
           </span>
-          <span className="animate__this animate__this2">
+          <span className="animate__this animate__this2 left-0">
             Developer<span className="yellow__it">.</span>
           </span>
           <span>&nbsp;</span>
