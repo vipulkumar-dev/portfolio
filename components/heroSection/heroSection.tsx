@@ -11,7 +11,6 @@ export function HeroSection({}) {
       <Bulge type="Light" />
       <Header color="Light" />
       <HeroWrapper />
-
       <SplineScene />
     </section>
   );
