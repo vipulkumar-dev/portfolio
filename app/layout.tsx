@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { DM_Sans } from "next/font/google";
 import GoogleAnalytics from "@/app/GoogleAnalytics";
+import Script from "next/script";
 
 import "./globals.css";
 import StoreProvider from "@/redux/storeProvider";
@@ -37,6 +38,10 @@ export default function RootLayout({
           content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no"
         ></meta>
 
+        <Script
+          type="module"
+          src="https://unpkg.com/@splinetool/viewer@1.9.26/build/spline-viewer.js"
+        />
         <GoogleAnalytics />
       </head>
 

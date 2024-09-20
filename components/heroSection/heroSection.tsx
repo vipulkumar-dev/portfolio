@@ -1,9 +1,9 @@
-"use client";
 import React from "react";
-import Spline from "@splinetool/react-spline/next";
+
 import { HeroWrapper } from "@/components/heroSection/heroWrapper";
 import { Header } from "@/components/header";
 import { Bulge } from "@/components/bulge";
+import { SplineScene } from "@/components/heroSection/splineScene";
 
 export function HeroSection({}) {
   return (
@@ -12,9 +12,7 @@ export function HeroSection({}) {
       <Header color="Light" />
       <HeroWrapper />
 
-      <div className="absolute left-0 top-0 z-10 h-full w-full origin-top scale-[108%]">
-        <Spline scene="https://prod.spline.design/u1VFgkuq6dbrbxHS/scene.splinecode" />
-      </div>
+      <SplineScene />
     </section>
   );
 }

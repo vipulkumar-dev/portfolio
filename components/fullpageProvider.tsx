@@ -9,6 +9,7 @@ import { CustomEase } from "gsap/CustomEase";
 import SplitType from "split-type";
 import { useAppDispatch } from "@/hooks/reduxHooks";
 import { setActiveSlide } from "@/redux/states/fullpageSlice";
+import { splineSceneVisibility } from "@/redux/states/splineSlice";
 // import Lottie from "lottie-web";
 // import fullpage from "@fullpage/react-fullpage";
 
@@ -43,6 +44,12 @@ const FullpageProvider = ({ children }: { children: React.ReactNode }) => {
       document.body.classList.add("darkGradient");
     } else {
       document.body.classList.remove("darkGradient");
+    }
+
+    if (destination.anchor == "first") {
+      dispatch(splineSceneVisibility(true));
+    } else {
+      dispatch(splineSceneVisibility(false));
     }
 
     if (destination.anchor == "first") {

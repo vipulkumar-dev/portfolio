@@ -1,12 +1,14 @@
 import { configureStore } from "@reduxjs/toolkit";
 import fullpageReducer from "./states/fullpageSlice";
 import menuReducer from "./states/menuSlice";
+import splineReducer from "./states/splineSlice";
 
 export const makeStore = () => {
   return configureStore({
     reducer: {
       fullpageReducer,
       menuReducer,
+      splineReducer,
     },
   });
 };
