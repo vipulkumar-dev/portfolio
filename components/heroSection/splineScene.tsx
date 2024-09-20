@@ -10,7 +10,11 @@ export function SplineScene({}) {
         loading-anim-type="spinner-small-dark"
         scene="https://prod.spline.design/2Y1ZMOQCV5sQd6rM/scene.splinecode"
       /> */}
-      <img className="h-full w-full" src="/img/nexbot.png" alt="" />
+      <img
+        className="h-full w-full object-cover"
+        src="/img/nexbot.png"
+        alt=""
+      />
       {/* <spline-viewer
         // class={isActive ? "" : "pointer-events-none"}
         url="https://prod.spline.design/2Y1ZMOQCV5sQd6rM/scene.splinecode"
