@@ -11,10 +11,10 @@ export function Bulge({ type }: bulgeProps) {
     <>
       {type == "Dark" ? (
         <>
-          <div className="rounded__div__down darkGradient">
+          <div className="rounded__div__down bg-[#000000]">
             <div className="round__bg__down lightGradient"></div>
           </div>
-          <div className="rounded__div__up darkGradient">
+          <div className="rounded__div__up bg-[#222121]">
             <div className="round__bg__up lightGradient"></div>
           </div>
         </>

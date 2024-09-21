@@ -252,7 +252,7 @@ input:-webkit-autofill:active {
   position: absolute;
   left: 0;
   overflow: hidden;
-  /* z-index: 999; */
+  z-index: 999;
 }
 
 .rounded__div__down {

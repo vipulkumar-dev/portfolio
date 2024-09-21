@@ -32,11 +32,11 @@ export default function WorkPage() {
     {
       title: (
         <>
-          Gulessence <br /> Store
+          AmanFX <br /> Portfolio
         </>
       ),
-      description: "Ecommere Store",
-      link: "https://gulessence.com/",
+      description: "Webflow Site",
+      link: "https://amanfx.webflow.io/",
       imageLink: "/img/projects/3.png",
     },
     {
@@ -66,7 +66,7 @@ export default function WorkPage() {
           Old <br /> Portfolio
         </>
       ),
-      description: "page",
+      description: "Page",
       link: "https://vipulkumar-dev.github.io/Portfolio-old/",
       imageLink: "/img/projects/6.png",
     },

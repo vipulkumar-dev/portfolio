@@ -105,14 +105,16 @@ export function AboutWrapper({}) {
       >
         <SwiperSlide>
           <TestimonialCard
-            clientName="Yash Goda"
-            testimonial="Vipul's expertise, professionalism, and dedication resulted in a top-notch website. Highly recommended for any web development project."
+            clientName="Aman Sharma"
+            imgSrc="/img/afx.jpeg"
+            testimonial="Impressed with Vipul's work; will definitely collaborate again for future projects. Highly recommended for web development needs."
           />
         </SwiperSlide>
         <SwiperSlide>
           <TestimonialCard
-            clientName="Deepak Verma"
-            testimonial="Impressed with Vipul's work; will definitely collaborate again for future projects. Highly recommended for web development needs."
+            clientName="Yash Goda"
+            imgSrc="/img/yash.jpeg"
+            testimonial="Vipul's expertise, professionalism, and dedication resulted in a top-notch website. Highly recommended for any web development project."
           />
         </SwiperSlide>
       </Swiper>

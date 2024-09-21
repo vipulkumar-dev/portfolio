@@ -47,6 +47,7 @@ export function WorkSection({
           className={`image image--works image--works${
             index + 1
           } anime rounded-3xl `}
+          target="_blank"
           href={item.link}
           style={{
             background: `url(${item.imageLink}) center center / contain no-repeat`,
@@ -78,6 +79,7 @@ export function WorkSection({
                 color === "Dark" ? "Light" : "Dark"
               } bg-color${color} mask`}
               href={item.link}
+              target="_blank"
             >
               <p className="shapka">
                 Show Me

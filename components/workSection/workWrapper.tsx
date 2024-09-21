@@ -48,6 +48,7 @@ export function WorkWrapper({}) {
         <video
           className="rounded-3xl  md:rounded-[3rem]"
           id="video"
+          playsInline
           autoPlay
           muted
           loop
