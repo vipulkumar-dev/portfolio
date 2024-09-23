@@ -7,6 +7,7 @@ import { Cursor } from "@/components/cursor";
 import { HeaderNavigation } from "@/components/headerNavigation";
 import { WorkSection } from "@/components/workPage/workSection";
 
+//test
 export default function WorkPage() {
   const projectsData = [
     {
