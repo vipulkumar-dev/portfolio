@@ -87,7 +87,7 @@ export default function App() {
 
 function Postpro() {
   return (
-    <EffectComposer disableNormalPass>
+    <EffectComposer enableNormalPass>
       <HueSaturation saturation={-1} />
       <BrightnessContrast brightness={0} contrast={0.25} />
       <WaterEffect factor={0.75} />
