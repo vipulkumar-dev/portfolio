@@ -12,7 +12,7 @@ import { isDesktop } from "@/lib/utils";
 
 export function AboutWrapper({}) {
   return (
-    <main className="flex h-full w-full max-w-maxWidth grow flex-col justify-center   text-[clamp(18px,_1vw_+_14px,_32px)]  ">
+    <main className="flex h-full w-full max-w-maxWidth grow flex-col justify-center   text-[clamp(19px,_1vw_+_14px,_32px)]  ">
       <div className="anime relative flex flex-col  gap-[1em]   md:flex-row-reverse md:gap-[2em] ">
         <p
           id="my-text"
@@ -23,7 +23,7 @@ export function AboutWrapper({}) {
           Here's what our partners have to say about me.
         </p>
         <Magentic
-          href={links.about}
+          href={"#third"}
           onMouseEnter={() => {
             gsap.to("body", {
               "--colorLight": "#0e0d0c",
@@ -49,7 +49,7 @@ export function AboutWrapper({}) {
           className="mask  group h-full items-center justify-center rounded-2xl bg-colorDark p-3 md:relative  md:mr-auto  md:min-h-full   md:w-[22%] md:rounded-full"
         >
           <p className="shapka !flex text-[0.8em]  text-colorLight md:text-[0.7em]">
-            Learn More
+            Latest Work
             <svg
               className="ml-4 w-[0.7em] -rotate-45 text-colorLight  " // width="34px"
               // height="34px"
@@ -96,7 +96,7 @@ export function AboutWrapper({}) {
         breakpoints={{
           768: {
             slidesPerView: 1.7,
-            spaceBetween: 50,
+            spaceBetween: 30,
           },
         }}
         onSlideChange={() => console.log("slide change")}
