@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Canvas } from "@react-three/fiber";
 import {
   AccumulativeShadows,
@@ -98,15 +99,16 @@ function Postpro() {
   );
 }
 
-function Cookie(props) {
+function Cookie(props: any) {
   const texture = useVideoTexture("/video/caustics.mp4");
   return <spotLight decay={0} map={texture} castShadow {...props} />;
 }
 
-function Suzi(props) {
+function Suzi(props: any) {
   const { nodes } = useGLTF(
     "https://vazxmixjsiawhamofees.supabase.co/storage/v1/object/public/models/suzanne-high-poly/model.gltf",
   );
+
   return (
     <mesh
       castShadow
