@@ -33,14 +33,18 @@ export default function App() {
       <fog attach="fog" args={["#353535", 5, 20]} />
       <ambientLight intensity={2} />
       {/* <Suzi rotation={[-0.63, 0, 0]} scale={2} position={[0, -1.175, 0]} /> */}
-      <Scene position={[0, 0, 0]} scale={1.1} rotation={[-0.1, 1.6, 0]}></Scene>
-      <Cookie
+      <Scene
+        position={[0, 0.1, 0]}
+        scale={1.1}
+        rotation={[-0.1, 1.6, 0]}
+      ></Scene>
+      {/* <Cookie
         distance={100}
         intensity={15}
         angle={0.6}
         penumbra={1}
         position={[2, 5, 0]}
-      />
+      /> */}
       <AccumulativeShadows
         receiveShadow
         temporal
@@ -57,26 +61,26 @@ export default function App() {
           bias={0.001}
         />
       </AccumulativeShadows>
-      <mesh castShadow position={[-1.5, -0.245, 1]}>
+      {/* <mesh castShadow position={[-1.5, -0.245, 1]}>
         <sphereGeometry args={[0.25, 64, 64]} />
         <meshStandardMaterial color="#353535" />
-      </mesh>
-      <mesh
+      </mesh> */}
+      {/* <mesh
         castShadow
         position={[1.5, -0.24, 1]}
         rotation={[0, Math.PI / 4, 0]}
       >
         <boxGeometry args={[0.5, 0.5, 0.5]} />
         <meshStandardMaterial color="#353535" />
-      </mesh>
-      <mesh
+      </mesh> */}
+      {/* <mesh
         rotation={[-Math.PI / 2, 0, 0]}
         position={[0, -0.51, 0]}
         scale={100}
       >
         <planeGeometry />
         <meshLambertMaterial color="#353535" />
-      </mesh>
+      </mesh> */}
       <Environment preset="city" />
       <OrbitControls
         autoRotate
