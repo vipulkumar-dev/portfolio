@@ -18,6 +18,9 @@ import {
   ToneMapping,
 } from "@react-three/postprocessing";
 
+import { useLoader } from "@react-three/fiber";
+import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
+
 export default function App() {
   return (
     <Canvas
@@ -29,7 +32,8 @@ export default function App() {
       <color attach="background" args={["#353535"]} />
       <fog attach="fog" args={["#353535", 5, 20]} />
       <ambientLight intensity={2} />
-      <Suzi rotation={[-0.63, 0, 0]} scale={2} position={[0, -1.175, 0]} />
+      {/* <Suzi rotation={[-0.63, 0, 0]} scale={2} position={[0, -1.175, 0]} /> */}
+      <Scene position={[0, 0, 0]} scale={1.1} rotation={[-0.1, 1.6, 0]}></Scene>
       <Cookie
         distance={100}
         intensity={15}
@@ -76,7 +80,7 @@ export default function App() {
       <Environment preset="city" />
       <OrbitControls
         autoRotate
-        autoRotateSpeed={-0.2}
+        autoRotateSpeed={-0}
         enableZoom={false}
         minPolarAngle={0}
         maxPolarAngle={Math.PI / 2.5}
@@ -92,9 +96,9 @@ function Postpro() {
       <HueSaturation saturation={-1} />
       <BrightnessContrast brightness={0} contrast={0.25} />
       <WaterEffect factor={0.75} />
-      <TiltShift2 samples={6} blur={0.5} />
+      <TiltShift2 samples={6} blur={1} />
       <ToneMapping />
-      <Bloom mipmapBlur luminanceThreshold={0.1} intensity={10} />
+      <Bloom mipmapBlur luminanceThreshold={0.1} intensity={2} />
     </EffectComposer>
   );
 }
@@ -105,19 +109,22 @@ function Cookie(props: any) {
 }
 
 function Suzi(props: any) {
-  const { nodes } = useGLTF(
-    "https://vazxmixjsiawhamofees.supabase.co/storage/v1/object/public/models/suzanne-high-poly/model.gltf",
-  );
-
+  const { nodes } = useGLTF("/3d/scene.gltf");
+  //https://vazxmixjsiawhamofees.supabase.co/storage/v1/object/public/models/suzanne-high-poly/model.gltf
   return (
     <mesh
       castShadow
       receiveShadow
-      geometry={nodes.Suzanne.geometry}
+      geometry={nodes.Object_3.geometry}
       {...props}
       dispose={null}
     >
       <meshStandardMaterial color="#353535" />
     </mesh>
   );
+}
+
+function Scene(props: any) {
+  const gltf = useLoader(GLTFLoader, "/3d/untitled.gltf");
+  return <primitive object={gltf.scene} {...props} />;
 }
