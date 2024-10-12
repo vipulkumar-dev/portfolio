@@ -29,9 +29,9 @@ export default function App() {
       shadows
       camera={{ position: [0, 0, 8], fov: 35 }}
     >
-      <color attach="background" args={["#353535"]} />
-      <fog attach="fog" args={["#353535", 5, 20]} />
-      <ambientLight intensity={2} />
+      <color attach="background" args={["#222222"]} />
+      {/* <fog attach="fog" args={["#353535", 5, 20]} /> */}
+      {/* <ambientLight intensity={2} /> */}
       {/* <Suzi rotation={[-0.63, 0, 0]} scale={2} position={[0, -1.175, 0]} /> */}
       <Scene
         position={[0, 0.1, 0]}
@@ -45,7 +45,7 @@ export default function App() {
         penumbra={1}
         position={[2, 5, 0]}
       /> */}
-      <AccumulativeShadows
+      {/* <AccumulativeShadows
         receiveShadow
         temporal
         frames={100}
@@ -60,7 +60,7 @@ export default function App() {
           position={[5, 8, -10]}
           bias={0.001}
         />
-      </AccumulativeShadows>
+      </AccumulativeShadows> */}
       {/* <mesh castShadow position={[-1.5, -0.245, 1]}>
         <sphereGeometry args={[0.25, 64, 64]} />
         <meshStandardMaterial color="#353535" />
@@ -81,7 +81,7 @@ export default function App() {
         <planeGeometry />
         <meshLambertMaterial color="#353535" />
       </mesh> */}
-      <Environment preset="city" />
+      {/* <Environment preset="city" /> */}
       <OrbitControls
         autoRotate
         autoRotateSpeed={-0}
@@ -96,7 +96,7 @@ export default function App() {
 
 function Postpro() {
   return (
-    <EffectComposer enableNormalPass>
+    <EffectComposer disableNormalPass>
       <HueSaturation saturation={-1} />
       <BrightnessContrast brightness={0} contrast={0.25} />
       <WaterEffect factor={0.75} />
