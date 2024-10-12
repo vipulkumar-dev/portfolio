@@ -3,9 +3,6 @@
 		"generator":"Khronos glTF Blender I/O v4.2.69",
 		"version":"2.0"
 	},
-	"extensionsUsed":[
-		"KHR_materials_unlit"
-	],
 	"scene":0,
 	"scenes":[
 		{
@@ -109,22 +106,6 @@
 			]
 		}
 	],
-	"materials":[
-		{
-			"doubleSided":true,
-			"extensions":{
-				"KHR_materials_unlit":{}
-			},
-			"name":"material_0.002",
-			"pbrMetallicRoughness":{
-				"baseColorTexture":{
-					"index":0
-				},
-				"metallicFactor":0,
-				"roughnessFactor":0.9
-			}
-		}
-	],
 	"meshes":[
 		{
 			"name":"Object_0.002",
@@ -135,8 +116,7 @@
 						"NORMAL":1,
 						"TEXCOORD_0":2
 					},
-					"indices":3,
-					"material":0
+					"indices":3
 				}
 			]
 		},
@@ -149,8 +129,7 @@
 						"NORMAL":5,
 						"TEXCOORD_0":6
 					},
-					"indices":7,
-					"material":0
+					"indices":7
 				}
 			]
 		},
@@ -163,8 +142,7 @@
 						"NORMAL":9,
 						"TEXCOORD_0":10
 					},
-					"indices":11,
-					"material":0
+					"indices":11
 				}
 			]
 		},
@@ -177,8 +155,7 @@
 						"NORMAL":13,
 						"TEXCOORD_0":14
 					},
-					"indices":15,
-					"material":0
+					"indices":15
 				}
 			]
 		},
@@ -191,8 +168,7 @@
 						"NORMAL":17,
 						"TEXCOORD_0":18
 					},
-					"indices":19,
-					"material":0
+					"indices":19
 				}
 			]
 		},
@@ -205,8 +181,7 @@
 						"NORMAL":21,
 						"TEXCOORD_0":22
 					},
-					"indices":23,
-					"material":0
+					"indices":23
 				}
 			]
 		},
@@ -219,23 +194,9 @@
 						"NORMAL":25,
 						"TEXCOORD_0":26
 					},
-					"indices":27,
-					"material":0
+					"indices":27
 				}
 			]
-		}
-	],
-	"textures":[
-		{
-			"sampler":0,
-			"source":0
-		}
-	],
-	"images":[
-		{
-			"mimeType":"image/jpeg",
-			"name":"material_0_baseColor",
-			"uri":"material_0_baseColor.jpg"
 		}
 	],
 	"accessors":[
@@ -646,12 +607,6 @@
 			"byteLength":410592,
 			"byteOffset":21855216,
 			"target":34963
-		}
-	],
-	"samplers":[
-		{
-			"magFilter":9729,
-			"minFilter":9987
 		}
 	],
 	"buffers":[
