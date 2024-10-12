@@ -10,7 +10,7 @@ export async function sendEmail(values: TFormSchema) {
     from: `${values.name} <onboarding@resend.dev>`,
     to: ["hello@vipulkumar.dev"],
     subject: "Customer Email",
-    text: `Email = ${values.email} \n\nMessage = ${values.message}`,
+    text: `Email = ${values.email} \n\nName = ${values.name} \n\nMessage = ${values.message}`,
   });
   if (error) {
     return false;
