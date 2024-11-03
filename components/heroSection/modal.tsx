@@ -27,8 +27,8 @@ export default function Modal() {
 
   useEffect(() => {
     const handleMouseMove = (e) => {
-      // Normalize mouse position to range -1 to 1
-      setMouseX((e.clientX / window.innerWidth) * 2 - 1);
+      // Normalize mouse position to range -0.5 to 0.5
+      setMouseX(e.clientX / window.innerWidth - 0.5);
     };
 
     window.addEventListener("mousemove", handleMouseMove);
