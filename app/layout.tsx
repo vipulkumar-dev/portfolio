@@ -37,11 +37,6 @@ export default function RootLayout({
           name="viewport"
           content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no"
         ></meta>
-
-        <Script
-          type="module"
-          src="https://unpkg.com/@splinetool/viewer@1.9.26/build/spline-viewer.js"
-        />
         <GoogleAnalytics />
       </head>
 

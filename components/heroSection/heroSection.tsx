@@ -3,7 +3,7 @@ import React from "react";
 import { HeroWrapper } from "@/components/heroSection/heroWrapper";
 import { Header } from "@/components/header";
 import { Bulge } from "@/components/bulge";
-import { SplineScene } from "@/components/heroSection/splineScene";
+import { ModalWrapper } from "@/components/heroSection/modalWrapper";
 
 export function HeroSection({}) {
   return (
@@ -11,7 +11,7 @@ export function HeroSection({}) {
       <Bulge type="Light" />
       <Header color="Light" />
       <HeroWrapper />
-      <SplineScene />
+      <ModalWrapper />
     </section>
   );
 }
