@@ -11,7 +11,7 @@ export function HeroSection({}) {
       <Bulge type="Light" />
       <Header color="Light" />
       <HeroWrapper />
-      <ModalWrapper />
+      {/* <ModalWrapper /> */}
     </section>
   );
 }
