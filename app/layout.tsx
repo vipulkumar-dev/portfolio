@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { DM_Sans } from "next/font/google";
+import localFont from "next/font/local";
 import GoogleAnalytics from "@/app/GoogleAnalytics";
 import Script from "next/script";
 
@@ -10,6 +11,10 @@ import { CustomEase } from "gsap/CustomEase";
 gsap.registerPlugin(CustomEase);
 
 const dM_Sans = DM_Sans({ subsets: ["latin-ext"] });
+const satoshi = localFont({
+  src: "../font/satoshi/Satoshi-Variable.woff2",
+  style: "normal",
+});
 
 export const metadata: Metadata = {
   title: "Vipul Kumar • Freelance Designer & Developer",
@@ -40,7 +45,7 @@ export default function RootLayout({
         <GoogleAnalytics />
       </head>
 
-      <body className={dM_Sans.className}>
+      <body className={satoshi.className}>
         <StoreProvider>{children}</StoreProvider>
       </body>
     </html>

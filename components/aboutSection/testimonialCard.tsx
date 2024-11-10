@@ -14,11 +14,11 @@ export default function TestimonialCard({
   return (
     <article className="swiper-slide mask rounded-3xl px-16  py-[1.5em] max-md:px-5 md:rounded-[3rem] md:py-[1.1em] ">
       <div className="testimonialHeader flex items-center gap-[1em] md:block">
-        <img
-          src={imgSrc}
-          alt=""
+        <div
+          // src={imgSrc}
+          // alt=""
           className="h-[60px] w-[60px] rounded-full bg-colorLight md:mt-2.5 md:h-[106px] md:w-[106px]"
-        />
+        ></div>
         <p className="max-w-fit justify-center whitespace-nowrap rounded-[30px] bg-colorSecondaryDark px-4 py-2 text-sm font-medium leading-5 tracking-normal text-stone-100 md:mt-5">
           {clientName}
         </p>

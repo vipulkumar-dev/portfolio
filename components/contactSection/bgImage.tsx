@@ -22,7 +22,7 @@ export function BgImage({ total, item, i }: BgImageProps) {
           Math.floor(total / 2) == i ? 520 : Math.floor(Math.random() * 10)
         }`,
       }}
-      className="bgImages drop-shadow-smd absolute h-[272px] w-[272px] origin-[center_center] translate-x-[-50%] translate-y-[0%] overflow-hidden rounded-3xl md:h-[400px] md:w-[600px]"
+      className="bgImages drop-shadow-smd absolute h-[150px] w-[150px] origin-[center_center] translate-x-[-50%] translate-y-[0%] overflow-hidden rounded-3xl md:h-[250px] md:w-[250px]"
     >
       <Image
         src={item.imgLink}

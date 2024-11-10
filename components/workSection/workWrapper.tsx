@@ -25,7 +25,7 @@ export function WorkWrapper({}) {
               />
             </svg>
           </div>
-          <div className="center">
+          <div className="center font-bold">
             view all work<span className="yellow__it"> .</span>
           </div>
           <div className="right">

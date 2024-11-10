@@ -10,43 +10,85 @@ import { getRandRgb, getRandValues, shuffle } from "@/lib/utils";
 const bgImagesData = [
   {
     id: 1,
-    imgLink: "/img/imageCollage/1.png",
+    imgLink: "/svg_logo/after-effects-logo.svg",
     title: "",
     subtitle: "",
   },
   {
     id: 2,
-    imgLink: "/img/imageCollage/2.png",
+    imgLink: "/svg_logo/attributes-logo.svg",
     title: "",
     subtitle: "",
   },
   {
     id: 3,
-    imgLink: "/img/imageCollage/3.png",
+    imgLink: "/svg_logo/client-first-logo.svg",
     title: "",
     subtitle: "",
   },
   {
     id: 4,
-    imgLink: "/img/imageCollage/4.png",
+    imgLink: "/svg_logo/figma-logo.svg",
     title: "",
     subtitle: "",
   },
   {
     id: 5,
-    imgLink: "/img/imageCollage/5.png",
+    imgLink: "/svg_logo/framer-logo.svg",
     title: "",
     subtitle: "",
   },
   {
     id: 6,
-    imgLink: "/img/imageCollage/6.png",
+    imgLink: "/svg_logo/gsap-logo.svg",
     title: "",
     subtitle: "",
   },
   {
     id: 7,
-    imgLink: "/img/imageCollage/7.png",
+    imgLink: "/svg_logo/mailchimp-logo.svg",
+    title: "",
+    subtitle: "",
+  },
+  {
+    id: 8,
+    imgLink: "/svg_logo/nextjs-logo.svg",
+    title: "",
+    subtitle: "",
+  },
+  {
+    id: 9,
+    imgLink: "/svg_logo/photoshop-logo.svg",
+    title: "",
+    subtitle: "",
+  },
+  {
+    id: 10,
+    imgLink: "/svg_logo/react-logo.svg",
+    title: "",
+    subtitle: "",
+  },
+  {
+    id: 11,
+    imgLink: "/svg_logo/spline-logo.svg",
+    title: "",
+    subtitle: "",
+  },
+  {
+    id: 12,
+    imgLink: "/svg_logo/tailwind-logo.svg",
+    title: "",
+    subtitle: "",
+  },
+  {
+    id: 13,
+    imgLink: "/svg_logo/typescript-logo.svg",
+    title: "",
+    subtitle: "",
+  },
+  {
+    id: 14,
+    imgLink: "/svg_logo/webflow-logo.svg",
     title: "",
     subtitle: "",
   },
@@ -84,7 +126,7 @@ export const BgImagesContainer = ({
   shuffle(bgImagesData);
 
   const bgImagesTween = useRef<gsap.core.Tween | null>(null);
-  const GAP = 10;
+  const GAP = 6;
   useEffect(() => {
     bgImagesTween.current = gsap.fromTo(
       ".bgImages",
@@ -101,7 +143,7 @@ export const BgImagesContainer = ({
         y: "-50%",
         x: "0%",
         left: function (index, target, targets) {
-          return 80 + index * -GAP + "%";
+          return 90 + index * -GAP + "%";
         },
         top: function (index, target, targets) {
           return getRandDistrubutedTop(index, targets) + "%";

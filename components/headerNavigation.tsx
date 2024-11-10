@@ -77,10 +77,10 @@ export function HeaderNavigation() {
       name: "Home",
       href: links.home,
     },
-    {
-      name: "About",
-      href: links.about,
-    },
+    // {
+    //   name: "About",
+    //   href: links.about,
+    // },
     {
       name: "Work",
       href: links.work,
