@@ -11,13 +11,13 @@ import { CustomEase } from "gsap/CustomEase";
 gsap.registerPlugin(CustomEase);
 
 const dM_Sans = DM_Sans({ subsets: ["latin-ext"] });
-const satoshi = localFont({
-  src: "../font/satoshi/Satoshi-Variable.woff2",
-  style: "normal",
-});
+// const satoshi = localFont({
+//   src: "../font/satoshi/Satoshi-Variable.woff2",
+//   style: "normal",
+// });
 
 export const metadata: Metadata = {
-  title: "Vipul Kumar • Freelance Designer & Developer",
+  title: "Vipul Kumar • Designer & Developer",
 };
 
 export default function RootLayout({
@@ -45,7 +45,7 @@ export default function RootLayout({
         <GoogleAnalytics />
       </head>
 
-      <body className={satoshi.className}>
+      <body className={dM_Sans.className}>
         <StoreProvider>{children}</StoreProvider>
       </body>
     </html>
