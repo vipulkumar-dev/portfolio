@@ -24,7 +24,7 @@ export default function TestimonialCard({
         </p>
       </div>
       <p className="mt-[1em] text-[0.8em]  tracking-tight  max-md:max-w-full  ">
-        "{testimonial}"
+        “{testimonial}”
       </p>
       <div className="absolute left-0 top-0 -z-10 h-full w-full bg-colorSecondaryLight opacity-80"></div>
     </article>

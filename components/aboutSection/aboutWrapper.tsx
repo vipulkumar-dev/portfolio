@@ -107,7 +107,7 @@ export function AboutWrapper({}) {
           <TestimonialCard
             clientName="Aman Sharma"
             imgSrc="/img/afx.jpeg"
-            testimonial="Impressed with Vipul's work; will definitely collaborate again for future projects. Highly recommended for web development needs."
+            testimonial="Impressed with Vipul's work, will definitely collaborate again for future projects. Highly recommended for web development needs."
           />
         </SwiperSlide>
         <SwiperSlide>

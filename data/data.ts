@@ -6,5 +6,5 @@ export const links = {
   resume: "/resume",
   github: "https://github.com/vipulkumar-dev",
   linkedin: "https://www.linkedin.com/in/vipulkumar-dev",
-  twitter: "https://twitter.com/vipulsingh1998",
+  twitter: "https://x.com/vipulkumar_dev",
 };
