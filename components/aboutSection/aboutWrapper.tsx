@@ -23,7 +23,8 @@ export function AboutWrapper({}) {
           Here's what our partners have to say about me.
         </p>
         <Magentic
-          href={"#third"}
+          href={links.twitter}
+          target="_blank"
           onMouseEnter={() => {
             gsap.to("body", {
               "--colorLight": "#0e0d0c",
@@ -49,7 +50,7 @@ export function AboutWrapper({}) {
           className="mask  group h-full items-center justify-center rounded-2xl bg-colorDark p-3 md:relative  md:mr-auto  md:min-h-full   md:w-[22%] md:rounded-full"
         >
           <p className="shapka !flex text-[0.8em]  text-colorLight md:text-[0.7em]">
-            Latest Work
+            About
             <svg
               className="ml-4 w-[0.7em] -rotate-45 text-colorLight  " // width="34px"
               // height="34px"
