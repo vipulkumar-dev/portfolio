@@ -77,10 +77,7 @@ export function HeaderNavigation() {
       name: "Home",
       href: links.home,
     },
-    {
-      name: "About",
-      href: links.twitter,
-    },
+
     {
       name: "Work",
       href: links.work,
@@ -88,6 +85,10 @@ export function HeaderNavigation() {
     {
       name: "Contact",
       href: links.contact,
+    },
+    {
+      name: "X/Twitter",
+      href: links.twitter,
     },
   ];
   return (

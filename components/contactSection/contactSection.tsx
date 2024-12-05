@@ -16,7 +16,7 @@ export function ContactSection({}) {
       <Header color="Dark"></Header>
 
       <Magentic // href="mailto:email.coex@gmail.com"
-        href={links.contact}
+        href={links.email}
         className="footer__heading anime cursor-pointer"
         onMouseEnter={() => {
           bgImagesSharedRef.current?.restart(true);
