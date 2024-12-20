@@ -33,17 +33,17 @@ export function HeroButton({}) {
       onMouseLeave={() => rotateImageRef.current?.pause()}
       href="#third"
     >
-      <div className="shapka !flex items-center justify-center gap-[6.5rem]">
+      <div className="shapka !flex items-center justify-center gap-[3.5rem]">
         <div className="round hidden items-center justify-center md:flex">
-          <p className="absolute left-[38%] whitespace-nowrap text-[21px]">
-            Certified Webflow
+          <p className="absolute left-[37%] whitespace-nowrap text-[21px]">
+            Check out
             <br />
-            Development Expert
+            Latest Work
           </p>
         </div>
         <div className="round flex items-center  justify-end md:justify-center ">
           <Image
-            className="rotateAnimation inline-block aspect-square md:p-1"
+            className="rotateAnimation inline-block aspect-square border-2 border-white md:border-0 md:p-1"
             ref={rotating}
             width={100}
             height={100}
