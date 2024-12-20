@@ -87,7 +87,7 @@ export function HeaderNavigation() {
       href: links.contact,
     },
     {
-      name: "X/Twitter",
+      name: "Twitter/X",
       href: links.twitter,
     },
   ];

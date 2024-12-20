@@ -98,9 +98,12 @@ export function Header({ color, className, mode = "hamburger" }: HeaderProps) {
             }}
           >
             <div
-              className={cn("flex h-3 w-full flex-col justify-between ", {
-                "scale-[.90] justify-center": mode === "cross",
-              })}
+              className={cn(
+                "flex h-[0.9rem] w-full flex-col justify-between ",
+                {
+                  "scale-[.90] justify-center": mode === "cross",
+                },
+              )}
             >
               <div
                 className={cn(
