@@ -18,7 +18,7 @@ export default function WorkPage() {
       ),
       description: "Webflow Site",
       link: "https://www.yieldstone.ai/",
-      imageLink: "/img/projects/1.png",
+      imageLink: "/img/projects/1.avif",
     },
     {
       title: (
@@ -28,7 +28,7 @@ export default function WorkPage() {
       ),
       description: "Figma Plugin",
       link: "https://www.figma.com/community/plugin/1380643582596908985/simple-font-replacer",
-      imageLink: "/img/projects/2.png",
+      imageLink: "/img/projects/2.avif",
     },
     {
       title: (
@@ -38,7 +38,7 @@ export default function WorkPage() {
       ),
       description: "Next.js Site",
       link: "https://generator.andytoken.com/",
-      imageLink: "/img/projects/3.png",
+      imageLink: "/img/projects/3.avif",
     },
     {
       title: (
@@ -48,7 +48,7 @@ export default function WorkPage() {
       ),
       description: "Webflow Site",
       link: "https://ponkecoin-ninetyeight.webflow.io/",
-      imageLink: "/img/projects/4.png",
+      imageLink: "/img/projects/4.avif",
     },
 
     {
@@ -59,7 +59,7 @@ export default function WorkPage() {
       ),
       description: "Webflow Site",
       link: "https://amanfx.webflow.io/",
-      imageLink: "/img/projects/5.png",
+      imageLink: "/img/projects/5.avif",
     },
     {
       title: (
@@ -69,7 +69,7 @@ export default function WorkPage() {
       ),
       description: "UI Design",
       link: "https://www.figma.com/proto/Tzz9bwrjHtSza87b1l3D0i/Inner-Strength-UI-Design?type=design&node-id=37-10&t=pq2KDLjYbMU4LFgA-1&scaling=min-zoom&page-id=0%3A1&mode=design",
-      imageLink: "/img/projects/6.png",
+      imageLink: "/img/projects/6.avif",
     },
     {
       title: (
@@ -79,7 +79,7 @@ export default function WorkPage() {
       ),
       description: "Page",
       link: "https://vipulkumar-dev.github.io/Portfolio-old/",
-      imageLink: "/img/projects/7.png",
+      imageLink: "/img/projects/7.avif",
     },
   ];
 
