@@ -20,7 +20,6 @@ export function AboutWrapper({}) {
         >
           Over the years, I've been privileged to work with a diverse client
           range, all of whom have found value and success through my services.
-          Here's what our partners have to say about me.
         </p>
         <Magentic
           href={links.twitter}
