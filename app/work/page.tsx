@@ -13,12 +13,53 @@ export default function WorkPage() {
     {
       title: (
         <>
+          YieldStone <br /> Page
+        </>
+      ),
+      description: "Webflow Site",
+      link: "https://www.yieldstone.ai/",
+      imageLink: "/img/projects/1.png",
+    },
+    {
+      title: (
+        <>
           Simple Font <br /> Replacer
         </>
       ),
       description: "Figma Plugin",
       link: "https://www.figma.com/community/plugin/1380643582596908985/simple-font-replacer",
-      imageLink: "/img/projects/1.png",
+      imageLink: "/img/projects/2.png",
+    },
+    {
+      title: (
+        <>
+          Andy PFP <br /> Generator
+        </>
+      ),
+      description: "Next.js Site",
+      link: "https://generator.andytoken.com/",
+      imageLink: "/img/projects/3.png",
+    },
+    {
+      title: (
+        <>
+          PonkeSol <br /> Page
+        </>
+      ),
+      description: "Webflow Site",
+      link: "https://ponkecoin-ninetyeight.webflow.io/",
+      imageLink: "/img/projects/4.png",
+    },
+
+    {
+      title: (
+        <>
+          AmanFX <br /> Portfolio
+        </>
+      ),
+      description: "Webflow Site",
+      link: "https://amanfx.webflow.io/",
+      imageLink: "/img/projects/5.png",
     },
     {
       title: (
@@ -28,38 +69,7 @@ export default function WorkPage() {
       ),
       description: "UI Design",
       link: "https://www.figma.com/proto/Tzz9bwrjHtSza87b1l3D0i/Inner-Strength-UI-Design?type=design&node-id=37-10&t=pq2KDLjYbMU4LFgA-1&scaling=min-zoom&page-id=0%3A1&mode=design",
-      imageLink: "/img/projects/2.png",
-    },
-    {
-      title: (
-        <>
-          AmanFX <br /> Portfolio
-        </>
-      ),
-      description: "Webflow Site",
-      link: "https://amanfx.webflow.io/",
-      imageLink: "/img/projects/3.png",
-    },
-    {
-      title: (
-        <>
-          InfoBot <br /> Page
-        </>
-      ),
-      description: "UI Design",
-      link: "https://www.figma.com/proto/7CmQQMDo0rdns5SkHqJBxa/AI-Bot-UI?type=design&node-id=3-75&t=wVQT7zV2hi9Ejb43-1&scaling=min-zoom&page-id=0%3A1&mode=design",
-      imageLink: "/img/projects/4.png",
-    },
-
-    {
-      title: (
-        <>
-          Skin Loyalty <br /> Store
-        </>
-      ),
-      description: "Ecommere Store",
-      link: "https://skinloyalty.com/",
-      imageLink: "/img/projects/5.png",
+      imageLink: "/img/projects/6.png",
     },
     {
       title: (
@@ -69,7 +79,7 @@ export default function WorkPage() {
       ),
       description: "Page",
       link: "https://vipulkumar-dev.github.io/Portfolio-old/",
-      imageLink: "/img/projects/6.png",
+      imageLink: "/img/projects/7.png",
     },
   ];
 
