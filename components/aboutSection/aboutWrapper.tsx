@@ -5,10 +5,13 @@ import { AboutMarquee } from "./aboutMarquee";
 import { links } from "@/data/data";
 import TestimonialCard from "./testimonialCard";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { FreeMode } from "swiper/modules";
 
 // Import Swiper styles
 import "swiper/css";
 import { isDesktop } from "@/lib/utils";
+import ProjectCard from "./projectCard";
+import { projectsData } from "@/app/work/page";
 
 export function AboutWrapper({}) {
   return (
@@ -93,31 +96,25 @@ export function AboutWrapper({}) {
 
       <Swiper
         spaceBetween={20}
-        slidesPerView={1.05}
+        slidesPerView={"auto"}
         breakpoints={{
           768: {
-            slidesPerView: 1.7,
+            slidesPerView: 2.8,
             spaceBetween: 30,
           },
         }}
+        // freeMode={true}
         onSlideChange={() => console.log("slide change")}
         onSwiper={(swiper) => console.log(swiper)}
+        grabCursor={true}
+        modules={[FreeMode]}
         className="anime sliderMask slider left-1/2  !w-screen -translate-x-1/2  gap-paddingX  !overflow-visible  !px-paddingX  md:mb-[1em] md:gap-[1.5em]"
       >
-        <SwiperSlide>
-          <TestimonialCard
-            clientName="Aman Sharma"
-            imgSrc="/img/afx.jpeg"
-            testimonial="Impressed with Vipul's work, will definitely collaborate again for future projects. Highly recommended for web development needs."
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <TestimonialCard
-            clientName="Yash Goda"
-            imgSrc="/img/yash.jpeg"
-            testimonial="Vipul's expertise, professionalism, and dedication resulted in a top-notch website. Highly recommended for any web development project."
-          />
-        </SwiperSlide>
+        {projectsData.map((item, index) => (
+          <SwiperSlide>
+            <ProjectCard imgSrc={item.imageLink} />
+          </SwiperSlide>
+        ))}
       </Swiper>
     </main>
   );
