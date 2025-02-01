@@ -68,7 +68,12 @@ export function ImageSequence({
   // const { isActive } = useAppSelector((state) => state.splineReducer);
   return (
     <div className="contrast-110 absolute left-0 top-0 z-10 flex h-full w-full items-center justify-center grayscale">
-      <canvas width={1024} height={1024} id="hero-lightpass"></canvas>
+      <canvas
+        width={1024}
+        height={1024}
+        id="hero-lightpass"
+        className="scale-[0.65] md:scale-[0.8] lg:scale-[1]"
+      ></canvas>
     </div>
   );
 }

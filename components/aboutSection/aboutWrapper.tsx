@@ -18,11 +18,12 @@ export function AboutWrapper({}) {
           id="my-text"
           className=" text-justify leading-[1.3] text-colorSecondaryDark md:w-[69.4%]"
         >
-          Over the years, I've been privileged to work with a diverse client
-          range, all of whom have found value and success through my services.
+          With my background as a React frontend engineer, I have a deep
+          understanding of custom code, which allows me to build advanced
+          Webflow solutions beyond what most Webflow developers can achieve.
         </p>
         <Magentic
-          href={links.twitter}
+          href={links.work}
           target="_blank"
           onMouseEnter={() => {
             gsap.to("body", {
@@ -49,7 +50,7 @@ export function AboutWrapper({}) {
           className="mask  group h-full items-center justify-center rounded-2xl bg-colorDark p-3 md:relative  md:mr-auto  md:min-h-full   md:w-[22%] md:rounded-full"
         >
           <p className="shapka !flex text-[0.8em]  text-colorLight md:text-[0.7em]">
-            Twitter/X
+            View all Work
             <svg
               className="ml-4 w-[0.7em] -rotate-45 text-colorLight  " // width="34px"
               // height="34px"
