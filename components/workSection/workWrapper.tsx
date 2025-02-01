@@ -6,7 +6,7 @@ export function WorkWrapper({}) {
       <div className="flex flex-col items-center justify-center">
         <div className="anime">
           <h2 className="heading mask">
-            Freelance <br />
+            Recent <br />
             Work
           </h2>
         </div>
