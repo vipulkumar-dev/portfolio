@@ -16,7 +16,7 @@ export function AboutWrapper({}) {
       <div className="anime relative flex flex-col  gap-[1em]   md:flex-row-reverse md:gap-[2em] ">
         <p
           id="my-text"
-          className=" text-justify leading-[1.3] text-colorSecondaryDark md:w-[69.4%]"
+          className=" text-justify leading-[1.3] text-colorSecondaryDark md:w-[100%]"
         >
           With my background as a React frontend engineer, my expertise in
           custom code enables me to create advanced Webflow solutions beyond
@@ -47,7 +47,7 @@ export function AboutWrapper({}) {
               "--colorWhite": "#fff",
             });
           }}
-          className="mask  group h-full items-center justify-center rounded-2xl bg-colorDark p-3 md:relative  md:mr-auto  md:min-h-full   md:w-[22%] md:rounded-full"
+          className="mask  group h-full items-center justify-center rounded-2xl bg-colorDark p-3 md:relative  md:min-h-full   md:w-[30%] md:rounded-full"
         >
           <p className="shapka !flex text-[0.8em]  text-colorLight md:text-[0.7em]">
             View all Work
