@@ -13,14 +13,14 @@ import { isDesktop } from "@/lib/utils";
 export function AboutWrapper({}) {
   return (
     <main className="flex h-full w-full max-w-maxWidth grow flex-col justify-center   text-[clamp(19px,_1vw_+_14px,_32px)]  ">
-      <div className="anime relative flex flex-col  gap-[1em]   md:flex-row-reverse md:gap-[2em] ">
+      <div className="anime relative flex flex-col gap-[1em] md:flex-row-reverse md:gap-[2em] ">
         <p
           id="my-text"
-          className=" text-justify leading-[1.3] text-colorSecondaryDark md:w-[100%]"
+          className="text-left leading-[1.3] text-colorSecondaryDark md:w-[100%]"
         >
-          Leveraging my React frontend engineering skills, I create advanced
-          Webflow solutions that push beyond traditional development
-          constraints.
+          Building high-end custom websites for agency clients and also
+          designing and developing premium marketplace templates in my free
+          time.
         </p>
         <Magentic
           href={links.work}
@@ -89,9 +89,9 @@ export function AboutWrapper({}) {
         </Magentic>
       </div>
       {/* <AboutMarquee></AboutMarquee> */}
-      <div className="customBorder anime mt-[1.5em] h-[0px] w-full self-start rounded-full bg-colorSecondaryLight opacity-30 md:my-[1.5em] md:h-[2px]"></div>
+      <div className="customBorder anime my-[1.5em] h-[2px] w-full self-start rounded-full bg-colorSecondaryLight opacity-30"></div>
 
-      <div className="anime relative flex h-[320px] w-full items-center justify-center md:h-[380px]">
+      <div className="anime relative flex h-[300px] w-full items-center justify-center md:h-[380px]">
         <div className="flex flex-col items-center justify-center">
           <div className="anime">
             <h2 className="work_heading mask">Freelance Work</h2>
