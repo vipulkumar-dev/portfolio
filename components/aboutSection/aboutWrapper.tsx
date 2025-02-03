@@ -96,9 +96,9 @@ export function AboutWrapper({}) {
         </Magentic>
       </div>
       {/* <AboutMarquee></AboutMarquee> */}
-      <div className="customBorder anime my-[1.5em] h-[2px] w-full self-start rounded-full bg-colorSecondaryLight opacity-30"></div>
+      <div className="customBorder anime mx-auto my-[1.5em] h-[2px] w-[calc(100%_-_20px)] self-start rounded-full bg-colorSecondaryLight opacity-30 "></div>
 
-      <div className="anime relative flex h-[280px] w-full items-center justify-center md:h-[380px]">
+      <div className="anime relative flex h-[260px] w-full items-center justify-center md:h-[380px]">
         <div className="flex flex-col items-center justify-center">
           <div className="anime">
             <h2 className="work_heading mask">{text}</h2>
