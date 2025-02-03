@@ -17,7 +17,7 @@ export function BgImage({ total, item, i }: BgImageProps) {
   return (
     <div
       style={{
-        filter: `brightness(80%)`,
+        filter: `brightness(85%)`,
         zIndex: `${
           Math.floor(total / 2) == i ? 520 : Math.floor(Math.random() * 10)
         }`,

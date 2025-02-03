@@ -8,7 +8,7 @@
   --fontExtraSmall: 18px;
   --fontSmall: 40px;
   --fontBig: 66px;
-  --fontExtraBig: 240px;
+  --fontExtraBig: 220px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -26,7 +26,7 @@
     --fontExtraSmall: 16px;
     --fontSmall: 7vw;
     --fontBig: 8.4vw;
-    --fontExtraBig: 25vw;
+    --fontExtraBig: 18vw;
     --padding2: 5vw;
   }
 }
@@ -378,15 +378,15 @@ textPath {
   outline: 1px solid hotpink !important;
 } */
 
-.section__3 .heading {
+.work_heading {
   position: relative;
   z-index: 1;
-  font-size: var(--fontExtraBig);
+  font-size: var(--fontExtraBig) !important;
   font-weight: bold;
   text-align: center;
   letter-spacing: -0.04em;
   line-height: 0.9em;
-  color: var(--colorLight);
+  color: white;
 }
 
 .section__3 .work__cto {
@@ -515,7 +515,7 @@ textPath {
   line-height: 1em;
   position: absolute;
   color: var(--colorLight);
-  background: hsla(0, 0%, 0%, 0.4);
+  background: hsl(0deg 0% 100% / 5%);
   -webkit-backdrop-filter: blur(20px);
   backdrop-filter: blur(10px);
 }

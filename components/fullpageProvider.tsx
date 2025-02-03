@@ -66,12 +66,14 @@ const FullpageProvider = ({ children }: { children: React.ReactNode }) => {
       } else {
         textAnim__section2__down.current?.restart();
       }
-    }
-
-    if (destination.anchor == "third") {
       videoElement.current && (videoElement.current.currentTime = 1.6);
       videoElement.current?.play();
     }
+
+    // if (destination.anchor == "third") {
+    //   videoElement.current && (videoElement.current.currentTime = 1.6);
+    //   videoElement.current?.play();
+    // }
 
     if (destination.anchor == "fourth") {
       if (direction == "down") {

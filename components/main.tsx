@@ -9,7 +9,7 @@ export function Main() {
     <>
       <HeroSection />
       <AboutSection />
-      <WorkSection />
+      {/* <WorkSection /> */}
       <ContactSection />
     </>
   );

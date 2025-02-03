@@ -98,7 +98,7 @@
     font-family: "DM Sans", sans-serif;
   }
   .darkGradient {
-    background: linear-gradient(0deg, #000000 0%, #222121 100%);
+    background: linear-gradient(90deg, #000000 0%, #222121 100%);
   }
 
   .fontsize-inherit {
@@ -207,7 +207,7 @@ input:-webkit-autofill:active {
 }
 
 .darkGradient {
-  background: linear-gradient(0deg, #000000 0%, #222121 100%);
+  background: linear-gradient(90deg, #000000 0%, #222121 100%);
 }
 
 .section {

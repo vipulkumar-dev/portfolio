@@ -91,34 +91,57 @@ export function AboutWrapper({}) {
       {/* <AboutMarquee></AboutMarquee> */}
       <div className="customBorder anime my-[1.5em] h-[2px] w-full self-start rounded-full bg-colorSecondaryLight opacity-30"></div>
 
-      <Swiper
-        spaceBetween={20}
-        slidesPerView={1.05}
-        breakpoints={{
-          768: {
-            slidesPerView: 1.7,
-            spaceBetween: 30,
-          },
-        }}
-        onSlideChange={() => console.log("slide change")}
-        onSwiper={(swiper) => console.log(swiper)}
-        className="anime sliderMask slider left-1/2  !w-screen -translate-x-1/2  gap-paddingX  !overflow-visible  !px-paddingX  md:mb-[1em] md:gap-[1.5em]"
-      >
-        <SwiperSlide>
-          <TestimonialCard
-            clientName="Aman Sharma"
-            imgSrc="/img/afx.jpeg"
-            testimonial="Impressed with Vipul's work, will definitely collaborate again for future projects. Highly recommended for web development needs."
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <TestimonialCard
-            clientName="Yash Goda"
-            imgSrc="/img/yash.jpeg"
-            testimonial="Vipul's expertise, professionalism, and dedication resulted in a top-notch website. Highly recommended for any web development project."
-          />
-        </SwiperSlide>
-      </Swiper>
+      <div className="anime relative flex h-[300px] w-full items-center justify-center md:h-[380px]">
+        <div className="flex flex-col items-center justify-center">
+          <div className="anime">
+            <h2 className="work_heading mask">Freelance Work</h2>
+          </div>
+          {/* <a href={links.work} className="work__cto anime">
+            <div className="left">
+              <svg
+                width="21"
+                height="6"
+                viewBox="0 0 21 6"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0.5 2V4H14.5V6L20.5 3L14.5 0V2H0.5Z"
+                  fill="var(--colorLight)"
+                />
+              </svg>
+            </div>
+            <div className="center font-bold">
+              view all work<span className="yellow__it"> .</span>
+            </div>
+            <div className="right">
+              <svg
+                width="21"
+                height="6"
+                viewBox="0 0 21 6"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0.5 2V4H14.5V6L20.5 3L14.5 0V2H0.5Z"
+                  fill="var(--colorLight)"
+                />
+              </svg>
+            </div>
+          </a> */}
+        </div>
+        <div className="section3__video overflow-hidden rounded-3xl bg-black md:rounded-[3rem]">
+          <video
+            className=""
+            id="video"
+            playsInline
+            autoPlay
+            muted
+            loop
+            src="/video/transcode.mp4"
+          ></video>
+        </div>
+      </div>
     </main>
   );
 }

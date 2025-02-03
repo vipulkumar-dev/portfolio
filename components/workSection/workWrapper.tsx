@@ -5,7 +5,7 @@ export function WorkWrapper({}) {
     <main className="relative flex h-full w-full max-w-maxWidth grow items-center justify-center">
       <div className="flex flex-col items-center justify-center">
         <div className="anime">
-          <h2 className="heading mask">
+          <h2 className="work_heading mask">
             Recent <br />
             Work
           </h2>
