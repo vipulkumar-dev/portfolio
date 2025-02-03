@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Magentic from "../ui/magentic";
 import { gsap } from "gsap";
 import { AboutMarquee } from "./aboutMarquee";
@@ -11,6 +11,13 @@ import "swiper/css";
 import { isDesktop } from "@/lib/utils";
 
 export function AboutWrapper({}) {
+  const [text, setText] = useState("Freelance Work");
+  useEffect(() => {
+    if (!isDesktop()) {
+      setText("Recent Work");
+    }
+  }, []);
+
   return (
     <main className="flex h-full w-full max-w-maxWidth grow flex-col justify-center   text-[clamp(19px,_1vw_+_14px,_32px)]  ">
       <div className="anime relative flex flex-col gap-[1em] md:flex-row-reverse md:gap-[2em] ">
@@ -94,9 +101,7 @@ export function AboutWrapper({}) {
       <div className="anime relative flex h-[280px] w-full items-center justify-center md:h-[380px]">
         <div className="flex flex-col items-center justify-center">
           <div className="anime">
-            <h2 className="work_heading mask">
-              {isDesktop() ? "Freelance Work" : "Recent Work"}
-            </h2>
+            <h2 className="work_heading mask">{text}</h2>
           </div>
           {/* <a href={links.work} className="work__cto anime">
             <div className="left">
