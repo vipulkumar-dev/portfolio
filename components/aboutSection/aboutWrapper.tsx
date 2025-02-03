@@ -11,10 +11,20 @@ import "swiper/css";
 import { isDesktop } from "@/lib/utils";
 
 export function AboutWrapper({}) {
-  const [text, setText] = useState("Freelance Work");
+  const [text, setText] = useState({
+    main: "Freelance Work",
+    para: `Building high-end custom websites for agency clients and also
+          designing and developing premium marketplace templates in my free
+          time.`,
+  });
   useEffect(() => {
     if (!isDesktop()) {
-      setText("Recent Work");
+      setText({
+        main: "Recent Work",
+        para: `Building high-end custom websites for agency clients and also
+          designing and developing premium marketplace tem- plates in my free
+          time.`,
+      });
     }
   }, []);
 
@@ -25,9 +35,7 @@ export function AboutWrapper({}) {
           id="my-text"
           className="text-justify leading-[1.3] text-colorSecondaryDark md:w-[100%]"
         >
-          Building high-end custom websites for agency clients and also
-          designing and developing premium marketplace templates in my free
-          time.
+          {text.para}
         </p>
         <Magentic
           href={links.work}
@@ -101,7 +109,7 @@ export function AboutWrapper({}) {
       <div className="anime relative flex h-[260px] w-full items-center justify-center md:h-[380px]">
         <div className="flex flex-col items-center justify-center">
           <div className="anime">
-            <h2 className="work_heading mask">{text}</h2>
+            <h2 className="work_heading mask">{text.main}</h2>
           </div>
           {/* <a href={links.work} className="work__cto anime">
             <div className="left">
