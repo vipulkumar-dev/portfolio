@@ -106,20 +106,14 @@ export function Header({ color, className, mode = "hamburger" }: HeaderProps) {
               )}
             >
               <div
-                className={cn(
-                  `h-[0.15rem] w-full rounded-full bg-color${color}`,
-                  {
-                    "absolute rotate-45": mode === "cross",
-                  },
-                )}
+                className={cn(`h-[0.15rem] w-full bg-color${color}`, {
+                  "absolute rotate-45": mode === "cross",
+                })}
               ></div>
               <div
-                className={cn(
-                  `h-[0.15rem] w-full rounded-full bg-color${color}`,
-                  {
-                    "absolute -rotate-45": mode === "cross",
-                  },
-                )}
+                className={cn(`h-[0.15rem] w-full bg-color${color}`, {
+                  "absolute -rotate-45": mode === "cross",
+                })}
               ></div>
             </div>
           </Magentic>
