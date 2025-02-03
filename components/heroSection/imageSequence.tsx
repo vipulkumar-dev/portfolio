@@ -20,7 +20,7 @@ export function ImageSequence({
 
     const images: HTMLImageElement[] = [];
     const airpods = {
-      frame: 0,
+      frame: 60,
     };
     for (let i = 0; i < frameCount; i++) {
       const img = new Image();
@@ -28,7 +28,7 @@ export function ImageSequence({
       images.push(img);
     }
 
-    images[0].onload = render;
+    images[60].onload = render;
     function render() {
       context?.clearRect(0, 0, canvas.width, canvas.height);
       context?.drawImage(images[airpods.frame], 0, 0);

@@ -94,7 +94,9 @@ export function AboutWrapper({}) {
       <div className="anime relative flex h-[300px] w-full items-center justify-center md:h-[380px]">
         <div className="flex flex-col items-center justify-center">
           <div className="anime">
-            <h2 className="work_heading mask">Freelance Work</h2>
+            <h2 className="work_heading mask">
+              {isDesktop() ? "Freelance Work" : "Recent Work"}
+            </h2>
           </div>
           {/* <a href={links.work} className="work__cto anime">
             <div className="left">
