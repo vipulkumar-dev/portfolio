@@ -56,7 +56,7 @@ export function AboutWrapper({}) {
           }}
           className="mask  group h-full items-center justify-center rounded-2xl bg-colorDark p-3 md:relative  md:min-h-full   md:w-[27%] md:rounded-full"
         >
-          <p className="shapka !flex text-[0.8em]  text-colorLight md:text-[0.7em]">
+          <p className="shapka !flex text-[0.9em]  text-colorLight md:text-[0.7em]">
             View all Work
             <svg
               className="ml-4 w-[0.7em] -rotate-45 text-colorLight  " // width="34px"
