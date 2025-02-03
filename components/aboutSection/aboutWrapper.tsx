@@ -19,7 +19,7 @@ export function AboutWrapper({}) {
   }, []);
 
   return (
-    <main className="flex h-full w-full max-w-maxWidth grow flex-col justify-center   text-[clamp(19px,_1vw_+_14px,_32px)]  ">
+    <main className="flex h-full w-full max-w-maxWidth grow flex-col justify-center   text-[clamp(20px,_1vw_+_14px,_32px)]  ">
       <div className="anime relative flex flex-col gap-[1em] md:flex-row-reverse md:gap-[2em] ">
         <p
           id="my-text"
