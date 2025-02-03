@@ -16,7 +16,7 @@ export function AboutWrapper({}) {
       <div className="anime relative flex flex-col gap-[1em] md:flex-row-reverse md:gap-[2em] ">
         <p
           id="my-text"
-          className="text-left leading-[1.3] text-colorSecondaryDark md:w-[100%]"
+          className="text-justify leading-[1.3] text-colorSecondaryDark md:w-[100%]"
         >
           Building high-end custom websites for agency clients and also
           designing and developing premium marketplace templates in my free
