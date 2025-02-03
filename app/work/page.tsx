@@ -7,7 +7,7 @@ import { Cursor } from "@/components/cursor";
 import { HeaderNavigation } from "@/components/headerNavigation";
 import { WorkSection } from "@/components/workPage/workSection";
 
-export const projectsData = [
+const projectsData = [
   {
     title: (
       <>
