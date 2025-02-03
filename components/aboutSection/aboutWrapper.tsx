@@ -12,15 +12,15 @@ import { isDesktop } from "@/lib/utils";
 
 export function AboutWrapper({}) {
   return (
-    <main className="flex h-full w-full max-w-maxWidth grow flex-col justify-center   text-[clamp(20px,_1vw_+_14px,_32px)]  ">
+    <main className="flex h-full w-full max-w-maxWidth grow flex-col justify-center   text-[clamp(19px,_1vw_+_14px,_32px)]  ">
       <div className="anime relative flex flex-col  gap-[1em]   md:flex-row-reverse md:gap-[2em] ">
         <p
           id="my-text"
           className=" text-justify leading-[1.3] text-colorSecondaryDark md:w-[100%]"
         >
-          With my background as a React frontend engineer, my expertise in
-          custom code enables me to create advanced Webflow solutions beyond
-          most developers.
+          Leveraging my React frontend engineering skills, I create advanced
+          Webflow solutions that push beyond traditional development
+          constraints.
         </p>
         <Magentic
           href={links.work}
