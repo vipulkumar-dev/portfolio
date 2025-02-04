@@ -69,16 +69,6 @@ const projectsData = [
     link: "https://www.figma.com/proto/Tzz9bwrjHtSza87b1l3D0i/Inner-Strength-UI-Design?type=design&node-id=37-10&t=pq2KDLjYbMU4LFgA-1&scaling=min-zoom&page-id=0%3A1&mode=design",
     imageLink: "/img/projects/6.avif",
   },
-  {
-    title: (
-      <>
-        Old <br /> Portfolio
-      </>
-    ),
-    description: "Page",
-    link: "https://vipulkumar-dev.github.io/Portfolio-old/",
-    imageLink: "/img/projects/7.avif",
-  },
 ];
 //test
 export default function WorkPage() {
