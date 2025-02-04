@@ -8,7 +8,7 @@
   --fontExtraSmall: 18px;
   --fontSmall: 40px;
   --fontBig: 66px;
-  --fontExtraBig: 220px;
+  --fontExtraBig: clamp(182px, 12vw, 220px);
 }
 
 @media only screen and (max-width: 768px) {

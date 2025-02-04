@@ -12,7 +12,7 @@ import { isDesktop } from "@/lib/utils";
 
 export function AboutWrapper({}) {
   const [text, setText] = useState({
-    main: "Freelance Work",
+    main: "Featured Work",
     para: `Building high-end custom websites for agency clients and also
           designing and developing premium marketplace templates in my free
           time.`,
