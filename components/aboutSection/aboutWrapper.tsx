@@ -13,27 +13,23 @@ import { isDesktop } from "@/lib/utils";
 export function AboutWrapper({}) {
   const [text, setText] = useState({
     main: "Featured Work",
-    para: `Building high-end custom websites for agency clients and also
-          designing and developing premium marketplace templates in my free
-          time.`,
+    para: `Building high-end, pixel-perfect websites for agencies and individuals while creating high quality rebuilds in my free time.`,
   });
   useEffect(() => {
     if (!isDesktop()) {
       setText({
         main: "Recent Work",
-        para: `Building high-end custom websites for agency clients and also
-          designing and developing premium marketplace tem- plates in my free
-          time.`,
+        para: `Building high-end websites with agencies and individuals while creating rebuilds in my free time.`,
       });
     }
   }, []);
 
   return (
-    <main className="flex h-full w-full max-w-maxWidth grow flex-col justify-center text-[5.1vw] md:text-[clamp(20px,_1vw_+_14px,_32px)]  ">
+    <main className="flex h-full w-full max-w-maxWidth grow flex-col justify-center text-[5.8vw] md:text-[clamp(20px,_1vw_+_14px,_32px)]  ">
       <div className="anime relative flex flex-col gap-[1em] md:flex-row-reverse md:gap-[2em] ">
         <p
           id="my-text"
-          className="text-justify leading-[1.3] text-colorSecondaryDark md:w-[100%]"
+          className="text-left leading-[1.3] text-colorSecondaryDark md:w-[100%]"
         >
           {text.para}
         </p>
@@ -61,9 +57,9 @@ export function AboutWrapper({}) {
               "--colorWhite": "#fff",
             });
           }}
-          className="mask  group h-full items-center justify-center rounded-2xl bg-colorDark p-3 md:relative  md:min-h-full   md:w-[27%] md:rounded-full"
+          className="mask  group h-full items-center justify-center rounded-2xl bg-colorDark p-3 md:relative  md:min-h-full   md:w-[33%] md:rounded-full"
         >
-          <p className="shapka !flex text-[0.9em]  text-colorLight md:text-[0.7em]">
+          <p className="shapka !flex text-[0.8em]  text-colorLight md:text-[0.7em]">
             View all Work
             <svg
               className="ml-4 w-[0.7em] -rotate-45 text-colorLight  " // width="34px"
