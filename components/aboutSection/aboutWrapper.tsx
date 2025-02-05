@@ -39,7 +39,6 @@ export function AboutWrapper({}) {
         </p>
         <Magentic
           href={links.work}
-          target="_blank"
           onMouseEnter={() => {
             gsap.to("body", {
               "--colorLight": "#0e0d0c",
