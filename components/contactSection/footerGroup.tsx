@@ -23,6 +23,7 @@ export function FooterGroup({
                 strength={50}
                 className="relative text-[0.8em] text-[#ffffffd9]"
                 href={link.href}
+                target="_blank"
                 hoverUnderline
               >
                 <p>{link.text}</p>
