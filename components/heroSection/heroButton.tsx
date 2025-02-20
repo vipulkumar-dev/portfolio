@@ -32,13 +32,18 @@ export function HeroButton({}) {
       onMouseEnter={() => rotateImageRef.current?.play()}
       onMouseLeave={() => rotateImageRef.current?.pause()}
       href="#second"
+      // scrambleParams={{
+      //   text: "Check out\nLatest Work",
+      //   chars: "-x",
+      // }}
     >
       <div className="shapka !flex items-center justify-center gap-[3.5rem]">
         <div className="round hidden items-center justify-center md:flex">
           <p className="absolute left-[37%] whitespace-nowrap text-[21px]">
-            Check out
-            <br />
-            Latest Work
+            <span className="scrambleText w-[6em] !whitespace-normal">
+              Check out
+              <br /> Latest Work
+            </span>
           </p>
         </div>
         <div className="round flex items-center  justify-end md:justify-center ">

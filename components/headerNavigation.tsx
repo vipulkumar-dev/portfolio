@@ -110,9 +110,13 @@ export function HeaderNavigation() {
                   className={`text-[clamp(32px,_3.3vw_+_32px,_88px)] font-bold text-color${
                     color == "Light" ? "Dark" : "Light"
                   }`}
+                  scrambleParams={{
+                    text: data.name,
+                    chars: "-xx",
+                  }}
                   href={data.href}
                 >
-                  {data.name}
+                  <span className="scrambleText">{data.name}</span>
                 </Magentic>
               </li>
             ))}

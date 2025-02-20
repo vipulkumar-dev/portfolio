@@ -419,3 +419,9 @@ input:-webkit-autofill:active {
   background: var(--colorSecondaryDark);
   font-size: 0.75em;
 }
+
+.scrambleText {
+  display: inline-block;
+  text-align: left;
+  white-space: nowrap;
+}

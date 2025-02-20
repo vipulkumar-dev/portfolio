@@ -11,12 +11,18 @@ interface MagenticProps extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
   hoverUnderline?: boolean;
   onMouseEnter?: () => void;
   onMouseLeave?: () => void;
+  scrambleParams?: {
+    text: string;
+    chars?: string;
+    speed?: number;
+  };
 }
 const Magentic = ({
   children,
   className,
   onMouseEnter,
   onMouseLeave,
+  scrambleParams,
   hoverUnderline = false,
   strength = 100,
   ...rest
@@ -76,6 +82,28 @@ const Magentic = ({
       magnet.current?.removeEventListener("mouseout", handleMagnetOut);
     };
   }, []);
+
+  function handleScramble(scrambleParams: {
+    text: string;
+    chars?: string;
+    speed?: number;
+  }) {
+    if (typeof ScrambleTextPlugin !== "undefined") {
+      if (magnet.current === null) {
+        return;
+      }
+      const magnetButton = magnet.current as HTMLAnchorElement;
+      gsap.registerPlugin(ScrambleTextPlugin);
+
+      const scrambleText = magnetButton.querySelector(".scrambleText");
+      gsap.set(scrambleText, {
+        width: scrambleText?.clientWidth,
+      });
+      gsap.to(scrambleText, {
+        scrambleText: scrambleParams,
+      });
+    }
+  }
   return (
     <a
       ref={magnet}
@@ -86,7 +114,12 @@ const Magentic = ({
             : " ") +
           className,
       )}
-      onMouseEnter={onMouseEnter}
+      onMouseEnter={() => {
+        if (scrambleParams) {
+          handleScramble({ speed: 0.1, chars: "-x", ...scrambleParams });
+        }
+        onMouseEnter?.();
+      }}
       onMouseLeave={onMouseLeave}
       {...rest}
     >

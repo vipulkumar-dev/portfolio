@@ -16,6 +16,11 @@ const satoshi = localFont({
   style: "normal",
 });
 
+const helvetica = localFont({
+  src: "../font/helvetica/HelveticaNowDisplay-Medium.woff2",
+  style: "normal",
+});
+
 export const metadata: Metadata = {
   title: "Vipul Kumar • Designer & Developer",
 };
@@ -45,9 +50,10 @@ export default function RootLayout({
         <GoogleAnalytics />
       </head>
 
-      <body className={satoshi.className}>
+      <body className={helvetica.className}>
         <StoreProvider>{children}</StoreProvider>
       </body>
+      <Script src="https://cdn.jsdelivr.net/gh/vipulkumar-dev/gsap@2024/ScrambleTextPlugin.min.js" />
     </html>
   );
 }

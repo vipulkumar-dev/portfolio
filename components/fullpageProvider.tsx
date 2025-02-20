@@ -3,7 +3,6 @@
 import React, { useEffect, useRef } from "react";
 import ReactFullpage from "@fullpage/react-fullpage";
 import { gsap } from "gsap";
-
 import { CustomEase } from "gsap/CustomEase";
 
 import SplitType from "split-type";

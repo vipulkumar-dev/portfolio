@@ -18,6 +18,9 @@ export function ContactSection({}) {
       <Magentic // href="mailto:email.coex@gmail.com"
         href={links.email}
         className="footer__heading anime cursor-pointer"
+        scrambleParams={{
+          text: "Contact",
+        }}
         onMouseEnter={() => {
           bgImagesSharedRef.current?.restart(true);
         }}
@@ -26,7 +29,8 @@ export function ContactSection({}) {
         }}
       >
         <span className="shapka mask">
-          Contact<span className="yellow__it">.</span>
+          <span className="scrambleText inline-block text-left">Contact</span>
+          <span className="yellow__it">.</span>
         </span>
       </Magentic>
       <BgImagesContainer bgImagesSharedRef={bgImagesSharedRef} />

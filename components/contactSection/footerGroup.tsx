@@ -22,11 +22,17 @@ export function FooterGroup({
               <Magentic
                 strength={50}
                 className="relative text-[0.8em] text-[#ffffffd9]"
+                scrambleParams={{
+                  text: link.text,
+                  chars: "-xx",
+                }}
                 href={link.href}
                 target="_blank"
                 hoverUnderline
               >
-                <p>{link.text}</p>
+                <p className="scrambleText inline-block text-left">
+                  {link.text}
+                </p>
               </Magentic>
             ) : (
               <p className="text-[0.8em] text-[#ffffffd9]">{link.text}</p>

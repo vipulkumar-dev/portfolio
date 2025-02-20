@@ -384,7 +384,7 @@ textPath {
   font-size: var(--fontExtraBig) !important;
   font-weight: bold;
   text-align: center;
-  letter-spacing: -0.04em;
+  letter-spacing: -0.01em;
   line-height: 0.9em;
   color: white;
 }
