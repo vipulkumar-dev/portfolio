@@ -107,7 +107,7 @@ const Magentic = ({
           duration: 0.8,
           ease: "power3.out",
         })
-        .progress(0.02);
+        .progress(0.04);
     }
   }
   return (
