@@ -101,11 +101,13 @@ const Magentic = ({
       gsap.set(scrambleEl, {
         width: scrambleEl?.clientWidth,
       });
-      gsap.to(scrambleEl, {
-        scrambleText: scrambleParams,
-        duration: 0.8,
-        ease: "power3.out",
-      });
+      gsap
+        .to(scrambleEl, {
+          scrambleText: scrambleParams,
+          duration: 0.8,
+          ease: "power3.out",
+        })
+        .progress(0.02);
     }
   }
   return (
