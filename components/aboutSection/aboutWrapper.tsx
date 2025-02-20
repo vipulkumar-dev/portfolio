@@ -39,26 +39,30 @@ export function AboutWrapper({}) {
             text: "View all Work",
           }}
           onMouseEnter={() => {
-            gsap.to("body", {
-              "--colorLight": "#0e0d0c",
-              "--colorDark": "#fff",
-              "--colorSecondaryDark": "#bfbfbf",
-              "--colorSecondaryLight": "#404040",
-              "--colorSecondaryHalfLight": "#1a1a1a",
-              "--colorSecondaryHalfDark": "#f2f2f2",
-              "--colorWhite": "#000",
-            });
+            if (isDesktop()) {
+              gsap.to("body", {
+                "--colorLight": "#0e0d0c",
+                "--colorDark": "#fff",
+                "--colorSecondaryDark": "#bfbfbf",
+                "--colorSecondaryLight": "#404040",
+                "--colorSecondaryHalfLight": "#1a1a1a",
+                "--colorSecondaryHalfDark": "#f2f2f2",
+                "--colorWhite": "#000",
+              });
+            }
           }}
           onMouseLeave={() => {
-            gsap.to("body", {
-              "--colorLight": "#fff",
-              "--colorDark": "#0e0d0c",
-              "--colorSecondaryDark": "#404040",
-              "--colorSecondaryLight": "#bfbfbf",
-              "--colorSecondaryHalfLight": "#f2f2f2",
-              "--colorSecondaryHalfDark": "#1a1a1a",
-              "--colorWhite": "#fff",
-            });
+            if (isDesktop()) {
+              gsap.to("body", {
+                "--colorLight": "#fff",
+                "--colorDark": "#0e0d0c",
+                "--colorSecondaryDark": "#404040",
+                "--colorSecondaryLight": "#bfbfbf",
+                "--colorSecondaryHalfLight": "#f2f2f2",
+                "--colorSecondaryHalfDark": "#1a1a1a",
+                "--colorWhite": "#fff",
+              });
+            }
           }}
           className="mask  group h-full items-center justify-center rounded-2xl bg-colorDark p-3 md:relative  md:min-h-full   md:w-[33%] md:rounded-full"
         >
