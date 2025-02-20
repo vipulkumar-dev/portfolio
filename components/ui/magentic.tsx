@@ -11,11 +11,17 @@ interface MagenticProps extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
   hoverUnderline?: boolean;
   onMouseEnter?: () => void;
   onMouseLeave?: () => void;
-  scrambleParams?: {
-    text: string;
-    chars?: string;
-    speed?: number;
-  };
+  scrambleParams?:
+    | {
+        text: string;
+        chars?: string;
+        speed?: number;
+      }
+    | {
+        text: string;
+        chars?: string;
+        speed?: number;
+      }[];
 }
 const Magentic = ({
   children,
@@ -83,24 +89,22 @@ const Magentic = ({
     };
   }, []);
 
-  function handleScramble(scrambleParams: {
-    text: string;
-    chars?: string;
-    speed?: number;
-  }) {
+  function handleScramble(
+    scrambleParams: {
+      text: string;
+      chars?: string;
+      speed?: number;
+    },
+    scrambleEl: HTMLElement,
+  ) {
     if (typeof ScrambleTextPlugin !== "undefined") {
-      if (magnet.current === null) {
-        return;
-      }
-      const magnetButton = magnet.current as HTMLAnchorElement;
-      gsap.registerPlugin(ScrambleTextPlugin);
-
-      const scrambleText = magnetButton.querySelector(".scrambleText");
-      gsap.set(scrambleText, {
-        width: scrambleText?.clientWidth,
+      gsap.set(scrambleEl, {
+        width: scrambleEl?.clientWidth,
       });
-      gsap.to(scrambleText, {
+      gsap.to(scrambleEl, {
         scrambleText: scrambleParams,
+        duration: 0.8,
+        ease: "power3.out",
       });
     }
   }
@@ -116,7 +120,26 @@ const Magentic = ({
       )}
       onMouseEnter={() => {
         if (scrambleParams) {
-          handleScramble({ speed: 0.1, chars: "-x", ...scrambleParams });
+          if (magnet.current === null) {
+            return;
+          }
+          const magnetButton = magnet.current as HTMLAnchorElement;
+          gsap.registerPlugin(ScrambleTextPlugin);
+
+          const scrambleEl = magnetButton.querySelectorAll(".scrambleText");
+          if (scrambleParams instanceof Array) {
+            scrambleParams.forEach((param, i) => {
+              handleScramble(
+                { speed: 0.1, chars: "-x", ...param },
+                scrambleEl[i] as HTMLElement,
+              );
+            });
+          } else {
+            handleScramble(
+              { speed: 0.1, chars: "-x", ...scrambleParams },
+              scrambleEl[0] as HTMLElement,
+            );
+          }
         }
         onMouseEnter?.();
       }}
