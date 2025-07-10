@@ -31,6 +31,7 @@ const opts = {
 const FullpageProvider = ({ children }: { children: React.ReactNode }) => {
   const about = useRef<gsap.core.Timeline | null>(null);
   const textAnim__section2__down = useRef<gsap.core.Tween | null>(null);
+  const work_heading = useRef<gsap.core.Tween | null>(null);
   const videoElement = useRef<HTMLVideoElement | null>(null);
 
   const dispatch = useAppDispatch();
@@ -62,9 +63,11 @@ const FullpageProvider = ({ children }: { children: React.ReactNode }) => {
     if (destination.anchor == "second") {
       if (direction == "down") {
         textAnim__section2__down.current?.restart(true);
+        work_heading.current?.restart(true);
       } else {
         textAnim__section2__down.current?.restart();
       }
+      console.log(work_heading.current);
       videoElement.current && (videoElement.current.currentTime = 1.6);
       videoElement.current?.play();
     }
@@ -238,6 +241,28 @@ const FullpageProvider = ({ children }: { children: React.ReactNode }) => {
         paused: true,
         delay: 0.25,
         stagger: 0.12,
+        ease: CustomEase.create("custom", "M0,0,C0.5,0,0,1,1,1"),
+      },
+    );
+
+    work_heading.current = gsap.fromTo(
+      ".work_heading",
+      {
+        rotate: 15,
+        // opacity: 0,
+        scaleY: 1.5,
+      },
+      {
+        // opacity: 0,
+        rotate: 0,
+        scaleY: 1,
+        opacity: 1,
+        delay: 0.7,
+        duration: 1.3,
+        // scaleY: 1.5,
+        // paused: true,
+        // delay: 0.25,
+        // stagger: 0.12,
         ease: CustomEase.create("custom", "M0,0,C0.5,0,0,1,1,1"),
       },
     );

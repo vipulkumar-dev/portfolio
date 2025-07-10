@@ -12,7 +12,7 @@ export function WorkSection({
   index: number;
   item: {
     title: React.JSX.Element;
-    description: string;
+    description: string | React.JSX.Element;
     link: string;
     imageLink: string;
   };
@@ -80,9 +80,10 @@ export function WorkSection({
               } bg-color${color} mask`}
               href={item.link}
               target="_blank"
+              scrambleParams={{ text: "Show Me", chars: "-x" }}
             >
               <p className="shapka">
-                Show Me
+                <span className="scrambleText">Show Me</span>
                 <svg
                   className="ml-4 inline w-[0.8em] -rotate-[75deg] text-inherit" // width="34px"
                   // height="34px"

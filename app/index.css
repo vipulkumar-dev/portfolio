@@ -387,6 +387,7 @@ textPath {
   letter-spacing: -0.01em;
   line-height: 0.9em;
   color: white;
+  transform-origin: top left;
 }
 
 .section__3 .work__cto {
