@@ -25,32 +25,33 @@ export function Footer({ className }: { className?: string }) {
   return (
     <footer
       className={cn(
-        "footer__links absolute flex  w-full flex-wrap gap-0  px-paddingX mix-blend-difference md:gap-12",
+        "footer__links absolute flex  w-full flex-wrap   px-paddingX mix-blend-difference ",
         className,
       )}
     >
-      <FooterGroup
-        className="hidden md:block"
-        title="COPYRIGHT"
-        links={[{ href: "", text: "Copyright © 2024." }]}
-      />
-      <FooterGroup
-        title="LOCAL TIME"
-        className="hidden md:block"
-        links={[{ href: "", text: currentTime }]}
-      />
-
-      <FooterGroup
-        title="SOCIALS"
-        className="md:ml-auto"
-        isMagnetic={true}
-        links={[
-          { href: links.email, text: "Email" },
-          { href: links.twitter, text: "Twitter" },
-          { href: links.telegram, text: "Telegram" },
-          { href: links.github, text: "Github" },
-        ]}
-      />
+      <div className="mx-auto flex w-full max-w-maxWidth gap-0 md:gap-12">
+        <FooterGroup
+          className="hidden md:block"
+          title="COPYRIGHT"
+          links={[{ href: "", text: "Copyright © 2024." }]}
+        />
+        <FooterGroup
+          title="LOCAL TIME"
+          className="hidden md:block"
+          links={[{ href: "", text: currentTime }]}
+        />
+        <FooterGroup
+          title="SOCIALS"
+          className="md:ml-auto"
+          isMagnetic={true}
+          links={[
+            { href: links.email, text: "Email" },
+            { href: links.twitter, text: "Twitter" },
+            { href: links.telegram, text: "Telegram" },
+            { href: links.github, text: "Github" },
+          ]}
+        />
+      </div>
     </footer>
   );
 }

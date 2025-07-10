@@ -130,7 +130,7 @@ ul {
   position: relative;
   width: 50%;
   aspect-ratio: 16/9;
-  margin: 0 var(--paddingX) 0 auto;
+  margin: 0 0 0 auto;
   /* -webkit-box-shadow: 0 80px 140px -40px rgba(0, 0, 0, 0.25);
   box-shadow: 0 80px 140px -40px rgba(0, 0, 0, 0.25); */
   transform-origin: center;

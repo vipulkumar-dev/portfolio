@@ -76,7 +76,7 @@ const bgImagesData = [
   },
   {
     id: 12,
-    imgLink: "/svg_logo/tailwind-logo.svg",
+    imgLink: "/svg_logo/rive-logo.svg",
     title: "",
     subtitle: "",
   },

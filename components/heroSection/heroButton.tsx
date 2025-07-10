@@ -57,9 +57,9 @@ export function HeroButton({}) {
           <Image
             className="rotateAnimation inline-block aspect-square border-2 border-white md:border-0 md:p-1"
             ref={rotating}
-            width={100}
-            height={100}
-            src="/svg_logo/webflow-badge.svg"
+            width={120}
+            height={120}
+            src="/img/logo.png"
             alt=""
           />
         </div>
