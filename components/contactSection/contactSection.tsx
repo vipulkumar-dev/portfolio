@@ -16,7 +16,7 @@ export function ContactSection({}) {
       <Header color="Light"></Header>
 
       <Magentic // href="mailto:email.coex@gmail.com"
-        href={links.email}
+        href={links.contact}
         className="footer__heading anime cursor-pointer"
         scrambleParams={{
           text: "Contact",

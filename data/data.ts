@@ -2,7 +2,7 @@ export const links = {
   home: "/",
   about: "/about",
   work: "/work",
-  contact: "/contact",
+  contact: "https://t.me/vipulkumar_dev",
   email: "mailto:hello@vipulkumar.dev",
   resume: "/resume",
   github: "https://github.com/vipulkumar-dev",
