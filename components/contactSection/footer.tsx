@@ -34,7 +34,7 @@ export function Footer({ className }: { className?: string }) {
           className="hidden md:block"
           title="OPEN SOURCE"
           isMagnetic={true}
-          links={[{ href: links.sourceCode, text: "Source Code" }]}
+          links={[{ href: links.sourceCode, text: "View on GitHub" }]}
         />
         <FooterGroup
           title="LOCAL TIME"
