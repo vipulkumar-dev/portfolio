@@ -32,8 +32,8 @@ export function Footer({ className }: { className?: string }) {
       <div className="mx-auto flex w-full max-w-maxWidth gap-0 md:gap-12">
         <FooterGroup
           className="hidden md:block"
-          title="COPYRIGHT"
-          links={[{ href: "", text: "Copyright © 2024." }]}
+          title="OPEN SOURCE"
+          links={[{ href: links.sourceCode, text: "Source Code" }]}
         />
         <FooterGroup
           title="LOCAL TIME"
