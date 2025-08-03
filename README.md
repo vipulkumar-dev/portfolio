@@ -4,7 +4,7 @@
 
 > **Note:** ⚠️ This project is open source and intended for learning purposes only. Please do not copy it.
 
-This repository contains the codebase for a portfolio website built using Next.js and integrated with GSAP animations.
+This repository contains the codebase for a cool portfolio website that I built using Next.js with GSAP animations.
 
 ## Features
 
