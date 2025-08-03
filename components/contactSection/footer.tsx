@@ -33,6 +33,7 @@ export function Footer({ className }: { className?: string }) {
         <FooterGroup
           className="hidden md:block"
           title="OPEN SOURCE"
+          isMagnetic={true}
           links={[{ href: links.sourceCode, text: "Source Code" }]}
         />
         <FooterGroup
