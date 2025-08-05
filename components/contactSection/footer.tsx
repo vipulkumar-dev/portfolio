@@ -31,16 +31,17 @@ export function Footer({ className }: { className?: string }) {
     >
       <div className="mx-auto flex w-full max-w-maxWidth gap-0 md:gap-12">
         <FooterGroup
+          title="LOCAL TIME"
+          className="hidden md:block"
+          links={[{ href: "", text: currentTime }]}
+        />
+        <FooterGroup
           className="hidden md:block"
           title="OPEN SOURCE"
           isMagnetic={true}
           links={[{ href: links.sourceCode, text: "View on GitHub" }]}
         />
-        <FooterGroup
-          title="LOCAL TIME"
-          className="hidden md:block"
-          links={[{ href: "", text: currentTime }]}
-        />
+
         <FooterGroup
           title="SOCIALS"
           className="md:ml-auto"
