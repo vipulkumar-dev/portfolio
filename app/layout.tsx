@@ -22,7 +22,9 @@ const helvetica = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Vipul Kumar • Designer & Developer",
+  title: "Vipul Kumar • Developer",
+  description:
+    "Vipul Kumar is a developer who creates beautiful and pixel perfect websites with zero effort in reviews.",
 };
 
 export default function RootLayout({
